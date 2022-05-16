@@ -1,0 +1,86 @@
+<html>
+  <script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+<body>
+  <div id = "box" contenteditable="true" style="width: 800px; height: 400px; outline: 2px solid gray;">A mobile device adapted for use where a subject being imaged by a camera of the device may move relative to the camera, and thereby hinder a desired user interaction, the device including:
+a processor;
+a memory;
+a display;
+means for recognizing first and second physical objects depicted in a first frame of video captured by the camera, said objects being depicted at first and second respective positions in said first frame; and
+instructions in the memory that configure the device to present, at first and second locations along an edge of the display, first and second graphical indicia that respectively correspond to said recognized first and second objects, said indicia being selectable by a user to link to additional information about said objects;
+wherein said instructions cause the first and second graphical indicia to remain fixed at said first and second locations, despite depiction of the first and second objects at positions different than said first and second positions in a second, subsequent, frame of video.
+
+  </div>
+  <button onclick="myFunction()">compromise</button>
+  <div id = "output"  contenteditable="true" style="width: 400px; height: 100px; outline: 2px solid gray;">first second
+  </div>
+<button onclick="testFunction()">POS</button>
+</body>
+
+
+  <script>
+//   var Box
+//   var nlp
+function  testFunction(){
+  box = document.getElementById('output').innerText
+  content = nlp(box)
+  var pos = content.match('(the|said) * #noun').out('array')
+  console.log(content.match('(the|said) * #noun').out('array'))
+
+}
+function  myFunction(){
+   box = document.getElementById('box').innerText
+   // content = nlp(box)
+// // document.getElementById('output').innerHTML =
+// console.log(nlp.match('(the|said) * #noun').out('array'))
+// console.log(nlp.match('(!the|!said) * #noun').out('array'))
+//
+//
+// //     console.log(nlp.match('#adjective * #noun').out('array'))
+// //     console.log(nlp.match('#ordinal * #noun').out('array'))
+// // console.log(nlp.match('#ordinal * #noun').out('array'))
+//     console.log(nlp.nouns().out('array'))
+// //     console.log(nlp.data())
+//
+// }
+
+
+nlp.extend((Doc, world) => {
+  // add new tags
+  world.addTags({
+    notnoun: {
+      // isA: 'Conjunction',
+      notA: 'Noun',
+    },
+  })
+  // add or change words in the lexicon
+  world.addWords({
+    wherein: 'notnoun',
+    hinder: 'notnoun',
+    thereby: 'notnoun'
+  })
+
+})
+content = nlp(box)
+var depTerms = content.match('(the|said) * #noun').out('array')
+console.log(content.match('(the|said) * #noun').out('array'))
+var search = content.match('!(the|said) #noun').out('array')
+console.log(search)
+
+for (i=0; i<depTerms.length; i++){
+  var term = depTerms[i]
+    var term2 = term.split(' ').splice(1).join(' ')
+  // var search = content.match('!(the|said) #noun').out('array')
+  // console.log(search)
+
+  if (search.length == 0){
+    console.log(term2, ": true",  )
+  }
+  if (search.length != 0){
+      console.log(term2, ": Lacks antecedent basis",  )
+  }
+}
+
+console.log(content.nouns().out('array'))
+}
+  </script>
+</html>

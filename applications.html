@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<!--begin::Head-->
+	<head><base href="">
+		<meta charset="utf-8" />
+		<title>ActionDocket | Applications</title>
+		<meta name="description" content="Updates and statistics" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!--begin::Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Page Vendors Styles(used by this page)-->
+		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css?v=7.0.4" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/leaflet/leaflet.bundle.css?v=7.0.4" rel="stylesheet" type="text/css" />
+		<!--end::Page Vendors Styles-->
+		<!--begin::Global Theme Styles(used by all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css?v=7.0.4" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/prismjs/prismjs.bundle.css?v=7.0.4" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css?v=7.0.4" rel="stylesheet" type="text/css" />
+		<link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="assets/images/favicon.png" />
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled page-loading">
+		<!--begin::Main-->
+		<!--begin::Header Mobile-->
+		<!--end::Header Mobile-->
+		<div class="d-flex flex-column flex-root">
+			<!--begin::Page-->
+			<div class="d-flex flex-row flex-column-fluid page">
+				<!--begin::Wrapper-->
+				<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+					<!--begin::Header-->
+					<div id="kt_header" class="header bg-white header-fixed">
+						<!--begin::Container-->
+						<div class="container-fluid d-flex align-items-stretch justify-content-between">
+							<!--begin::Left-->
+							<div class="d-flex align-items-stretch mr-2">
+								<!--begin::Page Title-->
+									<div class="d-none text-dark d-lg-flex align-items-center mr-10 mb-0"><img alt="Logo" src="assets/images/logo.png" class="logo-default max-h-25px" /></div>
+								<h3 class="d-none text-dark d-lg-flex align-items-center mr-10 mb-0 headerpagelabel">Applications</h3>
+								<!--end::Page Title-->
+								<!--begin::Header Menu Wrapper-->
+								<div class="header-menu-wrapper header-menu-wrapper-left" id="kt_header_menu_wrapper">
+									<!--begin::Header Menu-->
+									<div id="kt_header_menu" class="header-menu header-menu-mobile header-menu-layout-default">
+										<!--begin::Header Nav-->
+										<ul class="menu-nav">
+											<!-- <li class="menu-item" aria-haspopup="true">
+												<a href="index.html" class="menu-link">
+													<span class="menu-text">Dashboard</span>
+												</a>
+											</li> -->
+											<li class="menu-item " aria-haspopup="true">
+												<a href="docket.html" class="menu-link">
+													<span class="menu-text">Docket</span>
+												</a>
+											</li>
+											<li class="menu-item menu-item-active" aria-haspopup="true">
+												<a href="applications.html" class="menu-link">
+													<span class="menu-text">Applications</span>
+												</a>
+											</li>
+											<li class="menu-item" aria-haspopup="true">
+												<a href="prosecution.html" class="menu-link">
+													<span class="menu-text">Prosecution</span>
+												</a>
+											</li>
+											<li class="menu-item" aria-haspopup="true">
+												<a href="emails.html" class="menu-link">
+													<span class="menu-text">Emails</span>
+												</a>
+											</li>
+										</ul>
+										<!--end::Header Nav-->
+									</div>
+									<!--end::Header Menu-->
+								</div>
+								<!--end::Header Menu Wrapper-->
+							</div>
+							<!--end::Left-->
+							<!--begin::Topbar-->
+							<div class="topbar">
+								<!--begin::Quick Actions-->
+								<div class="dropdown">
+									<!--begin::Toggle-->
+									<div class="topbar-item mr-3" data-toggle="dropdown" data-offset="10px,0px">
+										<div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+											<span class="svg-icon svg-icon-xl">
+											<i class="fas fa-cog"></i>
+											</span>
+										</div>
+									</div>
+									<!--end::Toggle-->
+									<!--begin::Dropdown-->
+									<div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
+										<!--begin:Header-->
+										<div class="d-flex flex-column flex-center py-10 bgi-size-cover bgi-no-repeat rounded-top" style=" background-color:currentColor">
+											<h4 class="text-white font-weight-bold">Settings & Resources</h4>
+										</div>
+										<!--end:Header-->
+										<!--begin:Nav-->
+										<div class="row row-paddingless">
+											<!--begin:Item-->
+											<div class="col-6">
+												<a href="#" class="d-block py-10 px-5 text-center bg-hover-light border-right border-bottom">
+													<span class="svg-icon svg-icon-3x svg-icon-success">
+													<i  class="fas fa-user settingicons"></i>
+													</span>
+													<span class="d-block text-dark-75 font-weight-bold font-size-h6 mt-2 mb-1">Profile</span>
+												</a>
+											</div>
+											<!--end:Item-->
+											<!--begin:Item-->
+											<div class="col-6">
+												<a href="#" class="d-block py-10 px-5 text-center bg-hover-light border-bottom">
+													<span class="svg-icon svg-icon-3x svg-icon-success">
+														<i class="fas fa-sliders-h settingicons"></i>
+													</span>
+													<span class="d-block text-dark-75 font-weight-bold font-size-h6 mt-2 mb-1">Preferences</span>
+												</a>
+											</div>
+											<!--end:Item-->
+											<!--begin:Item-->
+											<div class="col-6">
+												<a href="#" class="d-block py-10 px-5 text-center bg-hover-light border-right">
+													<span class="svg-icon svg-icon-3x svg-icon-success">
+													<i class="fas fa-book-open settingicons"></i>
+													</span>
+													<span class="d-block text-dark-75 font-weight-bold font-size-h6 mt-2 mb-1">Resources</span>
+												</a>
+											</div>
+											<!--end:Item-->
+											<!--begin:Item-->
+											<div class="col-6">
+												<a href="#" class="d-block py-10 px-5 text-center bg-hover-light">
+													<span class="svg-icon svg-icon-3x svg-icon-success">
+												<i class="fas fa-exclamation-circle settingicons"></i>
+													</span>
+													<span class="d-block text-dark-75 font-weight-bold font-size-h6 mt-2 mb-1">Bug Report & Feature Request</span>
+												</a>
+											</div>
+											<!--end:Item-->
+										</div>
+										<!--end:Nav-->
+									</div>
+									<!--end::Dropdown-->
+								</div>
+								<!--end::Quick Actions-->
+								<!--begin::User-->
+								<div class="topbar-item">
+									<div class="btn btn-icon w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
+										<div class="d-flex flex-column text-right pr-3">
+											<span class="text-dark-75 font-weight-bolder font-size-base d-none d-md-inline">Pat Lawyerton</span>
+										</div>
+										<span class="symbol symbol-35 symbol-light-primary">
+											<span class="symbol-label font-size-h5 font-weight-bold">PL</span>
+										</span>
+									</div>
+								</div>
+								<!--end::User-->
+							</div>
+							<!--end::Topbar-->
+						</div>
+						<!--end::Container-->
+					</div>
+					<!--end::Header-->
+					<!--begin::Content-->
+					<div class="content d-flex flex-column flex-column-fluid" id="kt_content" style="padding:0">
+						<!--begin::Modal-->
+
+						<!--end::Modal-->
+						<!--begin::Entry-->
+						<div class="d-flex flex-column-fluid">
+							<div id="appaside" class="col-xl-2 card" style="border-radius:0; background-color:white; padding:50px">
+								<div class="navi navi-hover navi-active navi-link-rounded navi-bold navi-icon-center navi-light-icon" style="margin: 20px 0 40px 0;">
+								            <div class="navi-item my-2">
+								                <a id="navBasic" href="#" class="navi-link active" onclick="funcBasic()">
+								                    <span class="navi-text font-weight-bolder font-size-lg">App Data</span>
+								                </a>
+								            </div>
+								            <!--end:Item-->
+								            <!--begin:Item-->
+								            <div class="navi-item my-2">
+								                <a id="navBackground" href="#" class="navi-link" onclick="funcBackground()">
+								                    <span class="navi-text font-weight-bolder font-size-lg">Background</span>
+								                </a>
+								            </div>
+								            <!--end:Item-->
+								            <!--begin:Item-->
+								            <div class="navi-item my-2">
+								                <a id="navFigs" href="#" class="navi-link" onclick="funcFig()">
+								                   <span class="navi-text font-weight-bolder font-size-lg">Figures</span>
+								                </a>
+								            </div>
+								            <!--end:Item-->
+								            <!--begin:Item-->
+								            <div class="navi-item my-2">
+								                <a id="navClaims" href="#" class="navi-link" onclick="funcClaims()">
+								                    <span class="navi-text font-weight-bolder font-size-lg">Claims</span>
+								                </a>
+								            </div>
+								            <!--end:Item-->
+								        </div>
+												<div class="">
+												<button type="button" class="btn btn-outline-success btn-lg" style="width:100%" onclick="getInput()" >Download Application</button>
+												<br><br>
+													<button type="button" class="btn btn-outline-success btn-lg" style="width:100%" onclick="genFigures()" >Download Figures</button>
+												<!-- <button type="button" name="button" onclick="getFigures()">Get Figures</button> -->
+												<!-- <button type="button" class="btn btn-outline-success btn-lg">New Application</button> -->
+											</div>
+							</div>
+							<!--begin::Container-->
+							<div id="container" class="container" style="padding-top:50px;">
+								<!--begin::Dashboard-->
+								<div  class="row d-flex justify-content-center">
+
+									<div id="basicDiv"class="col-xl-5" style="">
+										<!--begin::Mixed Widget 11-->
+										<div class="card card-custom gutter-b example example-compact">
+					<div class="card-header">
+						<h3 class="card-title">
+							Start New Patent Application
+						</h3>
+					</div>
+					<!--begin::Form-->
+					<form class="form">
+						<div class="card-body">
+							<div class="form-group form-group-last">
+							</div>
+							<div class="form-group">
+								<label for="exampleSelectl">Select Client</label>
+								<select class="form-control form-control-lg" id="clientSelect">
+									<option> </option>
+									<option>Apple</option>
+									<option>Amazon</option>
+									<option>Fitbit</option>
+									<option>Nvidia</option>
+								</select>
+							</div>
+							<div class="form-group row">
+								<div class="col-lg-6">
+									<label>Client Tracking No.</label>
+									<input id="clientTracking" type="text" class="form-control form-control-lg" placeholder="">
+								</div>
+								<div class="col-lg-6">
+									<label>Firm Tracking No.</label>
+									<input id="firmTracking" type="text" class="form-control form-control-lg" placeholder="">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label>Application Title</label>
+								<input id="Title" type="text" class="form-control form-control-lg" placeholder="">
+							</div>
+							<div class="form-group">
+														<label>Application Type</label>
+														<div class="radio-list">
+															<label class="radio">
+															<input id="typeNP" type="radio" checked="checked" name="pRad">
+															<span></span>Non-provisional</label>
+															<label class="radio">
+															<input id="typeP" type="radio" name="pRad">
+															<span></span>Provisional</label>
+														</div>
+													</div>
+
+						</div>
+						<div class="card-footer" style="text-align:right">
+							<button type="button" class="btn btn-success mr-2" onclick="funcBackground()">Save</button>
+							<!-- <button type="reset" class="btn btn-secondary">Cancel</button> -->
+						</div>
+					</form>
+					<!--end::Form-->
+				</div>
+										<!--end::Mixed Widget 11-->
+									</div>
+
+								<!--end::Row-->
+								<div id="backgroundDiv" class="col-xl-8" style="display:none">
+
+									<div  >
+										<!--begin::Mixed Widget 11-->
+										<div class="card card-custom gutter-b example example-compact">
+							<div class="card-header">
+							<h3 class="card-title">
+							Background
+							</h3>
+							</div>
+							<!--begin::Form-->
+							<form id="backgroundForm" class="form" style="">
+								<div class="card-body">
+									<div class="form-group" style="margin-bottom:20px">
+										<label>Select Technology Category</label><br>
+										<button type="button" class="btn mr-2 email-btn bg1-btn" onclick="demoBG(1)">Cloud Computing</button>
+										<button type="button" class="btn mr-2 email-btn bg2-btn" onclick="demoBG(2)">Search Engine</button>
+										<button type="button" class="btn mr-2 email-btn bg3-btn" onclick="demoBG(3)">E-Commerce</button>
+										<button type="button" class="btn mr-2 email-btn bg4-btn" onclick="demoBG(4)">Voice Assistant</button>
+										<select class="form-control" id="" style="border-color:#ccb3ff; width: 200px; vertical-align: bottom; display: initial; margin-bottom:10px">
+											<option value="" disabled selected hidden>Others</option>
+											<option value="" >Consumer devices</option>
+											<option value="" >Augmented reality</option>
+											<option value="" >Digital Advertising</option>
+											<option value="" >Robotics</option>
+											<option value="" >Video processing</option>
+											<option value="" >Streaming</option>
+										</select>
+									</div>
+									<!-- <div class="row form-group" >
+										<div class="col-4" style="padding-right:10px">
+										<select class="form-control" id="" style="border-color:#ccb3ff">
+											<option>Others</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="col-2" style=" padding-left: 0px;">
+										<button class="btn mr-2 btn-success" style="background-color: #ccb3ff; border-color:#ccb3ff">Go</button>
+									</div>
+									</div> -->
+									<br>
+									<div class="form-group mb-1">
+											<label for="exampleTextarea">Boilerplate Text</label>
+											<textarea id="bgText" class="form-control" rows="14" style="font-size:14pt; font-family: times"></textarea><br>
+											</div>
+											<div class="form-group mb-8">
+														<div class="alert alert-custom alert-default" role="alert">
+															<div class="alert-icon">
+																<span class="svg-icon svg-icon-primary svg-icon-xl">
+																	<!--begin::Svg Icon | path:../../../../../../../../metronic/themes/metronic/theme/html/demo1/dist/assets/media/svg/icons/Tools/Compass.svg-->
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																			<rect x="0" y="0" width="24" height="24"></rect>
+																			<path d="M7.07744993,12.3040451 C7.72444571,13.0716094 8.54044565,13.6920474 9.46808594,14.1079953 L5,23 L4.5,18 L7.07744993,12.3040451 Z M14.5865511,14.2597864 C15.5319561,13.9019016 16.375416,13.3366121 17.0614026,12.6194459 L19.5,18 L19,23 L14.5865511,14.2597864 Z M12,3.55271368e-14 C12.8284271,3.53749572e-14 13.5,0.671572875 13.5,1.5 L13.5,4 L10.5,4 L10.5,1.5 C10.5,0.671572875 11.1715729,3.56793164e-14 12,3.55271368e-14 Z" fill="#000000" opacity="0.3"></path>
+																			<path d="M12,10 C13.1045695,10 14,9.1045695 14,8 C14,6.8954305 13.1045695,6 12,6 C10.8954305,6 10,6.8954305 10,8 C10,9.1045695 10.8954305,10 12,10 Z M12,13 C9.23857625,13 7,10.7614237 7,8 C7,5.23857625 9.23857625,3 12,3 C14.7614237,3 17,5.23857625 17,8 C17,10.7614237 14.7614237,13 12,13 Z" fill="#000000" fill-rule="nonzero"></path>
+																		</g>
+																	</svg>
+																	<!--end::Svg Icon-->
+																</span>
+															</div>
+															<div class="alert-text">Boilerplate text can be edited here. However, changes will be lost if another background boilerplate is chosen.</div>
+														</div>
+													</div>
+								</div>
+								<!-- <div class="card-footer" style="display:flex">
+
+
+				<div class="col-12" style="text-align:right">
+					<button type="reset" class="btn btn-secondary" onclick="clickback()" style="margin-right: 7px">Back</button>
+
+				<button type="reset" class="btn btn-primary btn-success mr-2" style="text-align:right">Next</button>
+				</div>
+				</div> -->
+							</form>
+							<!--end::Form-->
+							</div>
+										<!--end::Mixed Widget 11-->
+									</div>
+								</div>
+
+
+								<div id="figDiv" class="col-xl-12" style="display:none">
+									<div class="d-flex flex-column flex-grow-1">
+					            <!--begin::Head-->
+					<div class="card card-custom gutter-b" id="figfilter">
+					    <!--begin::Body-->
+					    <div class="card-body align-items-center justify-content-between flex-wrap py-3">
+					        <!--begin::Info-->
+									<div class="form-group">
+	    <label class="col-form-label text-left col-lg-3 col-sm-12" style="font-size:1.5em !important">Filter figures by tag</label>
+	    <div class=" col-lg-12 col-md-9 col-sm-12">
+	     <select class="form-control select2" id="kt_select2_3" name="param" multiple="multiple">
+	      <!-- <optgroup label="Pacific Time Zone"> -->
+	       <option value="EC">E-Commerce</option>
+	       <option value="ML">Machine Learning</option>
+	       <option value="MD">Mobile Device</option>
+	       <option value="CC">Cloud Computing</option>
+	       <option value="G">Gaming</option>
+	      <!-- </optgroup> -->
+	     </select>
+	    </div>
+	   </div>
+					      </div>
+					    <!--end::Body-->
+					</div>
+					<!--end::Head-->
+					            <!--begin::Row-->
+					            <div class="row">
+					                <!--begin::Col-->
+					                <div class="EC_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+					                    <div class="card figCard"  data-toggle="modal" data-target="#exampleModal1" style="width: 100%;padding-top: 100%;position: relative;" onclick="focusfig(1)">
+					                            <div class="d-flex flex-column align-items-center figbg" style="background-image:url(assets/figures/1.PNG);">
+																				<!-- <img style="height:100%;max-width:100%" src="assets/figures/1.PNG"> -->
+																				<div style="height: 8%; width: 16%; position: absolute; top: 93%; left: 44%; background-color: white;"> </div>
+					                        </div>
+																	 <div id="figoverlay1" class="figbg stack-top" style=""></div>
+					                </div>
+												</div>
+
+												<div class="MD_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+														<div class="card figCard"  data-toggle="modal" data-target="#exampleModal2" style="width: 100%;padding-top: 100%;position: relative;">
+																		<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/2.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+																			<!-- <img style="height:100%; max-width:100%" src="assets/figures/2.PNG"> -->
+																			<div style="height: 8%; width: 16%; position: absolute; top: 88%; left: 40%; background-color: white;">
+																		</div>
+																</div>
+																 <div id="figoverlay2" class="figbg stack-top" style=""></div>
+												</div>
+											</div>
+											<div class="G_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+													<div class="card figCard"  data-toggle="modal" data-target="#exampleModal3" style="width: 100%;padding-top: 100%;position: relative; " >
+																	<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0; background-image:url(assets/figures/3.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain;">
+																	<div style="height: 8%; width: 16%; position: absolute; top: 93%; left: 44%; background-color: white;">
+																	</div>
+															</div>
+															 <div id="figoverlay3" class="figbg stack-top" style=""></div>
+											</div>
+										</div>
+										<!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+												<div class="card figCard"  data-toggle="modal" data-target="#exampleModal4" style="width: 100%;padding-top: 100%;position: relative;">
+																<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/4.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+																<div style="height: 8%; width: 27%; position: absolute; top: 89%; left: 35%;background-color: white;"> </div>
+														</div>
+														<div id="figoverlay4" class="figbg stack-top" style=""></div>
+
+										</div>
+									</div> -->
+									<div class="G_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+											<div class="card figCard"  data-toggle="modal" data-target="#exampleModal5" style="width: 100%;padding-top: 100%;position: relative;">
+															<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/5.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+															<div style="height: 8%; width: 27%; position: absolute; top: 94%; left: 35%;background-color: white;"> </div>
+													</div>
+													<div id="figoverlay5" class="figbg stack-top" style=""></div>
+									</div>
+								</div>
+								<div class="EC_tag ML_tag CC_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+										<div class="card figCard"  data-toggle="modal" data-target="#exampleModal6" style="width: 100%;padding-top: 100%;position: relative;">
+														<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/6.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+														<div style="height: 8%; width: 27%; position: absolute; top: 80%; left: 40%;background-color: white;"> </div>
+												</div>
+												<div id="figoverlay6" class="figbg stack-top" style=""></div>
+								</div>
+							</div>
+							<div class="ML_tag EC_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+									<div class="card figCard"  data-toggle="modal" data-target="#exampleModal7" style="width: 100%;padding-top: 100%;position: relative;">
+													<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/7.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+														<div style="height: 8%; width: 27%; position: absolute; top: 95%; left: 35%;background-color: white;"> </div>
+											</div>
+											<div id="figoverlay7" class="figbg stack-top" style=""></div>
+							</div>
+						</div>
+						<div class=" ML_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+								<div class="card figCard"  data-toggle="modal" data-target="#exampleModal8" style="width: 100%;padding-top: 100%;position: relative;">
+												<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/8.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+												<div style="height: 8%; width: 27%; position: absolute; top: 92%; left: 35%;background-color: white;"> </div>
+										</div>
+										<div id="figoverlay8" class="figbg stack-top" style=""></div>
+						</div>
+					</div>
+					<!-- <div class="G_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+							<div class="card figCard"  data-toggle="modal" data-target="#exampleModal9" style="width: 100%;padding-top: 100%;position: relative;">
+											<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/9.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+													<div style="height: 8%; width: 27%; position: absolute; top: 92%; left: 15%;background-color: white;"> </div>
+									</div>
+									<div id="figoverlay9" class="figbg stack-top" style=""></div>
+					</div>
+				</div> -->
+				<div class="CC_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+						<div class="card figCard"  data-toggle="modal" data-target="#exampleModal11" style="width: 100%;padding-top: 100%;position: relative;">
+										<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/11.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+											<div style="height: 8%; width: 27%; position: absolute; top: 92%; left: 35%;background-color: white;"> </div>
+								</div>
+								<div id="figoverlay11" class="figbg stack-top" style=""></div>
+				</div>
+			</div>
+			<div class="CC_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+					<div class="card figCard"  data-toggle="modal" data-target="#exampleModal12" style="width: 100%;padding-top: 100%;position: relative;">
+									<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/12.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+									<div style="height: 8%; width: 27%; position: absolute; top: 92%; left: 35%;background-color: white;"> </div>
+							</div>
+							<div id="figoverlay12" class="figbg stack-top" style=""></div>
+			</div>
+		</div>
+		<div class="MD_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+				<div class="card figCard"  data-toggle="modal" data-target="#exampleModal13" style="width: 100%;padding-top: 100%;position: relative;">
+								<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/13.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+							<div style="height: 8%; width: 27%; position: absolute; top: 92%; left: 42%;background-color: white;"> </div>
+						</div>
+						<div id="figoverlay13" class="figbg stack-top" style=""></div>
+		</div>
+	</div>
+	<div class="MD_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+			<div class="card figCard"  data-toggle="modal" data-target="#exampleModal14" style="width: 100%;padding-top: 100%;position: relative;">
+							<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/14.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+						<div style="height: 8%; width: 27%; position: absolute; top: 78%; left: 35%;background-color: white;"> </div>
+					</div>
+					<div id="figoverlay14" class="figbg stack-top" style=""></div>
+	</div>
+</div>
+<div class="MD_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+		<div class="card figCard"  data-toggle="modal" data-target="#exampleModal15" style="width: 100%;padding-top: 100%;position: relative;">
+						<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/15.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+					<div style="height: 8%; width: 27%; position: absolute; top: 80%; left: 35%;background-color: white;"> </div>
+				</div>
+				<div id="figoverlay15" class="figbg stack-top" style=""></div>
+</div>
+</div>
+<div class="MD_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+		<div class="card figCard"  data-toggle="modal" data-target="#exampleModal16" style="width: 100%;padding-top: 100%;position: relative;">
+						<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/16.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+				<div style="height: 8%; width: 27%; position: absolute; top: 78%; left: 35%;background-color: white;"> </div>
+				</div>
+				<div id="figoverlay16" class="figbg stack-top" style=""></div>
+</div>
+</div>
+<div class="CC_tag col-xl-3 col-lg-6 col-md-6 col-sm-6">
+		<div class="card figCard"  data-toggle="modal" data-target="#exampleModal17" style="width: 100%;padding-top: 100%;position: relative;">
+						<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/17.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+					<div style="height: 8%; width: 27%; position: absolute; top: 92%; left: 35%;background-color: white;"> </div>
+				</div>
+				<div id="figoverlay17" class="figbg stack-top" style=""></div>
+</div>
+</div>
+<!-- <button onclick="pptxFigures()">get fig</button> -->
+<!-- <div class="card figCard"  data-toggle="modal" data-target="#printModal" style="width: 100%;padding-top: 100%;position: relative;">
+				<div class="d-flex flex-column align-items-center figbg" style="position: absolute; top: 0;left: 0;bottom: 0;right: 0;background-image:url(assets/figures/13.PNG);  background-position: center; background-repeat: no-repeat; background-size: contain; ">
+			<div style="height: 8%; width: 27%; position: absolute; top: 92%; left: 42%;background-color: white;"> </div>
+		</div>
+		<div id="" class="figbg stack-top" style=""></div>
+</div> -->
+												<!-- Modal-->
+	<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+													    <div class="modal-dialog modal-xl" role="document">
+													        <div class="modal-content">
+													            <div class="modal-header">
+													                <h5 class="modal-title" id="exampleModalLabel">Example computing device providing access to an electronic marketplace</h5>
+													                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													                    <i aria-hidden="true" class="ki ki-close"></i>
+													                </button>
+													            </div>
+													            <div class="modal-body row">
+																				<div id="pdfFigure1" class="col-6 modalfig">
+																						<img style="width:100%;" src="assets/figures/1.PNG">
+																						<input id="a1" class=" refno refno1" style="top: 0%; left: 90%; border-color: lightgray;" onkeyup="checkNumber(1)" readonly="">
+																						<input id="b1" class="refno refno1" style="top: 15%; left: 2%; border-color: lightgray;" onkeyup="checkNumber(1)" readonly="">
+																						<input id="c1" class="refno refno1" style="top: 24%; left: 4%; border-color: lightgray;" onkeyup="checkNumber(1)" readonly="">
+
+																						<input id="d1" class=" refno refno1" style="top: 32%; left: 7%; border-color: lightgray;" onkeyup="checkNumber(1)" readonly="">
+																						<input id="e1" class="refno refno1" style="top: 37%; left: 7%; border-color: lightgray;" onkeyup="checkNumber(1)" readonly="">
+																						<input readonly="" id="figno1" class="figno figno1" style="top: 94.5%;left: 55%;">
+
+																					</div>
+																			<div class="col-6 figdescription">
+																				<d id="figtitle1" style="display:none">FIG. <e class=" figinput1">__</e> illustrates an example computing device providing access to an electronic marketplace, in accordance with various embodiments.</d>
+																				<d id="spec1">FIG. <e class=" figinput1">__</e> illustrates an example <e class="textref1 a1">__</e> computing device <e class=" textref1 b1">__</e> providing access to an electronic marketplace <e class="textref1 c1">__</e>, in accordance with various embodiments. In this example, a computing device <e class="textref1 b1">__</e> provides access to an electronic marketplace <e class="textref1 c1">__</e>, in accordance with various embodiments. Although a tablet computing device is shown in this example, it should be understood that various other types of electronic devices that are capable of determining and processing input and providing output can be used in accordance with various embodiments discussed herein.  These devices can include, for example, smart phones, e-book readers, desktop computers, notebook computers, personal data assistants, video gaming consoles or controllers, smart televisions, and portable media players, wearable computers (e.g., glasses, watches, etc.) among others. Further, the elements illustrated can be part of a single device, while at least some elements illustrated and otherwise utilized for such a device can be provided as one or more peripheral devices or accessories within the scope of the various embodiments. As illustrated, the electronic marketplace <e class="textref1 c1">__</e> provides a plurality of items <e class="textref1 d1">__</e> available for consumption (e.g., purchase, rent, use, stream). in some embodiments, various descriptors <e class="textref1 e1">__</e> of an item are provided, such as images, price, name, among others.
+																			</d>
+																		</div>
+													            </div>
+
+													            <div class="modal-footer">
+																				<div class="col-3" style="text-align:left;padding-left: 50px;">
+																				<button id="deselect1" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(1)" data-dismiss="modal" aria-label="Close">Deselect</button>
+																			</div>
+
+																					  <div class="col-3">
+																					<label>Figure number:</label> <input id="figinput1" class="figinput" autofocus onkeyup="autoNumber(1)" ></input>
+																				</div>
+        <div class="col-4">
+					<div class="row">
+
+																	<label style="margin-right:20px">Reference numbers:</label>
+																<div class="radio-inline">
+																	<label class="radio">
+																	<input id="autoRef1" type="radio" checked="checked" name="radios1" onchange="autoNumber(1)">
+																	<span></span>Auto</label>
+																	<label class="radio">
+																	<input id="manualRef1" type="radio" name="radios1" onchange="autoNumber(1)">
+																	<span></span>Manual</label>
+																</div>
+															</div>
+
+            </div>
+						<div class="col-2">
+						<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(1)">Select Figure</button>
+					</div>
+													            </div>
+													        </div>
+													    </div>
+	</div>
+<!-- END MODAL 1 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel2">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure2" class="col-6 modalfig">
+									<img style="width:100%;" src="assets/figures/2.PNG">
+									<input id="a2" class=" refno refno2" style="top: 2px; left: 476px;" onkeyup="checkNumber(2)">
+									<input id="b2" class="refno refno2" style="top: 137px; left: 22px;" onkeyup="checkNumber(2)">
+									<input id="c2" class="refno refno2" style="top: 131px; left: 469px;" onkeyup="checkNumber(2)">
+									<input id="d2" class=" refno refno2" style="top: 220px; left: 469px;" onkeyup="checkNumber(2)">
+									<input id="e2" class="refno refno2" style="top: 278px; left: 441px;" onkeyup="checkNumber(2)">
+									<input id="f2" class="refno refno2" style="top: 67px; left: 399px;" onkeyup="checkNumber(2)">
+									<input readonly id="figno2" class="figno figno2" style="top: 434px; left: 279px;" >
+
+								</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle2" style="display:none">FIG. <e class="figinput2">__</e> illustrates an example scenario of a user utilizing a computing device, in accordance with various embodiments.</d>
+								<d id="spec2">FIG. <e class="figinput2">__</e> illustrates an example scenario <e class="textref2 a2">__</e> of a user <e class="textref2 b2">__</e> utilizing a computing device <e class="textref2 c2">__</e>, in accordance with various embodiments. In this example, a user <e class="textref2 b2">__</e> may use a computing device <e class="textref2 c2">__</e> to access content <e class="textref2 d2">__</e>. The computing device <e class="textref2 c2">__</e> may be used to render or access a graphical interface <e class="textref2 e2">__</e> of a Web platform such as a website or application. The graphical interface <e class="textref2 e2">__</e> may include content <e class="textref2 f2">__</e> such as text, image content, and other various static or interactive content.
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect2" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(2)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput2" class="figinput" autofocus onkeyup="autoNumber(2)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef2" type="radio" checked="checked" name="radios2" onchange="autoNumber(2)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef2" type="radio" name="radios2" onchange="autoNumber(2)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(2)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 2 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel3">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure3" class="col-6 modalfig">
+									<img style="width:100%;" src="assets/figures/3.PNG">
+									<input id="a3" class=" refno refno3" style="top: -3px; left: 494px;" onkeyup="checkNumber(3)">
+									<input id="b3" class="refno refno3" style="top: 157px; left: 148px;" onkeyup="checkNumber(3)">
+									<input id="c3" class="refno refno3" style="top: 327px; left: 350px;" onkeyup="checkNumber(3)">
+									<input id="d3" class=" refno refno3" style="top: 417px; left: 20px;" onkeyup="checkNumber(3)">
+									<input id="e3" class="refno refno3" style="top: 452px; left: 180px;" onkeyup="checkNumber(3)">
+									<input id="f3" class="refno refno3" style="top: 406px; left: 455px;" onkeyup="checkNumber(3)">
+									<input readonly id="figno3" class="figno figno3" style="top: 627px; left: 287px;" >
+
+								</div>
+							<div class="col-6 figdescription">
+									<d id="figtitle3" style="display:none">FIG. <e class="figinput3">__</e> illustrates an example of a networked computing system that can be improved using the systems and techniques of the present disclosure.</d>
+								<d id="spec3">FIG. <e class="figinput3">__</e> illustrates an example of a networked computing system <e class="textref3 a3">__</e> for [--INSERT APPLICATION--] that can be improved using the systems and techniques of the present disclosure. In this example, a server <e class="textref3 b3">__</e>, such as at a resource, service, or content provider can transmit video data to one or more client devices <e class="textref3 a3">__</e>, <e class="textref3 e3">__</e>, <e class="textref3 f3">__</e>. Client devices <e class="textref3 a3">__</e>, <e class="textref3 e3">__</e>, <e class="textref3 f3">__</e> include devices through which a user can watch, listen to, read, or otherwise interact with content, and include at least one form of input such as a keyboard or controller, and at least one form of output such as a display or speaker. The client devices <e class="textref3 d3">__</e>, <e class="textref3 e3">__</e>, <e class="textref3 f3">__</e> can include various computing devices such as smart phones, tablet computers, wearable computers (e.g., smart glasses or watches), desktop or notebook computers, and the like. The client devices <e class="textref3 d3">__</e>, <e class="textref3 e3">__</e>, <e class="textref3 f3">__</e> can communicate with the server <e class="textref3 a3">__</e> over at least one network <e class="textref3 c3">__</e>, such as the Internet, a cellular network, a local area network (LAN), an Ethernet, Wi-Fi, or a dedicated network, among other such options, such that the client devices <e class="textref3 d3">__</e>, <e class="textref3 e3">__</e>, <e class="textref3 f3">__</e> can communicate with the server <e class="textref3 b3">__</e>.
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect3" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(3)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput3" class="figinput" autofocus onkeyup="autoNumber(3)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef3" type="radio" checked="checked" name="radios3" onchange="autoNumber(3)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef3" type="radio" name="radios3" onchange="autoNumber(3)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(3)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 3 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel4">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure4" class="col-6 modalfig">
+									<img style="width:100%;" src="assets/figures/4.PNG">
+									<input id="a4" class=" refno refno4" style="top: 2px; left: 476px;" onkeyup="checkNumber(4)">
+									<input id="b4" class="refno refno4" style="top: 137px; left: 22px;" onkeyup="checkNumber(4)">
+									<input id="c4" class="refno refno4" style="top: 131px; left: 469px;" onkeyup="checkNumber(4)">
+									<input id="d4" class=" refno refno4" style="top: 220px; left: 469px;" onkeyup="checkNumber(4)">
+									<input id="e4" class="refno refno4" style="top: 278px; left: 441px;" onkeyup="checkNumber(4)">
+									<input id="f4" class="refno refno4" style="top: 67px; left: 399px;" onkeyup="checkNumber(4)">
+									<input readonly id="figno4" class="figno figno4" style="top: 434px; left: 279px;" >
+
+								</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle4" style="display:none">FIG. <e class="figinput4">__</e> illustrates an example situationin which a computing device can display content to a user via an interface on a display screen.</d>
+								<d id="spec4">FIG. <e class="figinput4">__</e> illustrates an example situation <e class="textref4 a4">__</e> in which a computing device <e class="textref4 b4">__</e> might display content to a user via an interface on a display screen <e class="textref4 c4">__</e> per conventional approaches. Although a portable computing device (e.g., a smart phone, an electronic book reader, or tablet computer) is shown, it should be understood that any device capable of receiving and processing input can be used in accordance with various embodiments discussed herein. The devices can include, for example, desktop computers, notebook computers, electronic book readers, personal data assistants, cellular phones, video gaming consoles or controllers, wearable computers (e.g., smart watches or glasses), television set top boxes, and portable media players, among others.
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect4" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(4)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput4" class="figinput" autofocus onkeyup="autoNumber(4)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef4" type="radio" checked="checked" name="radios4" onchange="autoNumber(4)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef4" type="radio" name="radios4" onchange="autoNumber(4)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(4)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 4 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel5">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure5" class="col-6 modalfig">
+										<img style="width:100%;" src="assets/figures/5.PNG">
+										<input id="a5" class=" refno refno5" style="top: 0px; left: 485px;"onkeyup="checkNumber(5)" >
+										<input id="b5" class="refno refno5" style="top: 94px; left: 388px;"onkeyup="checkNumber(5)" >
+										<input id="c5" class="refno refno5" style="top: 295px;left: 465px;"onkeyup="checkNumber(5)" >
+										<input id="d5" class=" refno refno5" style="top: 192px;left: 367px;"onkeyup="checkNumber(5)" >
+										<input id="e5" class="refno refno5" style="top: 335px;left: 43px;"onkeyup="checkNumber(5)" >
+										<input id="f5" class="refno refno5" style="top: 393px;left: 65px;"onkeyup="checkNumber(5)" >
+										<input id="g5" class=" refno refno5" style="top: 455px;left: 65px;" onkeyup="checkNumber(5)" >
+										<input id="hh5" class="refno refno5" style="top: 518px;left: 65px;" onkeyup="checkNumber(5)" >
+										<input id="i5" class="refno refno5" style="top: 608px;left: 96px;" onkeyup="checkNumber(5)" >
+										<input id="j5" class=" refno refno5" style="top: 452px;left: 466px;" onkeyup="checkNumber(5)" >
+										<input id="k5" class="refno refno5" style="top: 549px;left: 436px;" onkeyup="checkNumber(5)" >
+										<input id="l5" class="refno refno5" style="top: 391px;left: 465px;" onkeyup="checkNumber(5)" >
+										<input id="m5" class="refno refno5" style="top: 185px;left: 21px;" onkeyup="checkNumber(5)" >
+										<input readonly="" id="figno5" class="figno figno5" style="top: 753px; left: 285px;">
+
+									</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle5" style="display:none">FIG. <e class="figinput5">__</e> illustrates an example computing system for [[_PURPOSE OF APP_]], in accordance with various embodiments of the present disclosure.</d>
+								<d id="spec5">FIG. <e class="figinput5">__</e> illustrates an example computing system <e class="textref5 a5">__</e> for [[_PURPOSE OF APP_]], in accordance with various embodiments of the present disclosure. In various embodiments, a system <e class="textref5 a5">__</e> may enable a client device <e class="textref5 b5">__</e> to receive _______ from [[_SYSTEM_]] <e class="textref5 c5">__</e>. The device client <e class="textref5 b5">__</e> may access a content provider <e class="textref5 m5">__</e>, such as a _____ service or other web platform or service providing _____, to request ______. In some embodiments, the adaptive video compression system <e class="textref5 c5">__</e> may be implemented at one or more servers at _____. The _____ may utilizes the [[_SYSTEM_]] <e class="textref5 c5">__</e> to _____. In some other embodiments, the [[_SYSTEM_]] <e class="textref5 c5">__</e> may be implemented remote from the content provider <e class="textref5 m5">__</e>, such that the content provider <e class="textref5 m5">__</e> provides data to the [[_SYSTEM_]], the [[_SYSTEM_]] _____ and either transmits the _____ back to the content provider <e class="textref5 m5">__</e> or directly to the client device <e class="textref5 b5">__</e>. The client device <e class="textref5 b5">__</e> may represent a client-side computer device that includes any type of computing devices having network connectivity, including personal computers, tablet computers, smart phones, notebook computers, and the like. Multiple client devices <e class="textref5 b5">__</e> may be connected to the [[_SYSTEM_]] <e class="textref5 c5">__</e> via the network <e class="textref5 d5">__</e>, and the [[_SYSTEM_]] <e class="textref5 c5">__</e> may provide individualized service to each client device <e class="textref5 b5">__</e>, such as based on the type of client device. In some embodiments, the client device <e class="textref5 b5">__</e> may be a virtual device, Web program, or software application that can communicate with the [[_SYSTEM_]] <e class="textref5 c5">__</e> directly or over the network <e class="textref5 d5">__</e>, making and receiving requests and calls, and sending and receiving data. The network <e class="textref5 d5">__</e> can include any appropriate network, such as the Internet, a local area network (LAN), a cellular network, an Ethernet, Wi-Fi, Bluetooth, radiofrequency, or other such wired and/or wireless network. The  adaptive video compression system <e class="textref5 c5">__</e> can include any appropriate resources for performing the various functions described herein, and may include various servers, data stores, and other such components known or used for providing content from across a network (or from the cloud). In various embodiments, the [[_SYSTEM_]] <e class="textref5 c5">__</e> may include functional and data aspects illustrated herein as an interface <e class="textref5 e5">__</e>, a _____ module <e class="textref5 f5">__</e>, a _____ module <e class="textref5 g5">__</e>, a _____ module <e class="textref5 hh5">__</e>, a _____ database <e class="textref5 i5">__</e>, an _____ module <e class="textref5 j5">__</e>, an _____ database <e class="textref5 k5">__</e>, and a _____ module <e class="textref5 l5">__</e>. One or more of the modules and databases described above may be implemented jointly or separated further into additional modules. For example, the interface face <e class="textref5 e5">__</e> can facilitate communication between the client device <e class="textref5 b5">__</e> and the [[_SYSTEM_]] <e class="textref5 c5">__</e>. Requests received by the [[_SYSTEM_]] <e class="textref5 c5">__</e> can be received by the interface <e class="textref5 e5">__</e>. Example requests may include _____, among others.  The interface <e class="textref5 e5">__</e> may also provide outputs from the [[_SYSTEM_]] <e class="textref5 c5">__</e> to the client <e class="textref5 b5">__</e>, such as _____. The [[_SYSTEM_]] <e class="textref5 c5">__</e> may receive _____ from the content provider 202 via the interface <e class="textref5 e5">__</e>. The interface <e class="textref5 e5">__</e> may also include components such as specific application programming interfaces (APIs), load balancers, request and/or data routers, and the like. The interface <e class="textref5 e5">__</e> may also facilitate communication with the content provider <e class="textref5 b5">__</e>, whether local or remote.
+
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect5" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(5)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput5" class="figinput" autofocus onkeyup="autoNumber(5)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef5" type="radio" checked="checked" name="radios5" onchange="autoNumber(5)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef5" type="radio" name="radios5" onchange="autoNumber(5)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(5)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 5 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document" style="max-width: 1300px;">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel6">Content Management and Recommendation Diagram</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure6" class="col-6 modalfig">
+										<img style="width:100%;" src="assets/figures/6.PNG">
+										<input id="a6" class=" refno refno6" style="top: 2px;left: 591px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="b6" class="refno refno6" style="top: 122px;left: 19px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="c6" class="refno refno6" style="top: 64px;left: 188px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="d6" class=" refno refno6" style="top: 156px;left: 332px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="e6" class="refno refno6" style="top: 360px;left: 185px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="f6" class="refno refno6" style="top: 233px;left: 447px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+
+										<input id="g6" class=" refno refno6" style="top: 159px;left: 546px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="h6" class="refno refno6" style="top: 195px;left: 413px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="i6" class="refno refno6" style="top: 189px;left: 294px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="j6" class=" refno refno6" style="top: 189px;left: 515px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="k6" class="refno refno6" style="top: 263px;left: 355px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="l6" class="refno refno6" style="top: 261px;left: 446px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="m6" class="refno refno6" style="top: 225px;left: 73px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input id="n6" class="refno refno6" style="top: 228px;left: 187px;border-color: lightgray;" onkeyup="checkNumber(6)" readonly="">
+										<input readonly="" id="figno6" class="figno figno6" style="top: 415px;left: 406px;">
+
+									</div>
+							<div class="col-5 figdescription">
+								<d id="figtitle6" style="display:none">FIG. <e class="figinput6">__</e> illustrates an example content management system in accordance with various embodiments.</d>
+								<d id="spec6">FIG. <e class="figinput6">__</e> illustrates an example content management system <e class="textref6 a6">__</e> in accordance with various embodiments. A content management system <e class="textref6 c6">__</e> associated with an entity <e class="textref6 e6">__</e> such a service provider can include content server <e class="textref6 d6">__</e>, a content selection module <e class="textref6 f6">__</e>, and a model trainer module <e class="textref6 g6">__</e>. In some embodiments, content selection module <e class="textref6 f6">__</e> may include multiple content selectors <e class="textref6 h6">__</e> configured to select content for particular trained modules. It should be noted that the trained models may be stored in a models database <e class="textref6 j6">__</e> and may include machine learning models such as trained neural networks and/or classifiers of such neural networks. Additional or alternative components and elements can be used in such a system in accordance with the various embodiments. Accordingly, it should be noted that additional services, providers, and/or components can be included in such a system, and although some of the services, providers, components, etc. are illustrated as being separate entities and/or components, the illustrated arrangement is provided as an example arrangement and other arrangements as known to one skilled in the art are contemplated by the embodiments described herein. The content management system <e class="textref6 c6">__</e> may also include various data stores to store data and/or files in connection with customized content generation. For example, the content management system may include a user data store <e class="textref6 i6">__</e> to store data about _____. In some embodiments, a model may be generated for each content type that may be served by content management system <e class="textref6 c6">__</e>.  For example, a first model may correspond to _____, a second model may correspond to _____, a third model may correspond to _____, and so forth. In an example embodiment, the model may be a single model that corresponds to multiple or all product types. The content management system may also include a training data store <e class="textref6 k6">__</e> to store data for use in training a model, such as machine learning models, a neural network, classifiers, etc. In various embodiments, each piece of training data includes _____. The content management system may also include a content data store <e class="textref6 l6">__</e> to store a corpus of content (or information about the content) available to be distributed to user devices <e class="textref6 b6">__</e>. The data stores and other components of the content management system and described herein are illustrative only, and are not intended to be limiting. In some embodiments, fewer, additional, and/or alternative data stores and/or components may be implemented by a content management system. The content management system <e class="textref6 c6">__</e> may be implemented on one or more physical server computing devices that provide computing services and resources to users. In some embodiments, the content management system (or individual components thereof, such as the content server <e class="textref6 d6">__</e>, model trainer module <e class="textref6 g6">__</e>, etc.) may be implemented on one or more host devices, such as blade servers, midrange computing devices, mainframe computers, desktop computers, or any other computing device configured to provide computing services and resources. For example, a single host device may execute one or more content servers, one or more group generators, various data stores, some combination thereof, etc. The content management system may include any number of such hosts. In some embodiments, the features and services provided by the content management system <e class="textref6 c6">__</e> may be implemented as web services consumable via a communication network.  In further embodiments, the content management system (or individual components thereof) is provided by one more virtual machines implemented in a hosted computing environment.  The hosted computing environment may include one or more rapidly provisioned and released computing resources, such as computing devices, networking devices, and/or storage devices. A hosted computing environment may also be referred to as a cloud computing environment. Individual user devices <e class="textref6 b6">__</e> may be any of a wide variety of computing devices, including personal computing devices, terminal computing devices, laptop computing devices, tablet computing devices, electronic reader devices, wearable computing devices, mobile devices (e.g., smart phones, media players, handheld gaming devices, etc.), and various other electronic devices and appliances.  A user may operate a user device <e class="textref6 b6">__</e>to access and interact with content managed by the content management system <e class="textref6 c6">__</e>. In some embodiments, a user may launch specialized application software, such as a mobile application <e class="textref6 m6">__</e> executing on a particular user device, such as a smart phone or tablet computer. The application <e class="textref6 m6">__</e> may be specifically designed to interface with the content management system for accessing and interacting with content.  In some embodiments, a user may use other application software, such as a browser application, to interact with the content management system. In this example, a computing device can search for content from the service provider via a communication network. For example, the computing device can request content such as text, documents, audio recordings, video, images, animations, and the like. The content request can be received at content server <e class="textref6 d6">__</e>. The request can be received at, for example, a network interface layer <e class="textref6 n6">__</e>. The network interface layer can include any appropriate components known or used to receive requests from across a network, such as may include one or more application programming interfaces (APIs) or other such interfaces for receiving such requests. The network interface layer <e class="textref6 n6">__</e> might be owned and operated by the service provider, or leveraged by the service provider as part of a shared resource or serverless cloud offering. The network interface layer can receive and analyze the requests from the computing device, and cause at least a portion of the information in the requests to be directed to an appropriate system or service of the content management system. In various embodiments, when a user accesses application <e class="textref6 m6">__</e> on a computing device <e class="textref6 b6">__</e>to request content, such as to _____, the computing device <e class="textref6 b6">__</e>may establish a connection with the content management system <e class="textref6 c6">__</e>. The computing device <e class="textref6 b6">__</e>may receive content from a content server <e class="textref6 d6">__</e> of the content management system via the connection. The content may include network resources such as Web pages, content posts, documents, images, videos, and the like. Illustratively, the content may be received as an individual piece of content (an individual Web page), as a set of results, or in some other format. A user of the computing device <e class="textref6 b6">__</e>can interact with the content by activating links to other content, submitting search queries, initiating the purchase of items referenced in the content, etc. Information regarding user interactions with the content can be transmitted to the content management system for processing by content server <e class="textref6 d6">__</e>. In addition, information regarding the interactions, or some subset thereof, may be stored for use in training and/or adjusting any appropriate machine learning approaches. For example, information regarding interactions may be stored in the training data store <e class="textref6 k6">__</e>.
+
+
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect6" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(6)" data-dismiss="modal" aria-label="Close" >Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput6" class="figinput" autofocus onkeyup="autoNumber(6)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef6" type="radio" checked="checked" name="radios6" onchange="autoNumber(6)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef6" type="radio" name="radios6" onchange="autoNumber(6)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(6)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 6 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel7">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure7" class="col-6 modalfig">
+									<img style="width:100%;" src="assets/figures/7.PNG">
+									<input id="a7" class=" refno refno7" style="top: 0px;left: 449px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="b7" class="refno refno7" style="top: 22px;left: 148px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="c7" class="refno refno7" style="top: 183px;left: 143px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="d7" class=" refno refno7" style="top: 635px;left: 461px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="e7" class="refno refno7" style="top: 328px;left: 341px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="f7" class="refno refno7" style="top: 505px;left: 181px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="g7" class=" refno refno7" style="top: 386px;left: 135px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="h7" class="refno refno7" style="top: 505px;left: 125px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="i7" class="refno refno7" style="top: 388px;left: 198px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="j7" class=" refno refno7" style="top: 543px;left: 280px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="k7" class="refno refno7" style="top: 620px;left: 214px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="l7" class="refno refno7" style="top: 616px;left: 103px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="m7" class=" refno refno7" style="top: 395px;left: 450px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="n7" class="refno refno7" style="top: 479px;left: 450px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="o7" class="refno refno7" style="top: 555px;left: 450px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+									<input id="p7" class=" refno refno7" style="top: 180px;left: 404px;border-color: lightgray;" onkeyup="checkNumber(7)" readonly="">
+
+									<input readonly="" id="figno7" class="figno figno7" style="top: 691px;left: 275px;">
+
+								</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle7" style="display:none">FIG. <e class=" figinput7">___</e> illustrates an example environment in which aspects of the various embodiments can be implemented.</d>
+								<d id="spec7" >FIG. <e class=" figinput7">___</e> illustrates an example environment <e class="textref7 a7">___</e> in which aspects of the various embodiments can be implemented. Specifically, the example environment <e class="textref7 a7">___</e> includes a recommendation engine that can recommend _____. In this example, a computing device <e class="textref7 b7">___</e> is able to make a call or request across one or more networks <e class="textref7 c7">___</e> to a content provider environment <e class="textref7 d7">___</e>. The network(s) can include any appropriate network, such as the Internet, a local area network (LAN), a cellular network, an Ethernet, or other such wired and/or wireless network. The content provider environment <e class="textref7 d7">___</e> can include any appropriate resources for providing content from a resource provider, as may include various servers, data stores, and other such components known or used for providing content from across a network (or from the "cloud").  In this example, a request received to the content provider environment <e class="textref7 d7">___</e> can be received by an interface layer <e class="textref7 e7">___</e> of the environment. As known for network environments, the interface layer can include components such as interfaces (e.g., APIs), load balancers, request and/or data routers, and the like.  If the request is a request for content, such as for content for a page to be displayed in an application, information for the request can be directed to one or more content managers <e class="textref7 f7">___</e> and/or content servers, which can obtain the content from a content data store <e class="textref7 h7">___</e> or other such repository to be sent back across the network(s) to the computing device.  In some embodiments, information for the request might also be compared against user data in a user data store <e class="textref7 g7">___</e> or other such location do determine, for example, whether the user has access rights to that content. In some embodiments user data might also be analyzed to determine which type of content to provide additional supplemental content to provide with the primary content, and the like. In various embodiments, _____ recommendations may be determined by a recommendation engine <e class="textref7 i7">___</e> and provider by the content server <e class="textref7 f7">___</e> based upon data stored in the data repository <e class="textref7 j7">___</e> or determined using a query component <e class="textref7 m7">___</e> or model component <e class="textref7 n7">___</e>, among other such options. In some embodiments the recommendation engine <e class="textref7 i7">___</e> may access a weighting component <e class="textref7 o7">___</e> or other such mechanism to weigh the data, such as various components of training data, in determining the _____ recommendations. In various embodiments, determining the _____ recommendation may include ranking _____, in which all or a subset of the plurality of _____ are assigned a match score indicating how well matched (i.e., strongly associated) the respective ____ is with respect to _____. A recommended ____ may be a ____ whose match score is higher than a threshold score or ranked within a certain number of positions.  The individual match scores or the recommended _____ can be determined at least in part using neural networks <e class="textref7 l7">___</e> such as a CNN through training on an appropriate data set. The training component <e class="textref7 k7">___</e> can perform the training on the models and provide the resulting results and/or trained models for use in determining the individual match scores or the recommended products. The training component <e class="textref7 k7">___</e> can be the same system or service that is used to train a localizer, as well as various face detectors or other models, networks, or algorithms discussed or suggested herein. In the example shown in FIG. 5, a neural network <e class="textref7 l7">___</e> such as a convolutional neural network (CNN) can be trained using, for example, _____.  As mentioned, for CNN-based approaches there can be pairs of [[images]] submitted that are classified by a type of attribute (e.g., an association with a certain product), while for GAN-based approaches a series of [[images]] may be submitted for training that may include metadata or other information useful in classifying one or more aspects of each [[image]]. For example, a CNN may be trained to perform [[object recognition]] using [[images of different types of objects]], and then learn how the attributes relate to those [[objects]] using the provided training data. In certain embodiments, training a neural network may involve significant use of computation resources and time, such that this may correspond to a preparatory step to servicing search requests and/or performed relatively infrequently with respect to search request servicing and/or according to a schedule. According to some embodiments, training data and respective can be located in a data store <e class="textref7 j7">___</e>. A training component <e class="textref7 k7">___</e> can utilize the training data set to train the neural network <e class="textref7 l7">___</e>.  As further described, neural networks can include several learning layers in their architecture. A query image from the training data set is analyzed using the neural network to extract a feature vector from the network before the classification layer. This feature vector describes the content of the training data. This process can be implemented for each piece of training data in the data set, and the resulting object feature vectors can be stored in a data store. In various embodiments, the resulting object feature vectors can be compressed for improved processing. For example, the object feature vectors generated by the neural network may include object feature vectors that have a large number of dimensions. The dimensions of these object feature vectors can be reduced by applying at least one of Principal Component Analysis (PCA) or Multi-Dimensional Scaling (MDS). Advantageously, such an approach can reduce storage demands and significantly improve latency performance. Additionally, such an approach can remove or at least reduce noise in the transformed space since the tailing dimensions generally correspond to noise and discarding them helps to focus on the useful signal when measuring similarities. The initial query image in some embodiments may be received from client device <e class="textref7 b7">___</e> over network <e class="textref7 c7">___</e> and processed by query component <e class="textref7 m7">___</e>. In some embodiments, the [[query image]] can be received when a selection of an image from a third party provider <e class="textref7 p7">___</e> or content provider environment <e class="textref7 d7">___</e> is selected, such as through the selection of a content item. When a query image is received, for example, a set of query object descriptors may be obtained or determined for the query image. For example, if the query image is not part of an electronic catalog and does not already have associated feature descriptors, the system may generate feature descriptors (both local feature descriptors and object feature descriptors) for the query content in a same and/or similar manner that the feature descriptors are generated for the collection of images, as described. Also, for example, if the query image is part of the collection then the feature descriptors for the query image may be obtained from the appropriate data store.  Additionally, the query image can be analyzed to determine local feature descriptors for the query image. Using the clustered feature vectors and corresponding visual words determined for the training images, a histogram for the query image can be determined. The query image can also be analyzed using the neural network <e class="textref7 l7">___</e> to extract a feature vector from the network before the classification layer. This feature vector describes the subject and/or objects shown in the image. Using the local feature descriptors and object feature descriptors, visually similar images (i.e., image data representing facial features of various other uses) and their values of associations with one or more products in content provider environment <e class="textref7 d7">___</e> can be identified.
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect7" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(7)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput7" class="figinput" autofocus onkeyup="autoNumber(7)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef7" type="radio" checked="checked" name="radios7" onchange="autoNumber(7)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef7" type="radio" name="radios7" onchange="autoNumber(7)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(7)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 7 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel8">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure8" class="col-6 modalfig">
+										<img style="width:100%;" src="assets/figures/8.PNG">
+										<input id="a8" class=" refno refno8" style="top: 2px; left: 476px; border-color: lightgray;" onkeyup="checkNumber(8)" readonly="">
+										<input id="b8" class="refno refno8" style="top: 193px;left: 30px;border-color: lightgray;" onkeyup="checkNumber(8)" readonly="">
+										<input id="c8" class="refno refno8" style="top: 193px;left: 145px;border-color: lightgray;" onkeyup="checkNumber(8)" readonly="">
+										<input id="d8" class=" refno refno8" style="top: 252px;left: 395px;border-color: lightgray;" onkeyup="checkNumber(8)" readonly="">
+										<input id="e8" class="refno refno8" style="top: 111px;left: 231px;border-color: lightgray;" onkeyup="checkNumber(8)" readonly="">
+										<input id="f8" class="refno refno8" style="top: 222px;left: 472px;border-color: lightgray;" onkeyup="checkNumber(8)" readonly="">
+										<input id="g8" class=" refno refno8" style="top: 401px;left: 307px;border-color: lightgray;" onkeyup="checkNumber(8)" readonly="">
+										<input id="h8" class="refno refno8" style="top: 393px;left: 168px;border-color: lightgray;" onkeyup="checkNumber(8)" readonly="">
+										<input id="i8" class="refno refno8" style="top: 392px;left: 426px;border-color: lightgray;" onkeyup="checkNumber(8)" readonly="">
+										<input readonly="" id="figno8" class="figno figno8" style="top: 481px;left: 267px;">
+
+									</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle8" style="display:none">FIG. <e class="figinput8">__</e> illustrates an example machine learning analysis pipeline that can be utilized in accordance with various embodiments.</d>
+								<d id="spec8">FIG. <e class="figinput8">__</e> illustrates an example machine learning analysis pipeline  <e class="textref8 a8">__</e> that can be utilized in accordance with various embodiments. In this example, training data  <e class="textref8 b8">__</e> is obtained that can be used to train one or more neural networks  <e class="textref8 d8">__</e> to _______. The training data may include _______. Specifically, for example, _______. In this example, the training data is accessible to a training module  <e class="textref8 c8">__</e> which can feed the training data to a neural network  <e class="textref8 d8">__</e> in order to train the network. Specifically, the _______ will be fed to the neural network  <e class="textref8 d8">__</e> so the neural network can determine relationships between _______. Given a large number of such example relationships, the neural network  <e class="textref8 d8">__</e> can estimate how _______. Thus, when query _______ are processed with the trained neural network  <e class="textref8 d8">__</e>, the network can analyze the queried _______ to predict _______, although various other approaches can be utilized as well within the scope of the various embodiments. In some embodiments, once at least the initial training has completed, a testing module  <e class="textref8 e8">__</e> can utilize testing data  <e class="textref8 f8">__</e> to test the trained neural network and determine if the network is adequately trained or has achieved an acceptable level of accuracy. The testing data  <e class="textref8 f8">__</e> may be similar to the training data and include _______. Specifically, _______. The _______ are inputs to the testing module  <e class="textref8 e8">__</e> and fed into the neural network. The neural network may output one or more _______. The expected output may be known, and thus the output of the neural network may be compared to the expected output to gauge the accuracy of the neural network for this use instance. If the accuracy is acceptable, or if the average accuracy over a plurality of tests is acceptable, the neural network may be deployed and used. In some embodiments, the testing phase may be omitted. During use, query data  <e class="textref8 h8">__</e> such _______ may be accessed by the analyzer  <e class="textref8 g8">__</e> and fed through the neural network to produce _______  <e class="textref8 i8">__</e>. In some embodiments, an expected value of the optimization parameter is determined and the analyzer  <e class="textref8 g8">__</e> may _______, in order to determine _______ <e class="textref8 i8">__</e>.  The neural network  <e class="textref8 d8">__</e> may include several learning layers in its architecture. For example, the neural network  <e class="textref8 d8">__</e> may include a feature extraction layer. Training data may be analyzed in the feature extraction layer to extract a feature vector from the network before the classification layer.  This feature vector essentially describes the training data. This process can be implemented for each piece of training data, and the resulting content feature vectors can be stored in a training database.  In various embodiments, the resulting content feature vectors can be compressed for improved processing. For example, the content feature vectors generated by the neural network  <e class="textref8 d8">__</e> may include content feature vectors that have a large number of dimensions. The dimensions of these object feature vectors can be reduced by applying at least one of Principal Component Analysis (PCA) or Multi-Dimensional Scaling (MDS). Advantageously, such an approach can reduce storage demands and significantly improve latency performance. Additionally, such an approach can remove or at least reduce noise in the transformed space since the tailing dimensions generally correspond to noise and discarding them helps to focus on the useful signal when measuring similarities.  In some embodiments, deep neural networks can be trained using a set of [[training images]] exhibiting different category classifications and including information detailing those classifications. In other embodiments, generative adversarial networks (GANs) can be used that do not require the data seeding used for training deep neural networks. Various other approaches can be used as well as discussed and suggested elsewhere herein.  Deep neural networks, or deep learning, can involve representing [[images]] or other content as vectors or sets of edges or regions to simplify the learning task. These processes can allow for unsupervised learning and hierarchical feature extraction, among other such options. Deep learning algorithms can transform these inputs through multiple layers of transformation to describe causal connections between input and output.  GANs can estimate a general model of such inputs using an adversarial process, as may utilize a generative model and a discriminative model. The discriminative model discriminates between different classes of data, such as a convolutional neural network trained to provide different outputs for different recognized classes. The generative model generates new data that fits the distribution of the training data. The generative model can be, for example, a Gaussian mixture model that can generate a set of points which approximately fit the training data. Various other networks or trained models can be used as well within the scope of the various embodiments. For approaches that require seeding, there can be a set of training data defined or otherwise generated for each attribute applied for a given category. The attributes can be defined by an administrator or other authorized entity, or can be learned algorithmically based on user queries, among other such options.  Approaches in accordance with various embodiments can attempt to train one or more neural networks or other machine learning algorithms for detecting and localizing [[objects in images]] in two phases, which can allow for speed and other quality improvements of the neural network. In a first phase, the neural network can be trained on diverse [[images]] or other readily available [[images]] that may include representations of [[products, people, animals, among various other items]]. In a second phase, classification layers of the neural network can be trained to classify content for a particular classification category. In this example, [[training images]] are used to train a neural network or other such network for detecting and localizing [[objects in images]].  For example, convolutional features are used to predict various regions (e.g., object proposals) in an [[image]].  The regions are ranked and classified using a classification layer of the neural network to predict whether an [[image]] is an associated with a desired classification.
+							</d>
+
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect8" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(8)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput8" class="figinput" autofocus onkeyup="autoNumber(8)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef8" type="radio" checked="checked" name="radios8" onchange="autoNumber(8)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef8" type="radio" name="radios8" onchange="autoNumber(8)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+					</div>
+					<div class="col-2">
+					<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(8)">Select Figure</button>
+					</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 8 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel9">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure9" class="col-6 modalfig">
+									<img style="width:100%;" src="assets/figures/9.PNG">
+									<input id="a9" class=" refno refno9" style="top: 2px; left: 476px; border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="b9" class="refno refno9" style="top: 40px;left: 215px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="c9" class="refno refno9" style="top: 222px;left: 243px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="d9" class=" refno refno9" style="top: 599px;left: 381px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="e9" class="refno refno9" style="top: 245px;left: 343px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="f9" class="refno refno9" style="top: 372px;left: 294px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="g9" class=" refno refno9" style="top: 460px;left: 295px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="h9" class="refno refno9" style="top: 539px;left: 296px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="i9" class="refno refno9" style="top: 633px;left: 360px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+
+									<input id="j9" class=" refno refno9" style="top: 386px;left: 27px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="k9" class="refno refno9" style="top: 466px;left: 27px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="l9" class="refno refno9" style="top: 284px;left: 444px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="m9" class=" refno refno9" style="top: 338px;left: 444px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="n9" class="refno refno9" style="top: 491px;left: 445px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="o9" class="refno refno9" style="top: 676px;left: 243px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input id="p9" class="refno refno9" style="top: 729px;left: 352px;border-color: lightgray;" onkeyup="checkNumber(9)" readonly="">
+									<input readonly="" id="figno9" class="figno figno9" style="top: 747px;left: 122px;">
+
+								</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle10" style="display:none"></d>
+								<d id="spec10">
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect9" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(9)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput9" class="figinput" autofocus onkeyup="autoNumber(9)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef9" type="radio" checked="checked" name="radios9" onchange="autoNumber(9)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef9" type="radio" name="radios9" onchange="autoNumber(9)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(9)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 9 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel11">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure11" class="col-6 modalfig">
+											<img style="width:100%;" src="assets/figures/11.PNG">
+											<input id="a11" class=" refno refno11" style="top: 2px;left: 487px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="b11" class="refno refno11" style="top: 646px;left: 275px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="c11" class="refno refno11" style="top: 172px;left: 354px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="d11" class=" refno refno11" style="top: 609px;left: 198px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="e11" class="refno refno11" style="top: 488px;left: 482px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="f11" class="refno refno11" style="top: 627px;left: 359px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+
+											<input id="g11" class=" refno refno11" style="top: 331px;left: 200px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="h11" class="refno refno11" style="top: 219px;left: 482px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="i11" class="refno refno11" style="top: 353px;left: 361px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="j11" class=" refno refno11" style="top: 607px;left: 106px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="k11" class="refno refno11" style="top: 362px;left: 37px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="l11" class="refno refno11" style="top: 459px;left: 173px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input id="m11" class="refno refno11" style="top: 488px;left: 482px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+
+		<input id="f11" class="refno refno11" style="top: 565px;left: 60px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly=""><input id="f11" class="refno refno11" style="top: 103px;left: 433px;border-color: lightgray;" onkeyup="checkNumber(11)" readonly="">
+											<input readonly="" id="figno11" class="figno figno11" style="top: 726px;left: 287px;">
+
+										</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle11" style="display:none">FIG. <e class="figinput11">__</e> illustrates an example environment in which aspects of the various embodiments can be implemented.</d>
+								<d id="spec11">FIG. <e class="figinput11">__</e> illustrates an example environment <e class="textref11 a11">__</e> in which aspects of the various embodiments can be implemented. The ______ system of FIG. <e class="figinput11">__</e> may be implemented using the resources of example environment <e class="textref11 a11">__</e>. Resource environment may [[_function of resource environment_]] according to the techniques of the present disclosure. Specifically, the example _____ system _00 of FIG. <e class="figinput11">__</e> can be implemented using the resources of example environment <e class="textref11 a11">__</e>. For example, one or more of the resources of resource environment  <e class="textref11 a11">__</e> may be used or accessed to implement [[_Modules_]].  A [[_User_]] may access the _____ via a client device  <e class="textref11 j11">__</e>, which may access or utilize a resource provider environment <e class="textref11 l11">__</e> on which a _______ system is implemented. The resource provider environment  <e class="textref11 l11">__</e> can [[_function of invention_]]. In this example, the client device  <e class="textref11 j11">__</e> is able to communicate with a multi-tenant resource provider environment  <e class="textref11 l11">__</e> across at least one network  <e class="textref11 k11">__</e>. [[In some embodiments, the client device  <e class="textref11 j11">__</e> may be a content provider such as a _____ accessing the resource provider  <e class="textref11 l11">__</e> to develop _____.]] The client device  <e class="textref11 j11">__</e> may also represent a user, such as a ____, accessing the resource environment to access _____. In some embodiments, the multi-tenant resource provider environment  <e class="textref11 l11">__</e> may host, or otherwise provide, a _____ that a user can interact with through the client device  <e class="textref11 j11">__</e>. The client device  <e class="textref11 j11">__</e> can include any appropriate electronic device operable to send and receive requests, messages, or other such information over an appropriate network and convey information back to a user of the device. Examples of such client devices include personal computers, gaming consoles, tablet computers, smart phones, notebook computers, and the like. The at least one network  <e class="textref11 k11">__</e> can include any appropriate network, including an intranet, the Internet, a cellular network, a local area network (LAN), a specialized gaming network, or any other such network or combination, and communication over the network  <e class="textref11 k11">__</e> can be enabled via wired and/or wireless connections. The resource provider environment  <e class="textref11 l11">__</e> can include any appropriate components for receiving requests and returning information or performing actions in response to those requests. In this example, the client device  <e class="textref11 j11">__</e> is able to call into two different interface layers, although the interfaces could be part of a single layer or multiple layers in other embodiments. In this example, the client device  <e class="textref11 j11">__</e> may make calls into an interface  <e class="textref11 d11">__</e> and there can be a set of customer allocated resources <e class="textref11 f11">__</e>,  both computing resources  <e class="textref11 e11">__</e> and data resources  <e class="textref11 f11">__</e>, among others, allocated on behalf of the customer in the resource provider environment  <e class="textref11 l11">__</e>. These can be physical and/or virtual resources, but during the period of allocation the resources (or allocated portions of the resources) are only accessible using credentials associated with the customer account. These can include, for example, gaming servers and game databases that are utilized over a period of time for various customer applications. The client device  <e class="textref11 j11">__</e> can also make calls into an API gateway  <e class="textref11 g11">__</e>, or other such interface layer, of a task-based resource environment  <e class="textref11 c11">__</e>, or sub-environment. In such an environment, portions of various resources such as computing resources  <e class="textref11 g11">__</e> and data resources  <e class="textref11 h11">__</e> can be allocated dynamically and on a task-specific basis for at least a determined period. There can be resources allocated to perform a specific type of processing, and those resources can be allocated on an as-needed basis where the customer is only charged for the actual processing in response to a specific task. Approaches in accordance with various embodiments can enable customers, such as game developers, to leverage both types of allocations in their applications. This can include, for example, the ability to include on-demand cloud resource support for gaming applications and other such offerings. For example, an application may be developed or hosted on the environment, in which application data and application elements are distributed across one or more of the computing resources  <e class="textref11 g11">__</e> and/or data resources  <e class="textref11 h11">__</e>, and in which the resources  <e class="textref11 g11">__</e>,  <e class="textref11 h11">__</e> are utilized to carry out certain functions of the application. The present techniques provide for predictively initializing the resources  <e class="textref11 g11">__</e>,  <e class="textref11 h11">__</e> to carry out various functions associated with various aspects of the application before such functions are executed such that latency associated with such initialization can be hidden. The sharing of these multi-tenant resources from a resource provider environment  <e class="textref11 l11">__</e> is often referred to as resource sharing, Web services, or "cloud computing," among other such terms and depending upon the specific environment and/or implementation. In at least some embodiments, a user wanting to utilize a portion of the resources can submit a request that is received to an interface layer of the resource provider environment  <e class="textref11 l11">__</e>. The interface layer can include application programming interfaces (APIs) or other exposed interfaces enabling a user to submit requests to the provider environment. The interface layers in this example can also include other components as well, such as at least one Web server, routing components, load balancers, and the like. When a request to provision a resource is received to the interface layer, information for the request can be directed to a resource manager or other such system, service, or component configured to manage user accounts and information, resource provisioning and usage, and other such aspects. A resource manager receiving the request can perform tasks such as to authenticate an identity of the user submitting the request, as well as to determine whether that user has an existing account with the resource provider, where the account data may be stored in at least one data store in the provider environment. A user can provide any of various types of credentials in order to authenticate an identity of the user to the provider. These credentials can include, for example, a username and password pair, biometric data, a digital signature, or other such information. An identity manager  <e class="textref11 i11">__</e> can validate this information against information stored for the user in a credentials repository  <e class="textref11 m11">__</e>. If the user has an account with the appropriate permissions, status, etc., the resource manager can determine whether there are adequate resources available to suit the user’s request, and if so can provision the resources or otherwise grant access to the corresponding portion of those resources for use by the user for an amount specified by the request. This amount can include, for example, capacity to process a single request or perform a single task, a specified period of time, or a recurring/renewable period, among other such values. If the user does not have a valid account with the provider, the user account does not enable access to the type of resources specified in the request, or another such reason is preventing the user from obtaining access to such resources, a communication can be sent to the user to enable the user to create or modify an account, or change the resources specified in the request, among other such options. Once the user is authenticated, the account verified, and the resources allocated, the user can utilize the allocated resource(s) for the specified capacity, amount of data transfer, period of time, or other such value. In at least some embodiments, a user might provide a session token or other such credentials with subsequent requests in order to enable those requests to be processed on that user session. The client can receive a resource identifier, specific address, or other such information that can enable the client device to communicate with an allocated resource without having to communicate with the resource manager, at least until such time as a relevant aspect of the user account changes, the user is no longer granted access to the resource, or another such aspect changes. The resource manager (or another such system or service) in this example can also function as a virtual layer of hardware and software components that handles control functions in addition to management actions, as may include provisioning, scaling, replication, etc. The resource manager can utilize dedicated APIs in the interface layer, where each API can be provided to receive requests for at least one specific action to be performed with respect to the data environment, such as to provision, scale, clone, or hibernate an instance. Upon receiving a request to one of the APIs, a Web services portion of the interface layer can parse or otherwise analyze the request to determine the steps or actions needed to act on or process the call. For example, a Web service call might be received that includes a request to create a data repository. An interface layer in at least one embodiment includes a scalable set of client-facing servers that can provide the various APIs and return the appropriate responses based on the API specifications. The interface layer also can include at least one API service layer that in one embodiment consists of stateless, replicated servers which process the externally-facing client APIs. The interface layer can be responsible for Web service front end features such as authenticating clients based on credentials, authorizing the client, throttling client requests to the API servers, validating user input, and marshalling or unmarshalling requests and responses. The API layer also can be responsible for reading and writing database configuration data to/from the administration data store, in response to the API calls. In many embodiments, the Web services layer and/or API service layer will be the only externally visible component, or the only component that is visible to, and accessible by, clients of the control service. The servers of the Web services layer can be stateless and scaled horizontally as known in the art. API servers, as well as the persistent data store, can be spread across multiple data centers in a region, for example, such that the servers are resilient to single data center failures. Such an environment enables organizations to obtain and configure computing resources over a network such as the Internet to perform various types of computing operations (e.g., execute code, including threads, programs, software, routines, subroutines, processes, etc.). Thus, developers can quickly purchase or otherwise acquire a desired amount of computing resources without having to worry about acquiring physical machines. Such computing resources are typically purchased in the form of virtual computing resources, or virtual machine instances. These instances of virtual machines, which are hosted on physical computing devices with their own operating systems and other software components, can be utilized in the same manner as physical computers. For example, an application such as a video game may be developed or hosted on the environment, in which application data and application elements are distributed across one or more physical or virtual computing resources, and in which the resources are utilized to carry out certain functions of the application. The present techniques provide for predictively initializing the resources to carry out various functions associated with various aspects of the application before such functions are executed such that latency associated with such initialization can be hidden.  In many such environments, resource instances such as virtual machines are allocated to a client (or other authorized user) for a period of time in order to process tasks on behalf of that client. In many cases, however, a client may not have a steady flow of work such that the client must maintain a sufficient number of virtual machines to handle peak periods of work but will often have less than this amount of work. This can result in underutilization and unneeded expense for both the client and the resource provider. Approaches in accordance with various embodiments can instead allocate resource instances on a task or event basis to execute a function. A resource instance can be allocated to run a function in response to a client request or event, including performing certain ______ functions. Once the function has completed that instance can either be made available for processing a different event or destroyed, among other such options. In either case, the client will not be charged for more processing by the instance than was needed to run the function.
+
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect11" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(11)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput11" class="figinput" autofocus onkeyup="autoNumber(11)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef11" type="radio" checked="checked" name="radios11" onchange="autoNumber(11)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef11" type="radio" name="radios11" onchange="autoNumber(11)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(11)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 11 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel12">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure12" class="col-6 modalfig">
+									<img style="width:100%;" src="assets/figures/12.PNG">
+									<input id="a12" class=" refno refno12" style="top: 2px; left: 476px; border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="b12" class="refno refno12" style="top: 92px;left: 106px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="c12" class="refno refno12" style="top: 270px;left: 251px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="d12" class=" refno refno12" style="top: 317px;left: 452px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="e12" class="refno refno12" style="top: 343px;left: 316px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="f12" class="refno refno12" style="top: 380px;left: 220px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="g12" class=" refno refno12" style="top: 377px;left: 453px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="h12" class="refno refno12" style="top: 405px;left: 208px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="i12" class="refno refno12" style="top: 453px;left: 204px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="j12" class=" refno refno12" style="top: 650px;left: 107px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="k12" class="refno refno12" style="top: 658px;left: 196px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="l12" class="refno refno12" style="top: 404px;left: 448px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="m12" class=" refno refno12" style="top: 454px;left: 446px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="n12" class="refno refno12" style="top: 651px;left: 348px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="o12" class="refno refno12" style="top: 657px;left: 435px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="p12" class=" refno refno12" style="top: 85px;left: 470px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="q12" class="refno refno12" style="top: 263px;left: 136px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input id="r12" class="refno refno12" style="top: 269px;left: 60px;border-color: lightgray;" onkeyup="checkNumber(12)" readonly="">
+									<input readonly="" id="figno12" class="figno figno12" style="top: 710px;left: 271px;">
+
+								</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle12" style="display:none">FIG. <e class="figinput12">__</e> illustrates components of an example environment that can be used to implement at least some of the abovedescribed functionality.</d>
+								<d id="spec12">FIG. <e class="figinput12">__</e> illustrates components of an example environment <e class="textref12 a12">__</e> that can be used to implement at least some of the abovedescribed functionality. A client system <e class="textref12 b12">__</e> may access or utilize a resource environment <e class="textref12 d12">__</e> on which the instant system <e class="textref12 d12">__</e> is implemented, such that the resource environment <e class="textref12 d12">__</e> can perform the functions described herein. Such functionality can be offered as a service, such as a Web service, in at least some embodiments, wherein a client system <e class="textref12 b12">__</e> can submit requests or event information over at least one network <e class="textref12 c12">__</e> to the resource environment (i.e., a resource provider environment, service provider environment, or other shared resource or multi-tenant environment). The client system <e class="textref12 b12">__</e> may also be a player accessing the resource player environment to access and play the game, as well as to get assigned to a game session. The compute service offered by the resource environment can be referred to as a "serverless" compute service that can allocate virtual resources to execute registered functions in response to client events and automatically manage the underlying compute resources. The functions can be executed on high-availability compute infrastructure that can perform the administration of the compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, code and security patch deployment, and code monitoring and logging. An environment such as that described with respect to FIG. <e class="figinput12">__</e> can facilitate the handling of requests to execute user code on a virtual compute fleet by utilizing the containers created on the virtual machine instances as compute capacity. Information for a request or event can be received to a load balancer <e class="textref12 e12">__</e> that can determine an appropriate resource fleet <e class="textref12 f12">__</e>, <e class="textref12 g12">__</e> to which to direct the information. The decision can be based upon various types of information, as may include the context associated with the type of event or request. Upon receiving a request to execute user code on a selected virtual compute fleet <e class="textref12 f12">__</e>, <e class="textref12 g12">__</e>, a frontend service <e class="textref12 h12">__</e>, <e class="textref12 l12">__</e> associated with the virtual compute fleet can provide the information to an instance manager, which can direct the information to a virtual machine (VM) instance <e class="textref12 j12">__</e>, <e class="textref12 k12">__</e>, <e class="textref12 n12">__</e>, <e class="textref12 o12">__</e> where a container on the instance can provide an execution environment for the registered function. The client device <e class="textref12 b12">__</e> may utilize one or more user interfaces, command-line interfaces (CLIs), application programing interfaces (APIs), and/or other programmatic interfaces for generating and uploading client code, invoking the client code (e.g., submitting a request to execute the code on the virtual compute system), scheduling event-based jobs or timed jobs, tracking the client code, and/or viewing other logging or monitoring information related to their requests and/or client code. Although one or more embodiments may be described herein as using a user interface, it should be appreciated that such embodiments may, additionally or alternatively, use any CLIs, APIs, or other programmatic interfaces. Client may use the resource fleets <e class="textref12 f12">__</e>, <e class="textref12 g12">__</e> to execute code thereon. Code as used herein may refer to any program code (e.g., a program, routine, subroutine, thread, etc.) written in a program language. Such client code may be executed to achieve a specific task, for example, in connection with a particular web application or mobile application developed by the user. The allocation may automatically scale up and down based on the volume, thereby relieving the client from the burden of having to worry about over-utilization (e.g., acquiring too little computing resources and suffering performance issues) or under-utilization (e.g., acquiring more computing resources necessary to run the codes, and thus overpaying). In the configuration depicted in FIG. <e class="figinput12">__</e>, a first resource fleet <e class="textref12 f12">__</e> includes a frontend <e class="textref12 h12">__</e>, an instance manager <e class="textref12 i12">__</e> (later referred to herein as a worker manager), and virtual machine instances <e class="textref12 j12">__</e>, <e class="textref12 k12">__</e>. Similarly, other resource fleets <e class="textref12 g12">__</e> can also include a frontend <e class="textref12 l12">__</e>, an instance manager <e class="textref12 m12">__</e>, and virtual machine instances <e class="textref12 n12">__</e>, <e class="textref12 o12">__</e>, and there can be any appropriate number of resource fleets and any appropriate number of instances in each resource fleet. The environment can include low and high frequency fleets as well in at least some embodiments, as may serve different types of requests or requests for different types of clients. The fleets can also include any number of worker managers, and in some embodiments the frontend and the worker manager can be resident on a single virtual machine instance. In some embodiments, the load balancer <e class="textref12 e12">__</e> serves as a front door to all the other services <e class="textref12 p12">__</e> provided by the virtual compute system. The load balancer <e class="textref12 e12">__</e> processes requests to execute user code on the virtual compute system and handles the first level of load balancing across the frontends <e class="textref12 h12">__</e>, <e class="textref12 l12">__</e>. For example, the load balancer <e class="textref12 e12">__</e> may distribute the requests among the frontends <e class="textref12 h12">__</e>, <e class="textref12 l12">__</e> (e.g., based on the individual capacity of the frontends). The requests can be distributed evenly across the frontends or distributed based on the available capacity on the respective fleets, among other such options. In some embodiments, the frontend <e class="textref12 h12">__</e> for a fleet can determine that the requests are properly authorized. For example, the frontend <e class="textref12 h12">__</e> may determine whether the user associated with the request is authorized to access the client code specified in the request. The frontend <e class="textref12 h12">__</e> may also receive the request to execute such client code when an event is detected, such as an event that the client has registered to trigger automatic request generation. Alternatively, the client may have registered a timed job (e.g., execute the user code every 24 hours). In yet another example, the frontend <e class="textref12 h12">__</e> may have a queue of incoming code execution requests, and when the batch job for a client is removed from the virtual compute system's work queue, the frontend <e class="textref12 h12">__</e> may process the client request. In yet another example, the request may originate from another component within the resource environment <e class="textref12 d12">__</e> or other servers or services not illustrated in FIG. <e class="figinput12">__</e>. The frontend <e class="textref12 h12">__</e> can receive requests to execute client code on the virtual compute system that have been processed by the load balancer <e class="textref12 e12">__</e>. The frontend  <e class="textref12 h12">__</e> can request the instance manager <e class="textref12 i12">__</e> associated with the frontend <e class="textref12 h12">__</e> of the particular fleet <e class="textref12 f12">__</e> to find compute capacity in one of the virtual machine instances <e class="textref12 j12">__</e>, <e class="textref12 k12">__</e> managed by the instance manager <e class="textref12 i12">__</e>. The frontend <e class="textref12 h12">__</e> may include a usage data manager for determining the usage status (e.g., indicating how frequently the user code is executed) of a particular client code, and a client code execution manager for facilitating the execution of client code on one of the virtual machine instances managed by the worker manager. The instance manager <e class="textref12 i12">__</e> manages the virtual machine instances in the respective fleet. After a request has been successfully processed by the load balancer <e class="textref12 e12">__</e> and the frontend <e class="textref12 h12">__</e>, the instance manager <e class="textref12 i12">__</e> finds capacity to service the request to execute client code on the virtual compute system. For example, if a container exists on a particular virtual machine instance that has the user code loaded thereon, the instance manager <e class="textref12 i12">__</e> may assign the container to the request and cause the request to be executed in the container. Alternatively, if the client code is available in the local cache of one of the virtual machine instances, the instance manager <e class="textref12 i12">__</e> may create a new container on such an instance, assign the container to the request, and cause the client code to be loaded and executed in the container. Otherwise, the instance manager <e class="textref12 i12">__</e> may assign a new virtual machine instance to the client associated with the request from the pool of pre-initialized and pre-configured virtual machine instances, download the client code onto a container created on the virtual machine instance, and cause the client code to be executed in the container. A token service <e class="textref12 q12">__</e> may be used to provide credentials for accessing resources. For example, the clients in the same group may belong to the same security group (e.g., based on their security credentials <e class="textref12 r12">__</e>) such that executing one member's code in a container on a particular instance after another member's code has been executed in another container on the same instance does not pose security risks. Similarly, the instance manager <e class="textref12 i12">__</e> may assign the instances and the containers according to one or more policies that dictate which requests can be executed in which containers and which instances can be assigned to which clients. The instance manager <e class="textref12 i12">__</e> may also manage creation, preparation, and configuration of containers within virtual machine instances. Containers can be logical units within a virtual machine instance and utilize resources of the virtual machine instances to execute client code. Based on configuration information associated with a request to execute client code, such a container manager can create containers inside a virtual machine instance. In one embodiment, such containers are implemented as Linux containers. After the client code has been executed, the instance manager <e class="textref12 i12">__</e> may tear down the container used to execute the user code to free up the resources it occupied to be used for other containers in the instance. Alternatively, the instance manager <e class="textref12 i12">__</e> may keep the container running to use it to service additional requests from the same client. The determination of whether to keep the container and/or the instance running after the user code is done executing may be based on a threshold time, the type of the user, average request volume of the user, and/or other operating conditions. The virtual machine instances can be logical in nature and implemented by a single or multiple physical computing devices. At least some of the virtual machine instances may be provisioned to provide a variety of different desired conditions depending on the needs of the user. Resource capacity can be allocated as needed to execute code or perform specific tasks, which can be allocated in response to various events. The events can include any appropriate types of events, as may be permitted by a service provider or allowed through various rules or policies, among other such options. These can include, for example, modifications to data buckets or updates to data tables, among other such options. Implementation of the present player matching system on the environment <e class="textref12 a12">__</e>provides the environment <e class="textref12 a12">__</e>and its resources with the technological function of optimizing player grouping while minimizing the computing resources required to do so, thereby, among other reasons, bringing about an improving the computing technology.
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect12" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(12)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput12" class="figinput" autofocus onkeyup="autoNumber(12)" ></input>
+								</div>
+					<div class="col-4">
+					<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef12" type="radio" checked="checked" name="radios12" onchange="autoNumber(12)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef12" type="radio" name="radios12" onchange="autoNumber(12)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(12)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 12 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel13">Example Mobile Device Front Only</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+							<div id="pdfFigure13" class="col-6 modalfig">
+									<img style="width: 100%;padding: 55px;" src="assets/figures/13.PNG">
+<input id="a13" class=" refno refno13" style="top: 83px;left: 83px;border-color: lightgray;" onkeyup="checkNumber(13)" readonly="">
+
+									<input id="b13" class="refno refno13" style="top: 165px;left: 99px;border-color: lightgray;" onkeyup="checkNumber(13)" readonly="">
+									<input id="c13" class="refno refno13" style="top: 444px;left: 176px;border-color: lightgray;" onkeyup="checkNumber(13)" readonly="">
+
+									<input readonly="" id="figno13" class="figno figno13" style="top: 468px;left: 319px;">
+
+								</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle13" style="display:none">FIG. <e class="figinput13">__</e> example computing device that can be use in accordance with various embodiments.</d>
+								<d id="spec13">FIG. <e class="figinput13">__</e> illustrates an example computing device <e class="textref13 a13">__</e> that can be used in accordance with various embodiments. Although a portable computing device (e.g., a smart phone, an electronic book reader, or tablet computer) is shown, it should be understood that any device capable of receiving and processing input can be used in accordance with various embodiments discussed herein. The devices can include, for example, desktop computers, notebook computers, electronic book readers, personal data assistants, cellular phones, video gaming consoles or controllers, wearable computers (e.g., smart watches or glasses), television set top boxes, and portable media players, among others. In this example, the computing device <e class="textref13 a13">__</e> has a display screen <e class="textref13 b13">__</e> and an outer casing. The display screen under normal operation will display information to a user (or viewer) facing the display screen (e.g., on the same side of the computing device as the display screen). As discussed herein, the device can include one or more communication components <e class="textref13 c13">__</e>, such as may include a cellular communications subsystem, Wi-Fi communications subsystem, BLUETOOTH® communication subsystem, and the like.
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect13" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(13)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput13" class="figinput" autofocus onkeyup="autoNumber(13)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef13" type="radio" checked="checked" name="radios13" onchange="autoNumber(13)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef13" type="radio" name="radios13" onchange="autoNumber(13)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(13)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 13 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel14">Mobile Device Block Diagram</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure14" class="col-6 modalfig">
+									<img style="width:100%;" src="assets/figures/14.PNG">
+									<input id="a14" class=" refno refno14" style="top: 2px; left: 476px; border-color: lightgray;" onkeyup="checkNumber(14)" readonly="">
+									<input id="b14" class="refno refno14" style="top: 176px;left: 188px;border-color: lightgray;" onkeyup="checkNumber(14)" readonly="">
+									<input id="c14" class="refno refno14" style="top: 91px;left: 187px;border-color: lightgray;" onkeyup="checkNumber(14)" readonly="">
+									<input id="d14" class=" refno refno14" style="top: 260px;left: 188px;border-color: lightgray;" onkeyup="checkNumber(14)" readonly="">
+									<input id="e14" class="refno refno14" style="top: 126px;left: 360px;border-color: lightgray;" onkeyup="checkNumber(14)" readonly="">
+									<input id="f14" class="refno refno14" style="top: 241px;left: 355px;border-color: lightgray;" onkeyup="checkNumber(14)" readonly="">
+									<input readonly="" id="figno14" class="figno figno14" style="top: 334px;left: 275px;">
+
+								</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle14" style="display:none">FIG. <e class="figinput14">__</e> illustrates a set of basic components of one or more devices of the present disclosure.</d>
+								<d id="spec14">FIG. <e class="figinput14">__</e> illustrates a set of basic components of one or more devices <e class="textref14 a14">__</e> of the present disclosure. In this example, the device includes at least one processor <e class="textref14 b14">__</e> for executing instructions that can be stored in a memory device or element <e class="textref14 c14">__</e>. As would be apparent to one of ordinary skill in the art, the device can include many types of memory, data storage or computer-readable media, such as a first data storage for program instructions for execution by the at least one processor <e class="textref14 b14">__</e>, the same or separate storage can be used for images or data, a removable memory can be available for sharing information with other devices, and any number of communication approaches can be available for sharing with other devices. The device typically will include at least one type of display element <e class="textref14 d14">__</e>, such as a touch screen, electronic ink (e-ink), organic light emitting diode (OLED) or liquid crystal display (LCD), although devices such as portable media players might convey information via other means, such as through audio speakers. The device can include at least one communication component <e class="textref14 e14">__</e>, as may enabled wired and/or wireless communication of voice and/or data signals, for example, over a network such as the Internet, a cellular network, a Wi-Fi network, BLUETOOTH®, and the like. The device can include at least one additional input device <e class="textref14 f14">__</e> able to receive conventional input from a user. This conventional input can include, for example, a push button, touch pad, touch screen, wheel, joystick, keyboard, mouse, trackball, camera, microphone, keypad or any other such device or element whereby a user can input a command to the device. These I/O devices could even be connected by a wireless infrared or Bluetooth or other link as well in some embodiments. In some embodiments, however, such a device might not include any buttons at all and might be controlled only through a combination of visual and audio commands such that a user can control the device without having to be in contact with the device. As discussed, different approaches can be implemented in various environments in accordance with the described embodiments.
+
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect14" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(14)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput14" class="figinput" autofocus onkeyup="autoNumber(14)" ></input>
+								</div>
+				<div class="col-4">
+				<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef14" type="radio" checked="checked" name="radios14" onchange="autoNumber(14)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef14" type="radio" name="radios14" onchange="autoNumber(14)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+				</div>
+				<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(14)">Select Figure</button>
+				</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 14 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel15">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure15" class="col-6 modalfig">
+										<img style="width:100%;" src="assets/figures/15.PNG">
+										<input id="a15" class=" refno refno15" style="top: 0px;left: 487px;border-color: lightgray;" onkeyup="checkNumber(15)" readonly="">
+										<input id="b15" class="refno refno15" style="top: 149px;left: 8px;border-color: lightgray;" onkeyup="checkNumber(15)" readonly="">
+										<input id="c15" class="refno refno15" style="top: 19px;left: 327px;border-color: lightgray;" onkeyup="checkNumber(15)" readonly="">
+										<input id="d15" class=" refno refno15" style="top: 18px;left: 108px;border-color: lightgray;" onkeyup="checkNumber(15)" readonly="">
+										<input readonly="" id="figno15" class="figno figno15" style="top: 352px;left: 263px;">
+
+									</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle15" style="display:none">FIG. <e class="figinput15">__</e> illustrates an example computing device that can be used in accordance with various embodiments.</d>
+								<d id="spec15">FIG. <e class="figinput15">__</e> illustrates an example computing device <e class="textref15 a15">__</e> that can be used in accordance with various embodiments. Although a portable computing device (e.g., a smart phone, an electronic book reader, or tablet computer) is shown, it should be understood that any device capable of receiving and processing input can be used in accordance with various embodiments discussed herein.  The devices can include, for example, desktop computers, notebook computers, electronic book readers, personal data assistants, cellular phones, video gaming consoles or controllers, television set top boxes, and portable media players, among others. \n\nIn this example, the computing device <e class="textref15 a15">__</e> has a display screen <e class="textref15 b15">__</e>, which under normal operation will display information to a user facing the display screen (e.g., on the same side of the computing device as the display screen).  The computing device in this example can include one or more media capture elements, in this example including one image capture element <e class="textref15 c15">__</e> on the back side of the device and one image capture element <e class="textref15 d15">__</e> on the front side of the device, although it should be understood that image capture elements could also, or alternatively, be placed on the sides or corners of the device, and that there can be any appropriate number of capture elements of similar or different types. Each image capture element <e class="textref15 c15">__</e>, <e class="textref15 d15">__</e> may be, for example, a camera, a charge-coupled device (CCD), a motion detection sensor, or an infrared sensor, or can utilize any other appropriate image capturing technology.  The computing device can also include at least one microphone or other audio capture element(s) capable of capturing other types of input data, as known in the art, and can include at least one orientation-determining element that can be used to detect changes in position and/or orientation of the device.  Various other types of input can be utilized as well as known in the art for use with such devices.
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect15" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(15)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput15" class="figinput" autofocus onkeyup="autoNumber(15)" ></input>
+								</div>
+								<div class="col-4">
+									<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef15" type="radio" checked="checked" name="radios15" onchange="autoNumber(15)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef15" type="radio" name="radios15" onchange="autoNumber(15)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-2">
+			<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(15)">Select Figure</button>
+		</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 15 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel16">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div id="pdfFigure16" class="col-6 modalfig">
+											<img style="width:100%;" src="assets/figures/16.PNG">
+											<input id="a16" class=" refno refno16" style="top: 0px;left: 482px;border-color: lightgray;" onkeyup="checkNumber(16)" readonly="">
+											<input id="b16" class="refno refno16" style="top: 178px;left: 195px;border-color: lightgray;" onkeyup="checkNumber(16)" readonly="">
+											<input id="c16" class="refno refno16" style="top: 93px;left: 194px;border-color: lightgray;" onkeyup="checkNumber(16)" readonly="">
+											<input id="d16" class=" refno refno16" style="top: 259px;left: 188px;border-color: lightgray;" onkeyup="checkNumber(16)" readonly="">
+											<input id="e16" class="refno refno16" style="top: 94px;left: 349px;border-color: lightgray;" onkeyup="checkNumber(16)" readonly="">
+											<input id="f16" class="refno refno16" style="top: 179px;left: 350px;border-color: lightgray;" onkeyup="checkNumber(16)" readonly="">
+											<input id="g16" class="refno refno16" style="top: 263px;left: 349px;border-color: lightgray;" onkeyup="checkNumber(16)" readonly="">
+											<input readonly="" id="figno16" class="figno figno16" style="top: 337px;left: 261px;">
+
+										</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle16" style="display:none">FIG. <e class="figinput16">__</e> illustrates a set of example components of one or more devices of the present disclosure. </d>
+								<d id="spec16">FIG. <e class="figinput16">__</e> illustrates a set of example components of one or more devices <e class="textref16 a16">__</e> of the present disclosure. In this example, the device includes at least one processor <e class="textref16 b16">__</e> for executing instructions that can be stored in a memory device or element <e class="textref16 c16">__</e>.  As would be apparent to one of ordinary skill in the art, the device can include many types of memory, data storage or computer-readable media, such as a first data storage for program instructions for execution by the processor <e class="textref16 b16">__</e>, the same or separate storage can be used for images or data, a removable memory can be available for sharing information with other devices, and any number of communication approaches can be available for sharing with other devices.  The device typically will include some type of display element <e class="textref16 d16">__</e>, such as a touch screen, electronic ink (e-ink), organic light emitting diode (OLED) or liquid crystal display (LCD), although devices such as portable media players might convey information via other means, such as through audio speakers.  As discussed, the device in many embodiments will include at least one image capture element <e class="textref16 e16">__</e>, such as at least one ambient light camera that is able to image a user, people, or objects in the vicinity of the device.  An image capture element can include any appropriate technology, such as a CCD image capture element having a sufficient resolution, focal range and viewable area, to capture an image of the user when the user is operating the device.  Methods for capturing images or video using an image capture element with a computing device are well known in the art and will not be discussed herein in detail.  It should be understood that image capture can be performed using a single image, multiple images, periodic imaging, continuous image capturing, image streaming, etc. The device can include one or more networking components <e class="textref16 f16">__</e> enabling the device to communicate with remote systems or services such as content providers and rights determining systems.  These components can include, for example, wired or wireless communication components operable to communicate over a network such as a cellular network, local area network, or the Internet.  The device can also include at least one additional input device <e class="textref16 g16">__</e> able to receive conventional input from a user.  This conventional input can include, for example, a push button, touch pad, touch screen, wheel, joystick, keyboard, mouse, trackball, keypad or any other such device or element whereby a user can input a command to the device.  These I/O devices could even be connected by a wireless infrared or Bluetooth or other link as well in some embodiments.  In some embodiments, however, such a device might not include any buttons at all and might be controlled only through a combination of visual and audio commands such that a user can control the device without having to be in contact with the device. As discussed, different approaches can be implemented in various environments in accordance with the described embodiments.
+							</d>
+						</div>
+							</div>
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect16" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(16)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput16" class="figinput" autofocus onkeyup="autoNumber(16)" ></input>
+								</div>
+								<div class="col-4">
+									<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef16" type="radio" checked="checked" name="radios16" onchange="autoNumber(16)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef16" type="radio" name="radios16" onchange="autoNumber(16)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+			</div>
+							<div class="col-2">
+								<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(16)">Select Figure</button>
+								</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 16 -->
+<!-- Modal-->
+	<div class="modal fade" id="exampleModal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel17">An example computing device providing access to an electronic marketplace</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+									</button>
+							</div>
+							<div class="modal-body row">
+								<div class="col-6 modalfig" style="
+    text-align: center;">
+									<img style="width: 90%;margin: auto;" src="assets/figures/17.PNG">
+									<input id="a17" class=" refno refno17" style="top: 2px;left: 451px;border-color: lightgray;" onkeyup="checkNumber(17)" readonly="">
+									<input id="b17" class="refno refno17" style="top: 0;left: 47px;border-color: lightgray;" onkeyup="checkNumber(17)" readonly="">
+									<input id="c17" class="refno refno17" style="top: 265px;left: 104px;border-color: lightgray;" onkeyup="checkNumber(17)" readonly="">
+									<input id="d17" class=" refno refno17" style="top: 476px;left: 86px;border-color: lightgray;" onkeyup="checkNumber(17)" readonly="">
+									<input id="e17" class="refno refno17" style="top: 488px;left: 203px;border-color: lightgray;" onkeyup="checkNumber(17)" readonly="">
+									<input id="f17" class="refno refno17" style="top: 711px;left: 62px;border-color: lightgray;" onkeyup="checkNumber(17)" readonly="">
+									<input id="g17" class=" refno refno17" style="top: 702px;left: 200px;border-color: lightgray;" onkeyup="checkNumber(17)" readonly="">
+									<input id="h17" class="refno refno17" style="top: 701px;left: 300px;border-color: lightgray;" onkeyup="checkNumber(17)" readonly="">
+									<input id="i17" class="refno refno17" style="top: 703px;left: 399px;border-color: lightgray;" onkeyup="checkNumber(17)" readonly="">
+									<input readonly="" id="figno17" class="figno figno17" style="top: 754px;left: 240px;">
+
+								</div>
+							<div class="col-6 figdescription">
+								<d id="figtitle17" style="display:none">FIG. <e class="figinput17">__</e> illustrates an example environment for implementing aspects in accordance with various embodiments.</d>
+								<d id="spec17">FIG. <e class="figinput17">__</e> illustrates an example environment <e class="textref17 a17">__</e> for implementing aspects in accordance with various embodiments. As will be appreciated, although a Web-based environment is used for purposes of explanation, different environments may be used, as appropriate, to implement various embodiments.  The system includes an electronic client device <e class="textref17 b17">__</e>, which can include any appropriate device operable to send and receive requests, messages or information over an appropriate network <e class="textref17 c17">__</e> and convey information back to a user of the device.  Examples of such client devices include personal computers, cell phones, handheld messaging devices, laptop computers, set-top boxes, personal data assistants, electronic book readers and the like.  The network can include any appropriate network, including an intranet, the Internet, a cellular network, a local area network or any other such network or combination thereof.  Components used for such a system can depend at least in part upon the type of network and/or environment selected.  Protocols and components for communicating via such a network are well known and will not be discussed herein in detail.  Communication over the network can be enabled via wired or wireless connections and combinations thereof.  In this example, the network includes the Internet, as the environment includes a Web server <e class="textref17 d17">__</e> for receiving requests and serving content in response thereto, although for other networks, an alternative device serving a similar purpose could be used, as would be apparent to one of ordinary skill in the art.  \n\nThe illustrative environment includes at least one application server <e class="textref17 e17">__</e> and a data store <e class="textref17 f17">__</e>.  It should be understood that there can be several application servers, layers or other elements, processes or components, which may be chained or otherwise configured, which can interact to perform tasks such as obtaining data from an appropriate data store.  As used herein, the term data "store" refers to any device or combination of devices capable of storing, accessing and retrieving data, which may include any combination and number of data servers, databases, data storage devices and data storage media, in any standard, distributed or clustered environment.  The application server <e class="textref17 e17">__</e> can include any appropriate hardware and software for integrating with the data store <e class="textref17 f17">__</e> as needed to execute aspects of one or more applications for the client device and handling a majority of the data access and business logic for an application.  The application server provides access control services in cooperation with the data store and is able to generate content such as text, graphics, audio and/or video to be transferred to the user, which may be served to the user by the Web server <e class="textref17 d17">__</e> in the form of HTML, XML or another appropriate structured language in this example.  The handling of all requests and responses, as well as the delivery of content between the client device <e class="textref17 b17">__</e> and the application server <e class="textref17 e17">__</e>, can be handled by the Web server <e class="textref17 d17">__</e>.  It should be understood that the Web and application servers are not required and are merely example components, as structured code discussed herein can be executed on any appropriate device or host machine as discussed elsewhere herein.\n\nThe data store <e class="textref17 f17">__</e> can include several separate data tables, databases or other data storage mechanisms and media for storing data relating to a particular aspect.  For example, the data store illustrated includes mechanisms for storing content (e.g., production data) <e class="textref17 g17">__</e> and user information <e class="textref17 i17">__</e>, which can be used to serve content for the production side.  The data store is also shown to include a mechanism for storing log or session data <e class="textref17 h17">__</e>.  It should be understood that there can be many other aspects that may need to be stored in the data store, such as page image information and access rights information, which can be stored in any of the above listed mechanisms as appropriate or in additional mechanisms in the data store <e class="textref17 f17">__</e>.  The data store <e class="textref17 f17">__</e> is operable, through logic associated therewith, to receive instructions from the application server <e class="textref17 e17">__</e> and obtain, update or otherwise process data in response thereto.  In one example, a user might submit a search request for a certain type of item.  In this case, the data store might access the user information to verify the identity of the user and can access the catalog detail information to obtain information about items of that type.  The information can then be returned to the user, such as in a results listing on a Web page that the user is able to view via a browser on the user device <e class="textref17 b17">__</e>.  Information for a particular item of interest can be viewed in a dedicated page or window of the browser.\n\nEach server typically will include an operating system that provides executable program instructions for the general administration and operation of that server and typically will include computer-readable medium storing instructions that, when executed by a processor of the server, allow the server to perform its intended functions.  Suitable implementations for the operating system and general functionality of the servers are known or commercially available and are readily implemented by persons having ordinary skill in the art, particularly in light of the disclosure herein. \n\nThe environment in one embodiment is a distributed computing environment utilizing several computer systems and components that are interconnected via communication links, using one or more computer networks or direct connections.  However, it will be appreciated by those of ordinary skill in the art that such a system could operate equally well in a system having fewer or a greater number of components than are illustrated in FIG. <e class="figinput17">__</e>.  Thus, the depiction of the system <e class="textref17 a17">__</e> in FIG. <e class="figinput17">__</e> should be taken as being illustrative in nature and not limiting to the scope of the disclosure. \n\nThe various embodiments can be further implemented in a wide variety of operating environments, which in some cases can include one or more user computers or computing devices which can be used to operate any of a number of applications.  User or client devices can include any of a number of general purpose personal computers, such as desktop or laptop computers running a standard operating system, as well as cellular, wireless and handheld devices running mobile software and capable of supporting a number of networking and messaging protocols.  Such a system can also include a number of workstations running any of a variety of commercially-available operating systems and other known applications for purposes such as development and database management.  These devices can also include other electronic devices, such as dummy terminals, thin-clients, gaming systems and other devices capable of communicating via a network.\n\nMost embodiments utilize at least one network that would be familiar to those skilled in the art for supporting communications using any of a variety of commercially-available protocols, such as TCP/IP, FTP, UPnP, NFS, and CIFS.  The network can be, for example, a local area network, a wide-area network, a virtual private network, the Internet, an intranet, an extranet, a public switched telephone network, an infrared network, a wireless network and any combination thereof.\n\nIn embodiments utilizing a Web server, the Web server can run any of a variety of server or mid-tier applications, including HTTP servers, FTP servers, CGI servers, data servers, Java servers and business application servers.  The server(s) may also be capable of executing programs or scripts in response requests from user devices, such as by executing one or more Web applications that may be implemented as one or more scripts or programs written in any programming language, such as Java®, C, C# or C++ or any scripting language, such as Perl, Python or TCL, as well as combinations thereof.  The server(s) may also include database servers, including without limitation those commercially available from Oracle®, Microsoft®, Sybase® and IBM®. \n\nThe environment can include a variety of data stores and other memory and storage media as discussed above.  These can reside in a variety of locations, such as on a storage medium local to (and/or resident in) one or more of the computers or remote from any or all of the computers across the network.  In a particular set of embodiments, the information may reside in a storage-area network (SAN) familiar to those skilled in the art.  Similarly, any necessary files for performing the functions attributed to the computers, servers or other network devices may be stored locally and/or remotely, as appropriate.  Where a system includes computerized devices, each such device can include hardware elements that may be electrically coupled via a bus, the elements including, for example, at least one central processing unit (CPU), at least one input device (e.g., a mouse, keyboard, controller, touch-sensitive display element or keypad) and at least one output device (e.g., a display device, printer or speaker).
+							</d>
+						</div>
+							</div>
+
+							<div class="modal-footer">
+								<div class="col-3" style="text-align:left;padding-left: 50px;">
+								<button id="deselect17" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(17)" data-dismiss="modal" aria-label="Close">Deselect</button>
+							</div>
+
+										<div class="col-3">
+									<label>Figure number:</label> <input id="figinput17" class="figinput" autofocus onkeyup="autoNumber(17)" ></input>
+								</div>
+								<div class="col-4">
+									<div class="row">
+
+					<label style="margin-right:20px">Reference numbers:</label>
+				<div class="radio-inline">
+					<label class="radio">
+					<input id="autoRef17" type="radio" checked="checked" name="radios17" onchange="autoNumber(17)">
+					<span></span>Auto</label>
+					<label class="radio">
+					<input id="manualRef17" type="radio" name="radios17" onchange="autoNumber(17)">
+					<span></span>Manual</label>
+				</div>
+			</div>
+
+			</div>
+			<div class="col-2">
+				<button type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(17)">Select Figure</button>
+			</div>
+							</div>
+					</div>
+			</div>
+	</div>
+<!-- END MODAL 17 -->
+					            </div>
+					         </div>
+									<!--end::Mixed Widget 11-->
+								</div>
+
+<div id="claimsDiv" class="horizontal-scrollable" style="border:none !important; width:100%; padding:0px; display:none;">
+
+			<div class="col-12" style="text-align:right; padding:0;height: 50px;">
+				<div  id="kt_quick_search_toggle" class="btn btn-danger font-weight-bold btn-pill btn-sm" style="line-height: .7;height: 2.15em;vertical-align: text-bottom;" onclick="openDeletedList()">Deleted List</div>
+				<button id="addIndClaim" onclick="addIC()" class="btn btn-warning font-weight-bold btn-pill btn-sm" style="line-height: .7;height: 2.15em;vertical-align: text-bottom;">+ Ind Claim</button>
+				<button id="claimsToggle" onclick="claimExpand()" style="background: none; height: 100%; border: none; font-size: 25px; color: dimgray;"><i class="fas fa-expand" style="font-size:1.75rem"></i></button>
+				<div id="kt_drawer_example_basic"
+				class="bg-white"
+				data-kt-drawer="true"
+				data-kt-drawer-activate="true"
+				data-kt-drawer-toggle ="#kt_drawer_example_basic_button"
+				data-kt-drawer-close="#kt_drawer_example_basic_close"
+				data-kt-drawer-width="500px">
+													...
+											</div>
+			</div>
+
+
+									<div id = "claimsContainer" class=" row draggable-zone0">
+										<div class="icSet col-md-4 draggable0">
+										<div id="outerDiv1" data-claim= "1" data-unique-id="101" data-parent-id="000" class="card my-3 card-block d-flex no-b ClaimSet outerDiv draggable-zone1 draggable_NA" style="">
+												<div id= "innerDiv1" data-claim= "1" class="card-body claimsRow claimGroup1 innerDiv">
+												<div class="lobilist-actions claimsBar" style="display:flex; visibility:visible">
+<span class="depNo" style="display:none"></span>
+							<div class="dropdown preambleBtn ">
+							    <button type="button" class="btn btn-icon btn-outline-secondary btnPreamble" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-200, 0">
+							      <i class="fas fa-cog"></i>
+							    </button>
+									<form id="preambleBox1" class="dropdown-menu preambleBox  p-0">
+											<div class="card card-custom example example-compact">
+												<div class="card-header preamble-header-card" style="">
+													<h3 class="card-title">
+														Preamble
+													</h3>
+												</div>
+										<div class="card-body preamble-body-card">
+										<div class="form-group">
+										    <div id="radioList1" class="radio-list">
+										        <label class="radio">
+										            <input type="radio" class="method" checked="true" name="1" value="method" onclick="checkPreamble(this.value, this.name)"/>
+										            <span></span>
+										            Method - Software
+										        </label>
+										        <label class="radio">
+										            <input type="radio" class="system" name="1" value="system" onclick="checkPreamble(this.value, this.name)"/>
+										            <span></span>
+										            System - Software
+										        </label>
+										        <label class="radio">
+										            <input type="radio" class="crm" name="1" value="crm" onclick="checkPreamble(this.value, this.name)"/>
+										            <span></span>
+										            CRM - Software
+										        </label>
+														<!-- <br> -->
+														<label class="radio">
+										            <input type="radio" class="custom" name="1" value="custom" onclick="checkPreamble(this.value, this.name)"/>
+										            <span></span>
+										            Custom
+																<div id="customPreamble1" style="display:none">
+																<div class="preambleCustomDiv">IC:	<input id="" style="" type="text" class="form-control comments preambleCustomInput customIC" placeholder="E.g., A system..." required="">, comprising...</div>
+																<div class="preambleCustomDiv">DC:	<input id="customDC" style="" type="text" class="form-control comments preambleCustomInput customDC" placeholder="E.g., The system..." required=""> of claim...</div>
+															</div>
+										        </label>
+
+										    </div>
+
+										</div>
+									</div>
+									<div class="card-footer preamble-footer-card">
+										<button id="" type="button" class="btn btn-primary mr-2 btnSetPreamble" name= "1" onclick="setPreamble(this.name, 1)">Set</button>
+									</div>
+</div>
+</form>
+							</div>
+												<button id="" data-handle = "" class="btn btn-icon btn-outline-secondary btnMove handle draggable-handle0"><i class="fas fa-arrows-alt-h"></i></button>
+												<button id="addbtn1" class="btn btn-icon btn-outline-secondary btnAdd" onclick="addClaim(1, 101, 1)" style=""><i class="fas fa-plus"></i></button>
+												<button class="btnDel" style="display:none"></button>
+												</div>
+													<div class="ADeditor ADeditorInd" id="ADeditor1">
+														<p class="preambleBlock indPreambleBlock indPreamble1">
+															<span class="claimNo">1. </span>
+															<span class="preamble preambleInclude">A computer implemented method, comprising:</span>
+														</p>
+														<p class="claimBodyLine" style="text-indent:.5in" contenteditable="true"></p>
+													</div>
+												</div>
+										</div>
+
+								</div>
+
+
+
+
+					<!-- end::Claims Row -->
+							</div>
+							<!-- end::Claims Container -->
+</div>
+								<!--end::Dashboard-->
+							</div>
+							<!--end::Container-->
+						</div>
+						<!--end::Entry-->
+					</div>
+					<!--end::Content-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Page-->
+			<div style="position: absolute; left: 0px; top: 0px; z-index: 99; ">
+				<div id="" >
+		<!-- <img src="https://tpc.googlesyndication.com/simgad/5400327303016848257"/>
+		<input value="xxx" style="
+				position: absolute;
+				left: 43px;
+				top: 44px;
+				width: 33px;
+				border: cornsilk;
+
+		">
+				</div> -->
+				</div>
+			</div>
+
+		</div>
+		<!--end::Main-->
+<!-- side panel - deleted claims list -->
+<div id="kt_quick_search" class="offcanvas offcanvas-right p-10 offcanvas-on" style="display:none">
+			<!--begin::Header-->
+			<div class="offcanvas-header d-flex align-items-center justify-content-between mb-5" kt-hidden-height="24" style="">
+				<h3 class="font-weight-bold m-0 ">Deleted Claims</h3>
+
+				<button class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_search_close" onclick="closeDeletedList()">
+					<i class="ki ki-close icon-xs text-muted"></i>
+				</button>
+			</div>
+			<!--end::Header-->
+			<!--begin::Content-->
+			<div class="offcanvas-content">
+				<!--begin::Container-->
+				<div class="quick-search quick-search-offcanvas quick-search-has-result" id="kt_quick_search_offcanvas">
+					<!--begin::Form-->
+
+					<!--end::Form-->
+					<!--begin::Wrapper-->
+					<div class="quick-search-wrapper pt-5 scroll ps ps--active-y" style="height: 784px; overflow: hidden;">
+						<div id="deletedList" class="quick-search-result">
+							<!--begin::Message-->
+
+							<!--end::Message-->
+							<!--begin::Section-->
+
+
+								<!--begin::Item-->
+
+								<!--end::Item-->
+								<!--begin::Item-->
+
+								<!--end::Item-->
+
+
+							<!--end::Section-->
+
+
+						</div>
+					<!-- <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 784px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 300px;"></div></div></div> -->
+					<!--end::Wrapper-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::Content-->
+		</div>
+	</div>
+		<div id = "deletedOverlay" class="offcanvas-overlay" style="display:none" onclick="closeDeletedList()"></div>
+
+		<!--begin::Global Config(global config for global JS scripts)-->
+		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#8950FC", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
+		<!--end::Global Config-->
+		<!--begin::Global Theme Bundle(used by all pages)-->
+		<script src="assets/plugins/global/plugins.bundle.js?v=7.0.4"></script>
+		<script src="assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.4"></script>
+		<script src="assets/js/scripts.bundle.js?v=7.0.4"></script>
+		<!--end::Global Theme Bundle-->
+		<!--begin::Page Vendors(used by this page)-->
+		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.0.4"></script>
+		<script src="assets/plugins/custom/leaflet/leaflet.bundle.js?v=7.0.4"></script>
+		<!--end::Page Vendors-->
+		<!--begin::Page Scripts(used by this page)-->
+		<script src="assets/plugins/custom/tinymce/tinymce.bundle.js?v=7.0.5"></script>
+		<!-- <script src="assets/js/pages/crud/forms/editors/tinymce.js?v=7.0.5"></script> -->
+
+		<script src="assets/js/pages/widgets.js?v=7.0.4"></script>
+		<script src="assets/plugins/custom/draggable/draggable.bundle.js" type="text/javascript"></script>
+
+		<!--end::Page Scripts-->
+
+		<!-- <script src="assets/js/app.js"></script> -->
+		<!-- <script src="assets/js/utilities/jszip.min.js"></script>
+		<script src="assets/js/utilities/pptxgen.min.js"></script>
+    <script src="assets/js/utilities/docxtemplater.js"></script>
+		<script src="assets/js/utilities/jszip.js"></script>
+		<script src="assets/js/utilities/FileSaver.min.js"></script>
+		<script src="assets/js/utilities/jszip-utils.js"></script>
+		<script src="assets/js/utilities/html-module.js"></script> -->
+		<script src="assets/utilities/docx/docxtemplater.js"></script>
+		<script src="assets/utilities/docx/pizzip.js"></script>
+		<script src="assets/utilities/docx/FileSaver.js"></script>
+		<script src="assets/utilities/docx/pizzip-utils.js"></script>
+		<script src="assets/utilities/docx/slides-module.js"></script>
+
+		<script src="assets/utilities/docx/html-module.js"></script>
+
+<!-- PPTX Generator -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.5.0/dist/pptxgen.bundle.js"></script> -->
+
+<!-- <script src="assets/js/applications/experimentalClaims.js"></script> -->
+
+<!-- <script src="assets/js/applications/claimsMain.js"></script> -->
+		<script src="assets/js/applications/AD_Editor_Functions.js"></script>
+		<!-- <script src="assets/js/applications/claims.js"></script>
+		<script src="assets/js/applications/claims2.js"></script>
+		<script src="assets/js/applications/claims3.js"></script> -->
+		<script src="assets/js/applications/appfront.js"></script>
+		<script src="assets/js/applications/boilertext.js"></script>
+		<!-- <script src="assets/js/app/modal.js"></script> -->
+		<script src="assets/js/applications/application.js"></script>
+		<!-- <script src="assets/js/applications/application_UI.js"></script> -->
+
+		<script src="assets/js/applications/claimsModel.js"></script>
+		<script src="assets/js/applications/draggable.js"></script>
+
+		<script src="assets/js/applications/filledClaims.js"></script>
+
+
+
+
+		<!-- <script src="assets/js/applications/editorfunctions.js"></script> -->
+
+		<!-- <script src="assets/js/applications/pptxfigureObjects.js"></script> -->
+<!-- <script>$.noConflict();</script> -->
+	</body>
+</html>

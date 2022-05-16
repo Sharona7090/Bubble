@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<!--begin::Head-->
+	<head><base href="">
+		<meta charset="utf-8" />
+		<title>ActionDocket | Database</title>
+		<meta name="description" content="Updates and statistics" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!--begin::Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Page Vendors Styles(used by this page)-->
+		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css?v=7.0.4" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/leaflet/leaflet.bundle.css?v=7.0.4" rel="stylesheet" type="text/css" />
+		<!--end::Page Vendors Styles-->
+		<!--begin::Global Theme Styles(used by all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="assets/images/favicon.png" />
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled page-loading">
+		<!--begin::Main-->
+		<!--begin::Header Mobile-->
+		<!--end::Header Mobile-->
+		<div class="d-flex flex-column flex-root">
+			<!--begin::Page-->
+			<div class="d-flex flex-row flex-column-fluid page">
+				<!--begin::Wrapper-->
+				<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+					<!--begin::Header-->
+					<div id="kt_header" class="header bg-white header-fixed">
+						<!--begin::Container-->
+						<div class="container-fluid d-flex align-items-stretch justify-content-between">
+							<!--begin::Left-->
+							<div class="d-flex align-items-stretch mr-2">
+								<!--begin::Page Title-->
+									<div class="d-none text-dark d-lg-flex align-items-center mr-10 mb-0"><img alt="Logo" src="assets/images/logo.png" class="logo-default max-h-25px" /></div>
+								<h3 class="d-none text-dark d-lg-flex align-items-center mr-10 mb-0 headerpagelabel">Emails</h3>
+								<!--end::Page Title-->
+								<!--begin::Header Menu Wrapper-->
+								<div class="header-menu-wrapper header-menu-wrapper-left" id="kt_header_menu_wrapper">
+									<!--begin::Header Menu-->
+									<div id="kt_header_menu" class="header-menu header-menu-mobile header-menu-layout-default">
+										<!--begin::Header Nav-->
+										<ul class="menu-nav">
+											<!-- <li class="menu-item" aria-haspopup="true">
+												<a href="index.html" class="menu-link">
+													<span class="menu-text">Dashboard</span>
+												</a>
+											</li> -->
+											<li class="menu-item" aria-haspopup="true">
+												<a href="emails.html" class="menu-link">
+													<span class="menu-text">Emails</span>
+												</a>
+											</li>
+											<li class="menu-item" aria-haspopup="true">
+												<a href="prosecution.html" class="menu-link">
+													<span class="menu-text">Prosecution</span>
+												</a>
+											</li>
+											<li class="menu-item" aria-haspopup="true">
+												<a href="applications.html" class="menu-link">
+													<span class="menu-text">Applications</span>
+												</a>
+											</li>
+											<li class="menu-item menu-item-active" aria-haspopup="true">
+												<a href="applications.html" class="menu-link">
+													<span class="menu-text">Cases</span>
+												</a>
+											</li>
+										</ul>
+										<!--end::Header Nav-->
+									</div>
+									<!--end::Header Menu-->
+								</div>
+								<!--end::Header Menu Wrapper-->
+							</div>
+							<!--end::Left-->
+							<!--begin::Topbar-->
+							<div class="topbar">
+								<!--begin::Quick Actions-->
+								<div class="dropdown">
+									<!--begin::Toggle-->
+									<div class="topbar-item mr-3" data-toggle="dropdown" data-offset="10px,0px">
+										<div class="btn btn-icon btn-clean btn-dropdown btn-lg">
+											<span class="svg-icon svg-icon-xl">
+											<i class="fas fa-cog"></i>
+											</span>
+										</div>
+									</div>
+									<!--end::Toggle-->
+									<!--begin::Dropdown-->
+									<div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
+										<!--begin:Header-->
+										<div class="d-flex flex-column flex-center py-10 bgi-size-cover bgi-no-repeat rounded-top" style=" background-color:currentColor">
+											<h4 class="text-white font-weight-bold">Settings & Resources</h4>
+										</div>
+										<!--end:Header-->
+										<!--begin:Nav-->
+										<div class="row row-paddingless">
+											<!--begin:Item-->
+											<div class="col-6">
+												<a href="#" class="d-block py-10 px-5 text-center bg-hover-light border-right border-bottom">
+													<span class="svg-icon svg-icon-3x svg-icon-success">
+													<i  class="fas fa-user settingicons"></i>
+													</span>
+													<span class="d-block text-dark-75 font-weight-bold font-size-h6 mt-2 mb-1">Profile</span>
+												</a>
+											</div>
+											<!--end:Item-->
+											<!--begin:Item-->
+											<div class="col-6">
+												<a href="#" class="d-block py-10 px-5 text-center bg-hover-light border-bottom">
+													<span class="svg-icon svg-icon-3x svg-icon-success">
+														<i class="fas fa-sliders-h settingicons"></i>
+													</span>
+													<span class="d-block text-dark-75 font-weight-bold font-size-h6 mt-2 mb-1">Preferences</span>
+												</a>
+											</div>
+											<!--end:Item-->
+											<!--begin:Item-->
+											<div class="col-6">
+												<a href="#" class="d-block py-10 px-5 text-center bg-hover-light border-right">
+													<span class="svg-icon svg-icon-3x svg-icon-success">
+													<i class="fas fa-book-open settingicons"></i>
+													</span>
+													<span class="d-block text-dark-75 font-weight-bold font-size-h6 mt-2 mb-1">Resources</span>
+												</a>
+											</div>
+											<!--end:Item-->
+											<!--begin:Item-->
+											<div class="col-6">
+												<a href="#" class="d-block py-10 px-5 text-center bg-hover-light">
+													<span class="svg-icon svg-icon-3x svg-icon-success">
+												<i class="fas fa-exclamation-circle settingicons"></i>
+													</span>
+													<span class="d-block text-dark-75 font-weight-bold font-size-h6 mt-2 mb-1">Bug Report & Feature Request</span>
+												</a>
+											</div>
+											<!--end:Item-->
+										</div>
+										<!--end:Nav-->
+									</div>
+									<!--end::Dropdown-->
+								</div>
+								<!--end::Quick Actions-->
+								<!--begin::User-->
+								<div class="topbar-item">
+									<div class="btn btn-icon w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
+										<div class="d-flex flex-column text-right pr-3">
+											<span class="text-dark-75 font-weight-bolder font-size-base d-none d-md-inline">Pat Lawyerton</span>
+										</div>
+										<span class="symbol symbol-35 symbol-light-primary">
+											<span class="symbol-label font-size-h5 font-weight-bold">PL</span>
+										</span>
+									</div>
+								</div>
+								<!--end::User-->
+							</div>
+							<!--end::Topbar-->
+						</div>
+						<!--end::Container-->
+					</div>
+					<!--end::Header-->
+					<!--begin::Content-->
+					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+
+						<!--begin::Entry-->
+						<div class="d-flex flex-column-fluid">
+							<!--begin::Container-->
+							<div class="container" style=" padding-top:50px; max-width:1700px">
+								<!--begin::Dashboard-->
+								<div class="row d-flex justify-content-center">
+									<div class="card card-custom col-12">
+										<div class="card-header flex-wrap border-0 pt-6 pb-0">
+											<div class="card-title">
+												<h3 class="card-label">Case Database
+												<!-- <span class="text-muted pt-2 font-size-sm d-block">Javascript array as data source</span> -->
+											</h3>
+											</div>
+											<div class="card-toolbar">
+												<!--begin::Dropdown-->
+												<div class=" mr-2">
+													<button type="button" class="btn btn-light-primary font-weight-bolder" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+														<!--end::Svg Icon-->
+													</span>Import</button>
+													<!--begin::Dropdown Menu-->
+
+													<!--end::Dropdown Menu-->
+												</div>
+												<!--end::Dropdown-->
+												<!--begin::Button-->
+												<button class="btn btn-primary font-weight-bolder" data-toggle="modal" data-target="#exampleModal" onclick="newCase()">
+												Add New Case</button>
+												<!--end::Button-->
+											</div>
+										</div>
+										<div class="card-body">
+											<!--begin: Search Form-->
+											<!--begin::Search Form-->
+											<div class="mt-2 mb-14">
+												<div class="row align-items-center">
+													<div class="col-lg-9 col-xl-8">
+														<div class="row align-items-center">
+															<div class="col-md-4 my-2 my-md-0">
+																<div class="input-icon">
+																	<input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
+																	<span>
+																		<i class="flaticon2-search-1 text-muted"></i>
+																	</span>
+																</div>
+															</div>
+															<div class="col-md-4 my-2 my-md-0">
+																<div class="d-flex align-items-center">
+																	<label class="mr-3 mb-0 d-none d-md-block">Client:</label>
+																	<select class="form-control" id="kt_datatable_search_client">
+																		<option value="">All</option>
+																		<option value="amazon">Amazon</option>
+																		<option value="halliburton">Halliburton</option>
+
+																	</select>
+																</div>
+															</div>
+															<div class="col-md-4 my-2 my-md-0">
+																<div class="d-flex align-items-center">
+																	<label class="mr-3 mb-0 d-none d-md-block">Attorney:</label>
+																	<select class="form-control" id="kt_datatable_search_attorney">
+																		<option value="">All</option>
+																		<option value="pat_lawyerton">Pat Lawyerton</option>
+																		<option value="thomas_morris">Thomas Morris</option>
+																		<option value="amy_johnson">Amy Johnson</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-3 col-xl-4 mt-5 mt-lg-0">
+														<a href="#" class="btn btn-light-primary px-6 font-weight-bold">Search</a>
+													</div>
+												</div>
+											</div>
+											<!--end::Search Form-->
+											<!--end: Search Form-->
+											<!--begin: Datatable-->
+											<div class="datatable datatable-bordered datatable-head-custom" id="kt_datatable"></div>
+											<!--end: Datatable-->
+										</div>
+										<!-- Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document" style="max-width:1600px">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:aquamarine">
+                <h5 class="modal-title" id="exampleModalLabel" >Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+							<div class="card-body">
+
+								<div class="form-group row">
+											<div class="col-lg-3">
+												<label>Client Matter No.</label>
+												<input id="clientmatter" type="text" class="form-control" placeholder=""/>
+												<!-- <span class="form-text text-muted">Please enter your full name</span> -->
+											</div>
+											<div class="col-lg-3">
+												<label>Firm Matter No.</label>
+												<input id="firmmatter" type="text" class="form-control" placeholder=""/>
+											</div>
+											<div class="col-lg-3">
+												<label>Application No.</label>
+												<input id="appnumber" type="text" class="form-control" placeholder=""/>
+											</div>
+											<div class="col-lg-3">
+												<label>Filing Date</label>
+												<input id="filingdate" type="text" class="form-control" placeholder=""/>
+											</div>
+								</div>
+
+								<div class="form-group row">
+											<div class="col-lg-8">
+												<label>Title</label>
+												<input id="title" type="text" class="form-control" placeholder=""/>
+												<!-- <span class="form-text text-muted">Please enter your full name</span> -->
+											</div>
+											<div class="col-lg-4">
+												<label>Inventors</label>
+												<input id="inventor" type="text" class="form-control" placeholder=""/>
+											</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-lg-3">
+										<label>Examiner</label>
+										<input id="examiner" type="text" class="form-control" placeholder=""/>
+									</div>
+											<div class="col-lg-2">
+												<label>Art Unit</label>
+												<input id="artunit" type="text" class="form-control" placeholder=""/>
+												<!-- <span class="form-text text-muted">Please enter your full name</span> -->
+											</div>
+											<div class="col-lg-2">
+												<label>Confirmation No.</label>
+												<input id="confirmation" type="text" class="form-control" placeholder=""/>
+											</div>
+											<div class="col-lg-3">
+												<label>Working Attorney</label>
+												<input Required id="workingatty" type="text" class="form-control" placeholder=""/>
+											</div>
+
+								</div>
+								<div class="form-group row">
+									<div class="col-lg-6">
+										<label>Notes</label>
+										<input id="examiner" type="text" class="form-control" placeholder=""/>
+									</div>
+
+
+								</div>
+							</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary font-weight-bold">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+									</div>
+								</div>
+								<!--end::Row-->
+								<!--end::Dashboard-->
+							<!-- </div> -->
+							<!--end::Container-->
+						</div>
+						<!--end::Entry-->
+					</div>
+					</div>
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Page-->
+		</div>
+		<!--end::Main-->
+		<!-- begin::User Panel-->
+		<!-- end::User Panel-->
+		<!--begin::Global Config(global config for global JS scripts)-->
+		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#8950FC", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
+		<!--end::Global Config-->
+		<!--begin::Global Theme Bundle(used by all pages)-->
+		<script src="assets/plugins/global/plugins.bundle.js?v=7.0.4"></script>
+		<script src="assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.4"></script>
+		<script src="assets/js/utilities/scripts.bundle.js?v=7.0.4"></script>
+		<!--end::Global Theme Bundle-->
+		<!--begin::Page Vendors(used by this page)-->
+		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.0.4"></script>
+		<script src="assets/plugins/custom/leaflet/leaflet.bundle.js?v=7.0.4"></script>
+		<!--end::Page Vendors-->
+		<!--begin::Page Scripts(used by this page)-->
+		<script src="assets/js/pages/widgets.js?v=7.0.4"></script>
+		<!-- Custom JS -->
+		<script src="assets/js/emails/email.js"></script>
+			<script src="assets/js/emails/emailtemplates.js"></script>
+			<script src="assets/js/core.datatable.js"></script>
+	<script src="assets/js/caseTable.js"></script>
+		<!--end::Page Scripts-->
+	</body>
+	<!--end::Body-->
+</html>
