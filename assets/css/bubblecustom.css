@@ -1,10 +1,10 @@
 .Dropdown{
-  margin-left: 8px
+  margin-left: 8px !important;
 }
 
 .Group .Button{
-min-width: fit-content;
-max-width: fit-content;
-width: fit-content;
-padding: 0px 10px;
+min-width: fit-content !important;
+max-width: fit-content !important;
+width: fit-content !important;
+padding: 0px 10px !important;
 }
