@@ -8,7 +8,7 @@ function populatecasedata(caseno, clientno, title, inventor, appnumber, filingda
   document.getElementById("confirmation").value = confirmation;
   document.getElementById("examiner").value = examiner;
   document.getElementById("artunit").value = artunit;
-  document.getElementById("maildate").value = maildate;
+  // document.getElementById("maildate").value = maildate;
   "Pat Lawyerton"
   "68,244"
   document.getElementById('pendClaims').value
