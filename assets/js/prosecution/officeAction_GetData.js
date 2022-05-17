@@ -1,3 +1,25 @@
+function populatecasedata(caseno, clientno, title, inventor, appnumber, filingdate, confirmation, examiner, artunit){
+  document.getElementById("firmmatter").value = caseno;
+  document.getElementById("clientmatter").value = clientno;
+  document.getElementById("title").value = title.toUpperCase();;
+  document.getElementById("inventor").value = inventor;
+  document.getElementById("appnumber").value = appnumber;
+  document.getElementById("filingdate").value = filingdate;
+  document.getElementById("confirmation").value = confirmation;
+  document.getElementById("examiner").value examiner;
+  document.getElementById("artunit").value = artunit;
+  document.getElementById("maildate").value = maildate;
+  "Pat Lawyerton"
+  "68,244"
+  document.getElementById('pendClaims').value
+  document.getElementById('indClaims').value
+}
+
+
+
+
+
+
 function importClaims(){
   var myContent = tinymce.get("kt-tinymce-1").getContent();
   // var myContent2 = tinymce.get("kt-tinymce-1").getContent({ format: "text" });
@@ -10,7 +32,7 @@ function importClaims(){
    // cleanText = step5.replace(/currently amended/gi, "previously presented")
    cleanHtml = step3.replace(/currently amended/gi, "previously presented")
 
-} 
+}
 
 function getBasicData(){
   numbers = /^[0-9]+$/;
