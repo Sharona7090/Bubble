@@ -6,7 +6,7 @@ function populatecasedata(caseno, clientno, title, inventor, appnumber, filingda
   document.getElementById("appnumber").value = appnumber;
   document.getElementById("filingdate").value = filingdate;
   document.getElementById("confirmation").value = confirmation;
-  document.getElementById("examiner").value examiner;
+  document.getElementById("examiner").value = examiner;
   document.getElementById("artunit").value = artunit;
   document.getElementById("maildate").value = maildate;
   "Pat Lawyerton"
