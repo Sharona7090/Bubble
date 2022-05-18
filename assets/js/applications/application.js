@@ -507,8 +507,10 @@ function claimExpand(){
 
 function claimContract(){
 	document.getElementById('appaside').style="border-radius:0; background-color:white; padding:50px"
-	document.getElementById('kt_header').style="display: inherit;"
-	document.getElementById('kt_wrapper').style="padding:"
+  document.getElementsByClassName('Group')[0].style="display: flex;"
+
+	// document.getElementById('kt_header').style="display: inherit;"
+	// document.getElementById('kt_wrapper').style="padding:"
 	document.getElementById('claimsToggle').onclick=function() {claimExpand()};
 	document.getElementById('claimsToggle').innerHTML='<i class="fas fa-expand" style="font-size:1.75rem"></i>';
   document.getElementById('claimsDiv').style.gridTemplateRows="50px calc(100vh - 130px)"
