@@ -4,7 +4,7 @@ function funcNfoaRec(casedata){
   var matter = casedata.firmid
   var title = casedata.title
   var file = casedata.filingdate
-  // var ihc = "John"
+  var ihc = "John"
   var to = "To: "
   var cc = "\r\Cc: "
   var subject = "\r\Subject: " + clientno + " / " + matter + " - " + actionFull + " (privileged and confidential)" + "\r\X-Unsent: 1 \r\Content-Type: text/html";
