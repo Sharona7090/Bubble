@@ -1,5 +1,5 @@
 depPreambleArray = [
-  0, 
+  0,
   `<span class="claimNo">'+newClaimNumber+'. </span>
   <span class="preamble preambleInclude">The computer implemented method of claim </span>
   <span class = "depNo preambleInclude"> '+parentclaimNumber+',</span>`,
@@ -497,8 +497,8 @@ function funcClaims(){
 
 function claimExpand(){
 	document.getElementById('appaside').style="display: none;"
-	document.getElementById('kt_header').style="display: none;"
-	document.getElementById('kt_wrapper').style="padding:0px 15px;"
+	document.getElementsByClassName('Group')[0].style="display: none;"
+	// document.getElementById('kt_wrapper').style="padding:0px 15px;"
   document.getElementById('container').style.padding="0px 50px 0px;"
   document.getElementById('claimsDiv').style.gridTemplateRows="50px calc(100vh - 50px)"
 	document.getElementById('claimsToggle').onclick=function() {claimContract()};
