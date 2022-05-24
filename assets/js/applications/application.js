@@ -1,3 +1,8 @@
+$('.modal').on('shown.bs.modal', function (event) {
+$('#kt_content').append($('.modal-backdrop'))
+})
+
+
 depPreambleArray = [
   0,
   `<span class="claimNo">'+newClaimNumber+'. </span>
@@ -858,13 +863,14 @@ function select3(){
 
 //// focus fig number input in model //
 function focusfig(x){
-  console.log("hello")
   var target = "figinput"+x;
-  console.log(target)
   document.getElementById(target).focus()
+  globalcurrentfig = x
 }
 
 function autoNumber(x){
+  w=x-1;
+var languagekey = figures[w].languagekey
 var figInputID = "figinput"+x; //get figure number input ID
 var figurenumber = document.getElementById(figInputID).value // get figure number value
 var displayfignumberID = "figno"+x //get display figure number ID
@@ -872,80 +878,111 @@ $('.'+figInputID).text(figurenumber);
 document.getElementById(displayfignumberID).value = figurenumber //set display figure number to input values
 var reinputID = "refno"+x
 var refinputs = document.getElementsByClassName(reinputID) //get reference number display elements
-console.log(refinputs)
+
 autoref = "autoRef"+x;
 manualref = "manualRef"+x;
 var textref = "textref"+x
-console.log(autoref)
+
 if (document.getElementById(autoref).checked == true){
   $('.'+reinputID).css('border-color', "lightgray")
   $('.'+reinputID).prop('readonly', true)
-  console.log("line 745")
-  for (i = 0; i < refinputs.length; i++){
-if (refinputs.length <5){
-  for (i=0; i<refinputs.length; i++){
-    var number = 2*i
-    console.log(refinputs[i])
-      refinputs[i].value = figurenumber + "0" +number;
-      var refID = refinputs[i].id
-
-      $('.'+refID).text(figurenumber + "0" +number);
-
-      console.log(figurenumber + "0" +number)
-  }
-}else{
-    for (i=0; i<5; i++){
-      var number = 2*i
-      console.log(refinputs[i])
-        refinputs[i].value = figurenumber + "0" +number;
-        var refID = refinputs[i].id
-
-        $('.'+refID).text(figurenumber + "0" +number);
-
-        console.log(figurenumber + "0" +number)
+  for (i = 0; i < languagekey.length; i++){
+    if (languagekey.length <=5){
+      for (i=0; i<languagekey.length; i++){
+        var j=i+1
+        var number = 2*i
+        var inputclass = document.getElementsByClassName(`${x}_${j}`)
+        for (counter = 0; counter<inputclass.length; counter++){
+          inputclass[counter].value = figurenumber + "0" +number;
+          inputclass[counter].textContent = figurenumber + "0" +number;
+        }
+      }
+    }else
+    {
+      for (i=0; i<languagekey.length; i++){
+        var j=i+1
+        var number = 2*i
+        var inputclass = document.getElementsByClassName(`${x}_${j}`)
+        for (counter = 0; counter<inputclass.length; counter++){
+          inputclass[counter].value = figurenumber + "0" +number;
+          inputclass[counter].textContent = figurenumber + "0" +number;
+        }
+      }
+      for (i=5; i<languagekey.length; i++){
+        var number = 2*i
+        var j=i+1
+        var inputclass = document.getElementsByClassName(`${x}_${j}`)
+        for (counter = 0; counter<inputclass.length; counter++){
+          inputclass[counter].value = figurenumber+number;
+          inputclass[counter].textContent = figurenumber+number;
+        }
+      }
     }
-    for (i=5; i<refinputs.length; i++){
-      var number = 2*i
-        refinputs[i].value = figurenumber +number;
-        var refID = refinputs[i].id
-        $('.'+refID).text(figurenumber +number);
-        console.log(refID)
-        console.log(figurenumber +number)
-    }
-  }
   }
 }
 
 if( figurenumber == ""){
   var figinput = "figinput" +x //get description fig number class
-  console.log("761");
   for (i = 0; i < refinputs.length; i++){
     refinputs[i].value = ""
   }
-    $('.'+textref).text("___")
-    $('.'+figinput).text("___");
-
+    $('.'+textref).text("__")
+    $('.'+figinput).text("__");
 }
 
 if( document.getElementById(manualref).checked == true){
-  $('.'+reinputID).css('border-color', "#7337EE")
-    $('.'+reinputID).prop('readonly', false)
-  $('.'+reinputID).val("")
-  $('.'+textref).text("___")
+// selectManualRef(x)
 }
 }
 
-function checkNumber(x){
-  var reinputID = "refno"+x
-  var refinputs = document.getElementsByClassName(reinputID) //get reference number display elements
-var figno = "figno"+x
-  for (i = 0; i < refinputs.length; i++){
-    var refID = refinputs[i].id
-$('.'+refID).text(refinputs[i].value);
- if(refinputs[i].value == ""){
-   $('.'+refID).text("___");
- }
+function selectManualRef(x){
+  w=x-1;
+  var languagekey = figures[w].languagekey
+  for (i=0; i<languagekey.length; i++){
+    var j=i+1
+    var allinputs = Array.from(document.getElementsByClassName(`${x}_${j} refno`))
+    allinputs.forEach(thing =>{
+      thing.value = ""
+    })
+    var testarray = [1, 2, 3, 4]
+    var firstone = allinputs[0];
+    firstone.style.cssText += "border-color: #7337EE"
+    firstone.readOnly = false
+  allinputs.shift()
+    console.log(allinputs)
+    allinputs.forEach(thing =>{
+      thing.disabled = true
+      thing.onkeyup = function(){}
+    })
   }
+    var textref = "textref"+x
+    $('.textref'+x).text("__")
+}
+
+function checkNumber(){
+h=globalcurrentfig-1;
+  languagekey = figures[h].languagekey
+  console.log(h)
+  console.log(languagekey)
+
+  for (var i=0; i<languagekey.length; i++){
+    var counter=i+1
+    var allinputs = document.getElementsByClassName(`${globalcurrentfig}_${counter} refno`)
+    var firstone = document.getElementsByClassName(`${globalcurrentfig}_${counter} refno`)[0];
+    for (var k=1; k<allinputs.length; k++){
+      allinputs[k].value = allinputs[0].value
+    }
+var boxes = Array.from(
+            document.getElementsByClassName(`${globalcurrentfig}_${counter} textref${globalcurrentfig}`)
+          )
+boxes.forEach(box => {
+  if(firstone.value == ""){
+
+  }else{
+    box.textContent = firstone.value}
+});
+  }
+
 }
 
 

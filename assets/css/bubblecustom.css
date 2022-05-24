@@ -8,3 +8,16 @@ max-width: fit-content !important;
 width: fit-content !important;
 padding: 0px 10px !important;
 }
+
+.figCard {
+  width: 100%;padding-top: 100%;position: relative;
+}
+
+.refno{
+  border-color: lightgray;
+}
+
+.figbg{
+  position: absolute; top: 0;left: 0;bottom: 0;right: 0;
+  background-position: center; background-repeat: no-repeat; background-size: contain;
+}

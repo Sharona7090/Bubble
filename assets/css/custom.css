@@ -1,4 +1,6 @@
-
+input:disabled{
+  background-color: white
+}
   [data-kt-drawer=true]{
     display:none
     }
