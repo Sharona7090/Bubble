@@ -2,7 +2,7 @@
   padding-left: 8px !important;
 }
 
-.Group .Button{
+.Group.Button{
 min-width: fit-content !important;
 max-width: fit-content !important;
 width: fit-content !important;
@@ -20,4 +20,18 @@ padding: 0px 10px !important;
 .figbg{
   position: absolute; top: 0;left: 0;bottom: 0;right: 0;
   background-position: center; background-repeat: no-repeat; background-size: contain;
+}
+
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.form-group.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#backgroundDiv{
+  margin: auto;
 }

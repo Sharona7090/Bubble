@@ -171,10 +171,7 @@
 					<!--end::Header-->
 					<!--begin::Content-->
 					<div class="content d-flex flex-column flex-column-fluid" id="kt_content" style="padding:0">
-						<!--begin::Modal-->
 
-						<!--end::Modal-->
-						<!--begin::Entry-->
 						<div class="d-flex flex-column-fluid">
 							<div id="appaside" class="col-xl-2 card" style="border-radius:0; background-color:white; padding:50px">
 								<div class="navi navi-hover navi-active navi-link-rounded navi-bold navi-icon-center navi-light-icon" style="margin: 20px 0 40px 0;">
@@ -296,34 +293,21 @@
 								<div class="card-body">
 									<div class="form-group" style="margin-bottom:20px">
 										<label>Select Technology Category</label><br>
-										<button type="button" class="btn mr-2 email-btn bg1-btn" onclick="demoBG(1)">Cloud Computing</button>
-										<button type="button" class="btn mr-2 email-btn bg2-btn" onclick="demoBG(2)">Search Engine</button>
-										<button type="button" class="btn mr-2 email-btn bg3-btn" onclick="demoBG(3)">E-Commerce</button>
-										<button type="button" class="btn mr-2 email-btn bg4-btn" onclick="demoBG(4)">Voice Assistant</button>
-										<select class="form-control" id="" style="border-color:#ccb3ff; width: 200px; vertical-align: bottom; display: initial; margin-bottom:10px">
+										<span id="buttonzone">
+										<!-- <span><button type="button" class="btn mr-2 email-btn bg1-btn" onclick="demoBG(1)">Cloud Computing</button></span>
+										<span><button type="button" class="btn mr-2 email-btn bg2-btn" onclick="demoBG(2)">Search Engine</button></span>
+										<span><button type="button" class="btn mr-2 email-btn bg3-btn" onclick="demoBG(3)">E-Commerce</button></span>
+										<span><button type="button" class="btn mr-2 email-btn bg4-btn" onclick="demoBG(4)">Voice Assistant</button></span> -->
+									</span>
+										<span><select class="form-control" id="categorydropdown" onchange="dropdemoBG()" style="border-color:#ccb3ff; width: 200px; vertical-align: bottom; display: initial; margin-bottom:10px">
 											<option value="" disabled selected hidden>Others</option>
-											<option value="" >Consumer devices</option>
-											<option value="" >Augmented reality</option>
-											<option value="" >Digital Advertising</option>
-											<option value="" >Robotics</option>
-											<option value="" >Video processing</option>
-											<option value="" >Streaming</option>
-										</select>
+											<!-- <option value="" >Consumer devices</option>
+											<option value="" >Augmented reality</option> -->
+
+										</select></span>
+
 									</div>
-									<!-- <div class="row form-group" >
-										<div class="col-4" style="padding-right:10px">
-										<select class="form-control" id="" style="border-color:#ccb3ff">
-											<option>Others</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</div>
-									<div class="col-2" style=" padding-left: 0px;">
-										<button class="btn mr-2 btn-success" style="background-color: #ccb3ff; border-color:#ccb3ff">Go</button>
-									</div>
-									</div> -->
+
 									<br>
 									<div class="form-group mb-1">
 											<label for="exampleTextarea">Boilerplate Text</label>
@@ -394,7 +378,7 @@
 					            <div class="row">
 					                <!--fig cards-->
 												<div id="figCardContainer" style="display:contents">
-													
+
 											</div>
 
 												<!-- Modals-->

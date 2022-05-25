@@ -207,7 +207,7 @@ function closeDeletedList(){
   document.getElementById("deletedOverlay").style.display = "none"
 }
 
-function addIC(){
+function addIC(){ 
   zoneCounter++
   uniqueID++
   var newICnumber = claimsArray[claimsArray.length-1].claim +1

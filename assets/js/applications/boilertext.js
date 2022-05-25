@@ -1,14 +1,48 @@
-function loadbackgrounds(category, language){
+
+// category = ["machine", "tennis", "apples"]
+// language = ["machine language", "tennis language", "apples language"]
+// displayType = ["Button", "Dropdown", "Dropdown"]
+
+loadbackgrounds(category, language, displayType)
+function loadbackgrounds(category, language, displayType){
   console.log(category)
   console.log(language)
+  console.log(displayType)
+
+if (displayType.includes("Dropdown")){
+  document.getElementById("categorydropdown").style.display = "inline"
+}else{
+  document.getElementById("categorydropdown").style.display = "none"
+
 }
+
+for (var i = 0; i < category.length; i++){
+  if (displayType[i] == "Button"){
+    var newSpan = document.createElement("span");
+    newSpan.innerHTML = `<button type="button" class="btn mr-2 email-btn bg1-btn" onclick="demoBG(${i})">${category[i]}</button>`
+    document.getElementById("buttonzone").append(newSpan);
+  }
+  if (displayType[i] == "Dropdown"){
+    const newOption = document.createElement('option');
+    const optionText = document.createTextNode(category[i]);
+    newOption.appendChild(optionText);
+    newOption.setAttribute('value', i);
+    document.getElementById("categorydropdown").appendChild(newOption);
+  }
+}
+
+
+}
+
+
+
 loadfigures()
 function loadfigures(){
  figures =  [
   {
   image:"assets/figures/1.PNG",
   title:"First Figure Title",
-  shortdescription: "short desciption 1",
+  shortdescription: "is/illustrates an electronic device accessing an electronic commerce platform",
   figposition: "top: 80%; left:45%",
   refpositionkey: [1, 2, 3, 3],
   refpositions: ["top:0%; left: 25%", "top:10%; left: 35%","top:20%; left: 35%", "top:40%; left: 65%"],
@@ -227,20 +261,25 @@ var newModal = document.createElement("div");
 
 }
 
-
+function dropdemoBG(){
+  var x = document.getElementById('categorydropdown').value;
+  demoBG(x)
+}
 function demoBG(x){
-  if (x == 1){
-    document.getElementById('bgText').value = "Many companies and other organizations operate computer networks that interconnect numerous computing systems to support their operations, such as with the computing systems being co-located (e.g., as part of a local network) or instead located in multiple distinct geographical locations (e.g., connected via one or more private or public intermediate networks). For example, data centers housing significant numbers of interconnected computing systems have become commonplace, such as private data centers that are operated by and on behalf of a single organization, and public data centers that are operated by entities as businesses to provide computing resources and services to customers. Some public data center operators provide network access, power, and secure installation facilities for hardware owned by various customers, while other public data center operators provide “full service” facilities that also include hardware resources made available for use by their customers. However, as the scale and scope of typical data centers has increased, the tasks of provisioning, administering, and managing the physical computing resources have become increasingly complicated."
-  }
-  if (x == 2){
-    document.getElementById('bgText').value = "Computer users use search engines to retrieve information that meet specific criteria, from information stored on a computer system. For example, computer users may use search engines to search for information on the World Wide Web, on a corporate network, or on a personal computer. Typically, a user will provide a search term, which is one or more words, or a phrase, to the search engine and request that the search engine conduct a search for documents containing the search term. Depending on the search term provided to the search engine, the information returned by the search engine could be voluminous. Consequently, most search engines provide, to the user, relevance rankings of all the information returned to the user. The relevance rankings aid the user in determining which information the user should view to get the information the user needs."
-  }
-  if (x == 3){
-    document.getElementById('bgText').value = "Unlike traditional brick-and-mortar businesses, companies utilizing e-commerce websites often do not have a physical store or location where a salesperson can help both novice and knowledgeable customers find sought-after products. Instead, a customer navigating an e-commerce website typically attempts to identify a product that meets the customer's needs. Even a customer with considerable experience navigating e-commerce websites sometimes experiences difficulty in choosing a product from among tens or hundreds of similar products. For novice customers, meanwhile, the task of shopping online via the web can be unproductive and even frustrating. In response to these difficulties, these companies continually strive to make their e-commerce websites more dynamic, compelling, informative, and easier for users to navigate and locate products and related information. One way to improve a customer's experience includes providing forums (or discussion boards) that allow customers to exchange information with other people via dialogue in a discussion. The ever-enlarging product catalog makes forums helpful when a customer tries to distinguish between products, seek out impartial advice, learn more about a product or category, or obtain other information."
-  }
-  if (x == 4){
-    document.getElementById('bgText').value = "Homes are becoming more connected with the proliferation of computing devices such as desktops, tablets, entertainment systems, and portable communication devices. As these computing devices evolve, many different ways have been introduced that allow users to interact with computing devices, such as through mechanical devices (e.g., keyboards, mice, etc.), touch screens, motion, and gesture. Another way to interact with computing devices is through speech. To implement speech interaction, the device is commonly equipped with a microphone to receive voice input from a user and a speech recognition component to recognize and understand the voice input. The device also commonly includes a speaker to emit audible responses to the user. With speech interaction, the device may be operated essentially “hands free”. For some operations, however, voice operation may not be intuitive or easily implemented. Accordingly, there is a continuing need for improved designs of voice enabled devices that are intuitive and easy to operate."
-  }
+document.getElementById('bgText').value = language[x]
+
+  // if (x == 0){
+  //   document.getElementById('bgText').value = "Many companies and other organizations operate computer networks that interconnect numerous computing systems to support their operations, such as with the computing systems being co-located (e.g., as part of a local network) or instead located in multiple distinct geographical locations (e.g., connected via one or more private or public intermediate networks). For example, data centers housing significant numbers of interconnected computing systems have become commonplace, such as private data centers that are operated by and on behalf of a single organization, and public data centers that are operated by entities as businesses to provide computing resources and services to customers. Some public data center operators provide network access, power, and secure installation facilities for hardware owned by various customers, while other public data center operators provide “full service” facilities that also include hardware resources made available for use by their customers. However, as the scale and scope of typical data centers has increased, the tasks of provisioning, administering, and managing the physical computing resources have become increasingly complicated."
+  // }
+  // if (x == 1){
+  //   document.getElementById('bgText').value = "Computer users use search engines to retrieve information that meet specific criteria, from information stored on a computer system. For example, computer users may use search engines to search for information on the World Wide Web, on a corporate network, or on a personal computer. Typically, a user will provide a search term, which is one or more words, or a phrase, to the search engine and request that the search engine conduct a search for documents containing the search term. Depending on the search term provided to the search engine, the information returned by the search engine could be voluminous. Consequently, most search engines provide, to the user, relevance rankings of all the information returned to the user. The relevance rankings aid the user in determining which information the user should view to get the information the user needs."
+  // }
+  // if (x == 2){
+  //   document.getElementById('bgText').value = "Unlike traditional brick-and-mortar businesses, companies utilizing e-commerce websites often do not have a physical store or location where a salesperson can help both novice and knowledgeable customers find sought-after products. Instead, a customer navigating an e-commerce website typically attempts to identify a product that meets the customer's needs. Even a customer with considerable experience navigating e-commerce websites sometimes experiences difficulty in choosing a product from among tens or hundreds of similar products. For novice customers, meanwhile, the task of shopping online via the web can be unproductive and even frustrating. In response to these difficulties, these companies continually strive to make their e-commerce websites more dynamic, compelling, informative, and easier for users to navigate and locate products and related information. One way to improve a customer's experience includes providing forums (or discussion boards) that allow customers to exchange information with other people via dialogue in a discussion. The ever-enlarging product catalog makes forums helpful when a customer tries to distinguish between products, seek out impartial advice, learn more about a product or category, or obtain other information."
+  // }
+  // if (x == 3){
+  //   document.getElementById('bgText').value = "Homes are becoming more connected with the proliferation of computing devices such as desktops, tablets, entertainment systems, and portable communication devices. As these computing devices evolve, many different ways have been introduced that allow users to interact with computing devices, such as through mechanical devices (e.g., keyboards, mice, etc.), touch screens, motion, and gesture. Another way to interact with computing devices is through speech. To implement speech interaction, the device is commonly equipped with a microphone to receive voice input from a user and a speech recognition component to recognize and understand the voice input. The device also commonly includes a speaker to emit audible responses to the user. With speech interaction, the device may be operated essentially “hands free”. For some operations, however, voice operation may not be intuitive or easily implemented. Accordingly, there is a continuing need for improved designs of voice enabled devices that are intuitive and easy to operate."
+  // }
 }
 
 
