@@ -3,8 +3,12 @@
 // language = ["machine language", "tennis language", "apples language"]
 // displayType = ["Button", "Dropdown", "Dropdown"]
 
-loadbackgrounds(category, language, displayType)
-function loadbackgrounds(category, language, displayType){
+// loadbackgrounds(category, language, displayType)
+function loadbackgrounds(bcategory, blanguage, bdisplayType){
+  category = bcategory;
+  language = blanguage;
+  displayType = bdisplayType
+
   console.log(category)
   console.log(language)
   console.log(displayType)
