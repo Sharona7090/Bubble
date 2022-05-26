@@ -35,7 +35,10 @@ $(function(){
     }
   })
 });
-
+$('#kt_select2_3').select2({
+ placeholder: "Select all that apply",
+ allowClear: true
+});
 function genFigures(){
   var clientTracking = document.getElementById('clientTracking').value;
   var firmTracking = document.getElementById('firmTracking').value;
