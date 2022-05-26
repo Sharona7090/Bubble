@@ -503,7 +503,7 @@ function funcClaims(){
 }
 
 function claimExpand(){
-	document.getElementById('bubbleappsidemenu').style.display= "none;"
+	document.getElementById('bubbleappsidemenu').style.display= "none"
 	document.getElementById('bubbleheader').style.display="none"
   // document.getElementById('container').style.padding="0px 50px 0px"
   document.getElementById('claimsDiv').style.gridTemplateRows="50px calc(100vh - 50px)"
