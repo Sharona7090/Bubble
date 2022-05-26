@@ -266,7 +266,7 @@ function makeSummaryAbstract(){
 }
 function myFunction(data){
   PizZipUtils.getBinaryContent(
-           "assets/docs/demoapptemplate_with_summary.docx",
+           patentTemplateDoc,
            function (error, content) {
                if (error) {
                    console.error(error);
