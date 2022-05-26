@@ -503,16 +503,16 @@ function funcClaims(){
 }
 
 function claimExpand(){
-	document.getElementById('bubbleappsidemenu').style="display: none;"
+	document.getElementById('bubbleappsidemenu').style.display= "none;"
 	document.getElementById('bubbleheader').style.display="none"
-  document.getElementById('container').style.padding="0px 50px 0px"
+  // document.getElementById('container').style.padding="0px 50px 0px"
   document.getElementById('claimsDiv').style.gridTemplateRows="50px calc(100vh - 50px)"
 	document.getElementById('claimsToggle').onclick=function() {claimContract()};
 	document.getElementById('claimsToggle').innerHTML='<i class="fas fa-compress" style="font-size:1.75rem"></i>';
 }
 
 function claimContract(){
-	document.getElementById('bubbleappsidemenu').style="border-radius:0; background-color:white; padding:50px"
+	document.getElementById('bubbleappsidemenu').style.display="grid"
   document.getElementById('bubbleheader').style.display="flex"
 	document.getElementById('claimsToggle').onclick=function() {claimExpand()};
 	document.getElementById('claimsToggle').innerHTML='<i class="fas fa-expand" style="font-size:1.75rem"></i>';
