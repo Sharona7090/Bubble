@@ -137,10 +137,10 @@ jQuery(document).ready(function() {
 
 // editableEl.onmouseup = editableEl.onkeyup = reportCharacterPrecedingCaret;
 
-// $('#kt_select2_3').select2({
-//  placeholder: "Select all that apply",
-//  allowClear: true
-// });
+$('#kt_select2_3').select2({
+ placeholder: "Select all that apply",
+ allowClear: true
+});
 
 // Class definition
 var KTSelect2 = function() {
@@ -503,8 +503,8 @@ function funcClaims(){
 }
 
 function claimExpand(){
-	document.getElementById('appaside').style="display: none;"
-	document.getElementsByClassName('Group')[0].style.display="none"
+	document.getElementById('bubbleappsidemenu').style="display: none;"
+	document.getElementById('bubbleheader').style.display="none"
   document.getElementById('container').style.padding="0px 50px 0px"
   document.getElementById('claimsDiv').style.gridTemplateRows="50px calc(100vh - 50px)"
 	document.getElementById('claimsToggle').onclick=function() {claimContract()};
@@ -512,8 +512,8 @@ function claimExpand(){
 }
 
 function claimContract(){
-	document.getElementById('appaside').style="border-radius:0; background-color:white; padding:50px"
-  document.getElementsByClassName('Group')[0].style.display="flex"
+	document.getElementById('bubbleappsidemenu').style="border-radius:0; background-color:white; padding:50px"
+  document.getElementById('bubbleheader').style.display="flex"
 	document.getElementById('claimsToggle').onclick=function() {claimExpand()};
 	document.getElementById('claimsToggle').innerHTML='<i class="fas fa-expand" style="font-size:1.75rem"></i>';
   document.getElementById('claimsDiv').style.gridTemplateRows="50px calc(100vh - 130px)"
