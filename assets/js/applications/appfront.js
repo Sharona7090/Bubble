@@ -124,7 +124,7 @@ function changeBG(){
   document.getElementById('bgText').value = bgBoiler[i]
 }
 //figbutton = false;
-function getInput(){
+function getInput(clientTracking, firmTracking, title, client){
   getClaims()
   makeSummaryAbstract()
 console.log(clientTracking, firmTracking, title, client)
