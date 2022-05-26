@@ -40,7 +40,7 @@ for (var i = 0; i < category.length; i++){
 
 
 
-loadfigures()
+// loadfigures()
 function loadfigures(figures){
  // figures =  [
  //  {
