@@ -127,11 +127,11 @@ function changeBG(){
 function getInput(){
   getClaims()
   makeSummaryAbstract()
-console.log('there')
+console.log(clientTracking, firmTracking, title, client)
 ///////////////  1. Basic Data  ////////////////////////////////
-var clientTracking = document.getElementById('clientTracking').value;
-var firmTracking = document.getElementById('firmTracking').value;
-var title = document.getElementById('Title').value;
+// var clientTracking = document.getElementById('clientTracking').value;
+// var firmTracking = document.getElementById('firmTracking').value;
+// var title = document.getElementById('Title').value;
 if (document.getElementById("typeNP").checked == true){
   var appType = "Non-Provisional Patent Application"
 };
