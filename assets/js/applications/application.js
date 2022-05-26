@@ -136,12 +136,12 @@ jQuery(document).ready(function() {
 
 
 // editableEl.onmouseup = editableEl.onkeyup = reportCharacterPrecedingCaret;
-$(window).bind("load", function () {
+
 $('#kt_select2_3').select2({
  placeholder: "Select all that apply",
  allowClear: true
 });
-});
+
 // Class definition
 var KTSelect2 = function() {
  // Private functions
