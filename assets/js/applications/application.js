@@ -141,7 +141,7 @@ $('#kt_select2_3').select2({
  placeholder: "Select all that apply",
  allowClear: true
 });
-
+});
 // Class definition
 var KTSelect2 = function() {
  // Private functions
@@ -188,7 +188,8 @@ var KTSelect2 = function() {
   $('#kt_select2_5').select2({
    placeholder: "Select a value",
    data: data
-  });
+  //
+
 });
   // loading remote data
 
