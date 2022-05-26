@@ -360,6 +360,9 @@
 			      <!-- <optgroup label="Pacific Time Zone"> -->
 			       <option value="EC">E-Commerce</option>
 			       <option value="ML">Machine Learning</option>
+			       <option value="MD">Mobile Device</option>
+			       <option value="CC">Cloud Computing</option>
+			       <option value="G">Gaming</option>
 			      <!-- </optgroup> -->
 	     			</select>
 	    		</div>
@@ -377,7 +380,8 @@
 			</div>
 \		</div>
 	</div>
-</div>
+
+								</div>
 
 <div id="claimsDiv" class="horizontal-scrollable" style="border:none !important; width:100%; padding:0px; display:none;">
 
@@ -505,54 +509,25 @@
 		</div>
 		<!--end::Main-->
 <!-- side panel - deleted claims list -->
+<div id="deletedClaimsContainer">
 <div id="kt_quick_search" class="offcanvas offcanvas-right p-10 offcanvas-on" style="display:none">
-			<!--begin::Header-->
-			<div class="offcanvas-header d-flex align-items-center justify-content-between mb-5" kt-hidden-height="24" style="">
-				<h3 class="font-weight-bold m-0 ">Deleted Claims</h3>
-
-				<button class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_search_close" onclick="closeDeletedList()">
-					<i class="ki ki-close icon-xs text-muted"></i>
-				</button>
-			</div>
-			<!--end::Header-->
-			<!--begin::Content-->
-			<div class="offcanvas-content">
-				<!--begin::Container-->
-				<div class="quick-search quick-search-offcanvas quick-search-has-result" id="kt_quick_search_offcanvas">
-					<!--begin::Form-->
-
-					<!--end::Form-->
-					<!--begin::Wrapper-->
-					<div class="quick-search-wrapper pt-5 scroll ps ps--active-y" style="height: 784px; overflow: hidden;">
-						<div id="deletedList" class="quick-search-result">
-							<!--begin::Message-->
-
-							<!--end::Message-->
-							<!--begin::Section-->
-
-
-								<!--begin::Item-->
-
-								<!--end::Item-->
-								<!--begin::Item-->
-
-								<!--end::Item-->
-
-
-							<!--end::Section-->
-
-
-						</div>
-					<!-- <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 784px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 300px;"></div></div></div> -->
-					<!--end::Wrapper-->
+	<div class="offcanvas-header d-flex align-items-center justify-content-between mb-5" kt-hidden-height="24" style="">
+		<h3 class="font-weight-bold m-0 ">Deleted Claims</h3>
+		<button class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_search_close" onclick="closeDeletedList()">
+			<i class="ki ki-close icon-xs text-muted"></i>
+		</button>
+	</div>
+	<div class="offcanvas-content">
+		<div class="quick-search quick-search-offcanvas quick-search-has-result" id="kt_quick_search_offcanvas">
+			<div class="quick-search-wrapper pt-5 scroll ps ps--active-y" style="height: 784px; overflow: hidden;">
+				<div id="deletedList" class="quick-search-result">
 				</div>
-				<!--end::Container-->
 			</div>
-			<!--end::Content-->
 		</div>
 	</div>
-		<div id = "deletedOverlay" class="offcanvas-overlay" style="display:none" onclick="closeDeletedList()"></div>
-
+</div>
+<div id = "deletedOverlay" class="offcanvas-overlay" style="display:none" onclick="closeDeletedList()"></div>
+</div>
 		<!--begin::Global Config(global config for global JS scripts)-->
 		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#8950FC", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
 		<!--end::Global Config-->
