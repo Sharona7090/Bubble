@@ -41,29 +41,29 @@ for (var i = 0; i < category.length; i++){
 
 
 loadfigures()
-function loadfigures(){
- figures =  [
-  {
-  image:"assets/figures/1.PNG",
-  title:"First Figure Title",
-  shortdescription: "is/illustrates an electronic device accessing an electronic commerce platform",
-  figposition: "top: 80%; left:45%",
-  refpositionkey: [1, 2, 3, 3],
-  refpositions: ["top:0%; left: 25%", "top:10%; left: 35%","top:20%; left: 35%", "top:40%; left: 65%"],
-  languagekey:["100", "102", "104"],
-  language: 'FIG. figref000 illustrates an example ref100 computing device ref102 providing access to an electronic marketplace ref104, in accordance with various embodiments. In this example, a computing device ref102 provides access to an electronic marketplace ref104, in accordance with various embodiments. Although a tablet computing device is shown in this example, it should be understood that various other types of electronic devices that are capable of determining and processing input and providing output can be used in accordance with various embodiments discussed herein.  These devices can include, for example, smart phones, e-book readers, desktop computers, notebook computers, personal data assistants, video gaming consoles or controllers, smart televisions, and portable media players, wearable computers (e.g., glasses, watches, etc.) among others. Further, the elements illustrated can be part of a single device, while at least some elements illustrated and otherwise utilized for such a device can be provided as one or more peripheral devices or accessories within the scope of the various embodiments. As illustrated, the electronic marketplace ref104 provides a plurality of items ref104 available for consumption (e.g., purchase, rent, use, stream). in some embodiments, various descriptors ref108 of an item are provided, such as images, price, name, among others.'
-  },
-  {
-  image:"assets/figures/2.PNG",
-  title:"Second Figure Title",
-  shortdescription: "short desciption 2",
-  figposition: "top: 80%; left:45%",
-  refpositionkey: [1, 2, 3, 4, 5, 6, 6],
-  refpositions: ["top:0%; left: 25%", "top:10%; left: 35%","top:20%; left: 35%", "top:40%; left: 65%", "top:40%; left: 75%", "top:17%; left: 25%", "top:50%; left: 85%"],
-  languagekey:["100", "102", "104", "106", "108", "110"],
-  language: 'FIG. figref000 illustrates an example ref100 computing device ref102 providing access to an electronic marketplace ref104, in accordance with various embodiments. In this example, a computing device ref102 provides access to an electronic marketplace ref104, in accordance with various embodiments. Although a tablet computing device is shown in this example, it should be understood that various other types of electronic devices that are capable of determining and processing input and providing output can be used in accordance with various embodiments discussed herein.  These devices can include, for example, smart phones, e-book readers, desktop computers, notebook computers, personal data assistants, video gaming consoles or controllers ref110, smart televisions, and portable media players, wearable computers (e.g., glasses, watches, etc.) among others. Further, the elements illustrated can be part of a single device, while at least some elements illustrated and otherwise utilized for such a device can be provided as one or more peripheral devices or accessories within the scope of the various embodiments. As illustrated, the electronic marketplace ref104 provides a plurality of items ref106 available for consumption (e.g., purchase, rent, use, stream). in some embodiments, various descriptors ref108 of an item are provided, such as images, price, name, among others.'
-  },
-]
+function loadfigures(figures){
+ // figures =  [
+ //  {
+ //  image:"assets/figures/1.PNG",
+ //  title:"First Figure Title",
+ //  shortdescription: "is/illustrates an electronic device accessing an electronic commerce platform",
+ //  figposition: "top: 80%; left:45%",
+ //  refpositionkey: [1, 2, 3, 3],
+ //  refpositions: ["top:0%; left: 25%", "top:10%; left: 35%","top:20%; left: 35%", "top:40%; left: 65%"],
+ //  languagekey:["100", "102", "104"],
+ //  language: 'FIG. figref000 illustrates an example ref100 computing device ref102 providing access to an electronic marketplace ref104, in accordance with various embodiments. In this example, a computing device ref102 provides access to an electronic marketplace ref104, in accordance with various embodiments. Although a tablet computing device is shown in this example, it should be understood that various other types of electronic devices that are capable of determining and processing input and providing output can be used in accordance with various embodiments discussed herein.  These devices can include, for example, smart phones, e-book readers, desktop computers, notebook computers, personal data assistants, video gaming consoles or controllers, smart televisions, and portable media players, wearable computers (e.g., glasses, watches, etc.) among others. Further, the elements illustrated can be part of a single device, while at least some elements illustrated and otherwise utilized for such a device can be provided as one or more peripheral devices or accessories within the scope of the various embodiments. As illustrated, the electronic marketplace ref104 provides a plurality of items ref106 available for consumption (e.g., purchase, rent, use, stream). in some embodiments, various descriptors ref108 of an item are provided, such as images, price, name, among others.'
+ //  },
+ //  {
+ //  image:"assets/figures/2.PNG",
+ //  title:"Second Figure Title",
+ //  shortdescription: "short desciption 2",
+ //  figposition: "top: 80%; left:45%",
+ //  refpositionkey: [1, 2, 3, 4, 5, 6, 6],
+ //  refpositions: ["top:0%; left: 25%", "top:10%; left: 35%","top:20%; left: 35%", "top:40%; left: 65%", "top:40%; left: 75%", "top:17%; left: 25%", "top:50%; left: 85%"],
+ //  languagekey:["100", "102", "104", "106", "108", "110"],
+ //  language: 'FIG. figref000 illustrates an example ref100 computing device ref102 providing access to an electronic marketplace ref104, in accordance with various embodiments. In this example, a computing device ref102 provides access to an electronic marketplace ref104, in accordance with various embodiments. Although a tablet computing device is shown in this example, it should be understood that various other types of electronic devices that are capable of determining and processing input and providing output can be used in accordance with various embodiments discussed herein.  These devices can include, for example, smart phones, e-book readers, desktop computers, notebook computers, personal data assistants, video gaming consoles or controllers ref110, smart televisions, and portable media players, wearable computers (e.g., glasses, watches, etc.) among others. Further, the elements illustrated can be part of a single device, while at least some elements illustrated and otherwise utilized for such a device can be provided as one or more peripheral devices or accessories within the scope of the various embodiments. As illustrated, the electronic marketplace ref104 provides a plurality of items ref106 available for consumption (e.g., purchase, rent, use, stream). in some embodiments, various descriptors ref108 of an item are provided, such as images, price, name, among others.'
+ //  },
+// ]
 console.log(figures)
 
 for (i=0; i<figures.length; i++){
