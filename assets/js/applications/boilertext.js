@@ -194,6 +194,7 @@ $('.modal').on('shown.bs.modal', function (event) {
 $('#figDiv').prepend($('.modal-backdrop'))
 })
 }
+
 function fakeloadfigures(){
 var x=5
 for (i=1; i<x; i++){
