@@ -1,5 +1,5 @@
 $('.modal').on('shown.bs.modal', function (event) {
-$('#figDiv').append($('.modal-backdrop'))
+$('#figDiv').prepend($('.modal-backdrop'))
 })
 
 
