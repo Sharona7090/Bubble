@@ -1,4 +1,5 @@
 $('.modal').on('shown.bs.modal', function (event) {
+  console.log("prepend modal")
 $('#figDiv').prepend($('.modal-backdrop'))
 })
 

@@ -189,7 +189,10 @@ figlanguage= figlanguage.replaceAll(`figref000`, figrefTag)
     speclanguageholder.innerHTML = figlanguage
 }
 
-
+$('.modal').on('shown.bs.modal', function (event) {
+  console.log("prepend modal")
+$('#figDiv').prepend($('.modal-backdrop'))
+})
 }
 function fakeloadfigures(){
 var x=5
