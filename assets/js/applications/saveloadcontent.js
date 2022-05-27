@@ -1,18 +1,25 @@
 function savecontent(){
 
 
-  saveApplication = JSON.stringify(
+  savedApplication = JSON.stringify(
   {
-    saveClaimsArray: claimsArray,
-    saveClaimsContainer: document.getElementById('claimsContainer').innerHTML,
-    saveBgCategory: bgCategory,
-    saveBgText: document.getElementById('bgText').value,
-    saveFigures: figuresArray
+    savedClaimsArray: claimsArray,
+    savedClaimsContainer: document.getElementById('claimsContainer').innerHTML,
+    savedBgCategory: bgCategory,
+    savedBgText: document.getElementById('bgText').value,
+    savedFiguresArray: figuresArray
   }
 )
 
-  bubble_fn_savecontent(saveApplication)
+  bubble_fn_savecontent(savedApplication)
 }
-function loadcontent(){
+function loadcontent(loadApplication){
+  var application = JSON.parse(loadApplication)
+  claimsArray = application.savedClaimsArray;
+  figuresArray = application.savedFiguresArray;
+  document.getElementById('categoryfield').innerText = savedBgCategory;
+  document.getElementById('bgText').value = savedBgText;
+  document.getElementById("claimsContainer").innerHTML = savedClaimsContainer;
+
 
 }
