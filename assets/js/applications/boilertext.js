@@ -122,7 +122,7 @@ for (i=0; i<figures.length; i++){
                               </div>
                               <div class="modal-footer">
                                 <div class="col-3" style="text-align:left;padding-left: 50px;">
-                                  <button id="deselectfigbtn${j}" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(${j}) disabled" data-dismiss="modal" aria-label="Close">Deselect</button>
+                                  <button id="deselectfigbtn${j}" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(${j})" data-dismiss="modal" aria-label="Close" disabled >Deselect Figure</button>
                                 </div>
                                 <div class="col-3">
                                   <label>Figure number:</label> <input id="figinput${j}" class="figinput" autofocus onkeyup="autoNumber(${j})" ></input>
