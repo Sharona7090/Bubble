@@ -1056,7 +1056,7 @@ $("#"+pdfFigure).removeClass("selectedFig");
 const indexOfObject = figuresArray.findIndex(object => {
   return object.$slide === x;
 });
-arr.splice(indexOfObject, 1);
+figuresArray.splice(indexOfObject, 1);
 }
 
 function populateModal(){
