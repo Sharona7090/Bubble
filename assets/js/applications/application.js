@@ -1051,6 +1051,12 @@ $("#"+figtitle).removeClass("figList");
 $("#"+spec).removeClass("specList");
 
 $("#"+pdfFigure).removeClass("selectedFig");
+
+//remove from figuresArray
+const indexOfObject = figuresArray.findIndex(object => {
+  return object.$slide === x;
+});
+arr.splice(indexOfObject, 1);
 }
 
 function populateModal(){
