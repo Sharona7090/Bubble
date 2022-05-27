@@ -65,12 +65,16 @@ $('.'+figInputID).text(figurenumber);
 
 document.getElementById(`selectfigbtn${x}`).disabled = true;
 document.getElementById(`deselectfigbtn${x}`).disabled = false;
-  // if (loadApplication.savedFiguresArray[i].radio == "auto"){
-  // document.getElementById('autoRef'+x).checked = true
-  // }
-  // if (loadApplication.savedFiguresArray[i].radio == "manual"){
-  // document.getElementById('manualRef'+x).checked = true
-  // }
+  if (loadApplication.savedFiguresArray[i].radio == "auto"){
+  document.getElementById('autoRef'+x).checked = true
+  document.getElementById('manualRef'+x).checked = false
+
+  }
+  if (loadApplication.savedFiguresArray[i].radio == "manual"){
+  document.getElementById('manualRef'+x).checked = true
+  document.getElementById('autoRef'+x).checked = false
+
+  }
 }
 
 
