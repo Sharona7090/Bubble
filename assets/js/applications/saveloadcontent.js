@@ -29,6 +29,7 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
   var x = loadApplication.savedFiguresArray[i].$slide
   var figInputID = "figinput"+x; //get figure number input ID
   var figurenumber = loadApplication.savedFiguresArray[i].fig // get figure number value
+  document.getElementById(figInputID).value = figurenumber
   var figoverlay = "figoverlay" +x; //get fig selected overlay ID
   var pdfFigure = "pdfFigure" +x;
   $("#"+figoverlay).css( "display", "initial" )
@@ -47,7 +48,7 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
 
   for (var j=0; j<refs.length; i++){
     k=j+1
-    var refidproperty = `${x}_${k}`
+    var refidproperty = `"${x}_${k}"`
     var refnumber = loadApplication.savedFiguresArray[0][refidproperty]
     document.getElementById(`${x}_${k}`).value = refnumber
   }
