@@ -27,7 +27,7 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
 
   var x = loadApplication.savedFiguresArray[i].$slide
   var figInputID = "figinput"+x; //get figure number input ID
-  var figurenumber = document.getElementById(figInputID).value // get figure number value
+  var figurenumber = loadApplication.savedFiguresArray[i].fig // get figure number value
   var figoverlay = "figoverlay" +x; //get fig selected overlay ID
   var pdfFigure = "pdfFigure" +x;
   $("#"+figoverlay).css( "display", "initial" )
