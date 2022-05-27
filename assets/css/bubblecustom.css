@@ -42,3 +42,7 @@ padding: 0px 10px !important;
 #claimsDiv{
   display:grid;
 }
+
+.btn:disabled{
+  cursor:not-allowed;
+}
