@@ -15,12 +15,12 @@ function savecontent(){
 }
 function loadcontent(loadApplication){
   console.log("loadcontent called")
-  // var application = JSON.parse(loadApplication)
-  // claimsArray = application.savedClaimsArray;
-  // figuresArray = application.savedFiguresArray;
-  // document.getElementById('categoryfield').innerText = savedBgCategory;
-  // document.getElementById('bgText').value = savedBgText;
-  // document.getElementById("claimsContainer").innerHTML = savedClaimsContainer;
+  var application = JSON.parse(loadApplication)
+  claimsArray = application.savedClaimsArray;
+  figuresArray = application.savedFiguresArray;
+  document.getElementById('categoryfield').innerText = savedBgCategory;
+  document.getElementById('bgText').value = savedBgText;
+  document.getElementById("claimsContainer").innerHTML = savedClaimsContainer;
 
 
 }
