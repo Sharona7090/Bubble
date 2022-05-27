@@ -61,6 +61,10 @@ checkNumber()
 var figInputID = "figinput"+x; //get figure number input ID
 var figurenumber = document.getElementById(figInputID).value
 $('.'+figInputID).text(figurenumber);
+
+
+document.getElementById(`selectfigbtn${x}`).disabled = true;
+document.getElementById(`deselectfigbtn${x}`).disabled = false;
   // if (loadApplication.savedFiguresArray[i].radio == "auto"){
   // document.getElementById('autoRef'+x).checked = true
   // }

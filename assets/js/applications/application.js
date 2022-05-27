@@ -868,7 +868,7 @@ function focusfig(x){
   var target = "figinput"+x;
   document.getElementById(target).focus()
   globalcurrentfig = x
-  checkNumber()
+
 }
 
 function autoNumber(x){
@@ -1036,6 +1036,10 @@ if (manualradio.checked == true){
 console.log(newFigure)
 figuresArray.push(newFigure);
 console.log(figuresArray)
+
+document.getElementById(`selectfigbtn${x}`).disabled = true;
+document.getElementById(`deselectfigbtn${x}`).disabled = false;
+
 }
 
 function deselectfig(x){
@@ -1066,6 +1070,10 @@ const indexOfObject = figuresArray.findIndex(object => {
   return object.$slide === x;
 });
 figuresArray.splice(indexOfObject, 1);
+
+
+document.getElementById(`selectfigbtn${x}`).disabled = false;
+document.getElementById(`deselectfigbtn${x}`).disabled = true;
 }
 
 function populateModal(){
