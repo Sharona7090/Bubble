@@ -46,7 +46,7 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
   var refs = document.getElementsByClassName("refno"+x);
   console.log(refs)
   console.log(refs.length)
-
+  console.log(x)
   // for (var j=0; j<refs.length; i++){
     // var k=j+1
     // console.log(j)
