@@ -14,11 +14,11 @@ function savecontent(){
   bubble_fn_savecontent(savedApplication)
 }
 function loadcontent(loadApplication){
-  console.log("loadApplication:", loadApplication)
+  console.log("loadApplication: ", loadApplication)
 
 
   var application = JSON.parse(loadApplication)
-  console.log("parsed: "application)
+  console.log("parsed: ", application)
   claimsArray = application.savedClaimsArray;
   figuresArray = application.savedFiguresArray;
   document.getElementById('categoryfield').innerText = savedBgCategory;
