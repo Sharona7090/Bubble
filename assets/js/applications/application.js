@@ -1007,7 +1007,6 @@ $("#"+spec).addClass("specList");
 $("#"+pdfFigure).addClass("selectedFig");
 $("#"+pdfFigure).attr('data-figid',x);
 $("#"+pdfFigure).attr('data-figno',figurenumber);
-console.log('fig 6 selected')
 
 var newFigure = {
   $slide: x,
