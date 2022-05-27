@@ -48,7 +48,7 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
 
   for (var j=0; j<refs.length; i++){
     k=j+1
-    var refidproperty = `"${x}_${k}"`
+    var refidproperty = `${x}_${k}`
     var refnumber = loadApplication.savedFiguresArray[i][refidproperty]
     document.getElementById(`${x}_${k}`).value = refnumber
   }
