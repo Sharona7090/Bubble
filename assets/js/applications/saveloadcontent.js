@@ -16,7 +16,6 @@ function savecontent(){
 function loadcontent(loadApplication){
   accessobject = loadApplication
   console.log("loadApplication: ", loadApplication)
-  console.log(loadApplication.savedFiguresArray[0].radio)
   claimsArray = loadApplication.savedClaimsArray;
   figuresArray = loadApplication.savedFiguresArray;
   document.getElementById('categoryfield').innerText = loadApplication.savedBgCategory;
@@ -47,7 +46,7 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
   var refs = document.getElementsByClassName("refno"+x);
 
   for (var j=0; j<refs.length; i++){
-    k=j+1
+    var k=j+1
     var refidproperty = x+"_"+k
     var refnumber = loadApplication.savedFiguresArray[0][refidproperty]
     document.getElementById(`${x}_${k}`).value = refnumber
