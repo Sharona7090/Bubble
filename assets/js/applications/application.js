@@ -868,6 +868,7 @@ function focusfig(x){
   var target = "figinput"+x;
   document.getElementById(target).focus()
   globalcurrentfig = x
+  checkNumber()
 }
 
 function autoNumber(x){
