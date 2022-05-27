@@ -45,12 +45,12 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
 
   var refs = document.getElementsByClassName("refno"+x);
 
-  // for (var j=0; j<refs.length; i++){
-  //   var k=j+1
-  //   var refidproperty = x+"_"+k
-  //   var refnumber = loadApplication.savedFiguresArray[0][refidproperty]
-  //   document.getElementById(`${x}_${k}`).value = refnumber
-  // }
+  for (var j=0; j<refs.length; i++){
+    var k=j+1
+    var refidproperty = x+"_"+k
+    var refnumber = loadApplication.savedFiguresArray[0][refidproperty]
+    document.getElementById(`${x}_${k}`).value = refnumber
+  }
 
   // if (loadApplication.savedFiguresArray[i].radio == "auto"){
   // document.getElementById('autoRef'+x).checked = true
