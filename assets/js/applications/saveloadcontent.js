@@ -53,7 +53,7 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
     console.log(j)
     console.log(refs[j])
     var refidproperty = x+"_"+k
-    var refnumber = loadApplication.savedFiguresArray[0][refidproperty]
+    var refnumber = loadApplication.savedFiguresArray[i][refidproperty]
     document.getElementById(`${x}_${k}`).value = refnumber
   }
   globalcurrentfig = x
