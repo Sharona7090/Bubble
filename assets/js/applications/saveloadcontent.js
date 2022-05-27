@@ -54,9 +54,10 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
   }
 }
 
-if (loadApplication.savedFiguresArray[i].radio == "auto")
+if (loadApplication.savedFiguresArray[i].radio == "auto"){
 document.getElementById('autoRef'+x).checked = true
 }
-if (loadApplication.savedFiguresArray[i].radio == "manual")
-document.getElementById('manualRef'+x).checked = true 
+if (loadApplication.savedFiguresArray[i].radio == "manual"){
+document.getElementById('manualRef'+x).checked = true
+}
 }
