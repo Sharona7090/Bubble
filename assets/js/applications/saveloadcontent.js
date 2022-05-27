@@ -14,7 +14,7 @@ function savecontent(){
   bubble_fn_savecontent(savedApplication)
 }
 function loadcontent(loadApplication){
-  console.log("loadApplication: "loadApplication)
+  console.log("loadApplication:", loadApplication)
 
 
   var application = JSON.parse(loadApplication)
