@@ -23,7 +23,8 @@ function loadcontent(loadApplication){
   document.getElementById("claimsContainer").innerHTML = loadApplication.savedClaimsContainer;
   loadApplication.savedFiguresArray[0].radio.checked = true
 
-for (i=0; i<loadApplication.savedFiguresArray.length; i++){
+for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
+
   var x = loadApplication.savedFiguresArray[i].$slide
   var figInputID = "figinput"+x; //get figure number input ID
   var figurenumber = document.getElementById(figInputID).value // get figure number value
@@ -31,18 +32,23 @@ for (i=0; i<loadApplication.savedFiguresArray.length; i++){
   var pdfFigure = "pdfFigure" +x;
   $("#"+figoverlay).css( "display", "initial" )
   $("#"+figoverlay).text("FIG. " +figurenumber)
+  var figtitle = "figtitle" +x;
+  var spec = "spec"+x;
+  $("#"+figInputID).addClass("numList");
+  $("#"+figtitle).addClass("figList");
+  $("#"+spec).addClass("specList");
+  $("#"+spec).addClass("specList");
+  $("#"+pdfFigure).addClass("selectedFig");
+  $("#"+pdfFigure).attr('data-figid',x);
+  $("#"+pdfFigure).attr('data-figno',figurenumber);
 
-var figtitle = "figtitle" +x;
-var spec = "spec"+x;
-$("#"+figInputID).addClass("numList");
-$("#"+figtitle).addClass("figList");
-$("#"+spec).addClass("specList");
-$("#"+spec).addClass("specList");
+  var refs = document.getElementsByClassName("refno"+x);
 
-$("#"+pdfFigure).addClass("selectedFig");
-$("#"+pdfFigure).attr('data-figid',x);
-$("#"+pdfFigure).attr('data-figno',figurenumber);
-
+  for (var j=0; j<refs.length; i++){
+    k=j+1
+    var refnumber = loadApplication.savedFiguresArray[i].`${x}_${k}`
+    document.getElementById(`${x}_${k}`).value = refnumber
+  }
 }
 
 
