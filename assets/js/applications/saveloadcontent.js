@@ -15,15 +15,15 @@ function savecontent(){
 }
 function loadcontent(loadApplication){
   console.log("loadApplication: ", loadApplication)
-
-
-  // var application = JSON.parse(loadApplication)
-  // console.log("parsed: ", application)
+  console.log(loadApplication.savedFiguresArray[0].radio)
   claimsArray = loadApplication.savedClaimsArray;
   figuresArray = loadApplication.savedFiguresArray;
   document.getElementById('categoryfield').innerText = loadApplication.savedBgCategory;
   document.getElementById('bgText').value = loadApplication.savedBgText;
   document.getElementById("claimsContainer").innerHTML = loadApplication.savedClaimsContainer;
-  loadApplication.savedFiguresArray.radio.checked = true
+  loadApplication.savedFiguresArray[0].radio.checked = true
+
+
+
 
 }
