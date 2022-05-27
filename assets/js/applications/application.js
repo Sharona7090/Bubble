@@ -1023,6 +1023,15 @@ for (i=0; i<refs.length; i++){
   console.log(refNUM[i])
 }
 
+//manual or auto number
+var autoradio = document.getElementById('autoRef'+x)
+var manualradio = document.getElementById('manualRef'+x)
+if (autoradio.checked == true){
+  newFigure[radio] = autoradio
+}
+if (manualradio.checked == true){
+  newFigure[radio] = manualradio
+}
 
 console.log(newFigure)
 figuresArray.push(newFigure);

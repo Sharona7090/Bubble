@@ -157,7 +157,7 @@ for (i=0; i<figures.length; i++){
 
 
     var newinput = document.createElement("input");
-    newinput.id = `${j}_${key}`
+    newinput.id = `${j}_${n+1}`
     newinput.classList.add(`${j}_${key}`)
 
     newinput.classList.add('refno')
