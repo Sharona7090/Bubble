@@ -77,52 +77,53 @@ function genFigures(){
         );
 }
 
-function setClient(){
-  var passData = document.getElementById("client").value;
-  $.ajax({
-    type: 'POST',
-    url: 'https://uzzpphemz0.execute-api.us-west-2.amazonaws.com/default/QueryClientFigs',
-    data: JSON.stringify({"passData": passData}),
-    contentType: "application/json",
-    success: function(data){
-      console.log(data)
-      boilertext(data)
-    }
-  })
-  $.ajax({
-    type: 'POST',
-    url: 'https://w7sp7ajda9.execute-api.us-west-2.amazonaws.com/default/QueryClientBackground',
-    data: JSON.stringify({"passData": passData}),
-    contentType: "application/json",
-    success: function(data2){
-      console.log(data2)
-      setBackground(data2)
-    }
-  })
-}
-function setBackground(data){
-  bgCategory = []
-  bgBoiler = []
-  var i;
-  for (i = 0; i < data.Items.length; i++) {
-  bgCategory[i] = data.Items[i].Subject
-  bgBoiler[i] = data.Items[i].BoilerText
-console.log(bgBoiler[i])
-  var createoption = document.createElement('option');
-  createoption.innerHTML = bgCategory[i];
-  createoption.value = i
-  document.getElementById("subject").appendChild(createoption);
-  }
-  console.log(data.Items)
-}
+// function setClient(){
+//   var passData = document.getElementById("client").value;
+//   $.ajax({
+//     type: 'POST',
+//     url: 'https://uzzpphemz0.execute-api.us-west-2.amazonaws.com/default/QueryClientFigs',
+//     data: JSON.stringify({"passData": passData}),
+//     contentType: "application/json",
+//     success: function(data){
+//       console.log(data)
+//       boilertext(data)
+//     }
+//   })
+//   $.ajax({
+//     type: 'POST',
+//     url: 'https://w7sp7ajda9.execute-api.us-west-2.amazonaws.com/default/QueryClientBackground',
+//     data: JSON.stringify({"passData": passData}),
+//     contentType: "application/json",
+//     success: function(data2){
+//       console.log(data2)
+//       setBackground(data2)
+//     }
+//   })
+// }
+// function setBackground(data){
+//   bgCategory = []
+//   bgBoiler = []
+//   var i;
+//   for (i = 0; i < data.Items.length; i++) {
+//   bgCategory[i] = data.Items[i].Subject
+//   bgBoiler[i] = data.Items[i].BoilerText
+// console.log(bgBoiler[i])
+//   var createoption = document.createElement('option');
+//   createoption.innerHTML = bgCategory[i];
+//   createoption.value = i
+//   document.getElementById("subject").appendChild(createoption);
+//   }
+//   console.log(data.Items)
+// }
 
-function changeBG(){
-  var eye = document.getElementById("subject").value;
-  console.log(eye)
-  var i = Number(eye)
-  console.log(i)
-  document.getElementById('bgText').value = bgBoiler[i]
-}
+// function changeBG(){
+//   var eye = document.getElementById("subject").value;
+//   console.log(eye)
+//   var i = Number(eye)
+//   console.log(i)
+//   document.getElementById('bgText').value = bgBoiler[i]
+//   bgCategory = bgX
+// }
 //figbutton = false;
 function getInput(clientTracking, firmTracking, title, client){
   getClaims()

@@ -1027,10 +1027,10 @@ for (i=0; i<refs.length; i++){
 var autoradio = document.getElementById('autoRef'+x)
 var manualradio = document.getElementById('manualRef'+x)
 if (autoradio.checked == true){
-  newFigure[radio] = autoradio
+  newFigure["radio"] = autoradio
 }
 if (manualradio.checked == true){
-  newFigure[radio] = manualradio
+  newFigure["radio"] = manualradio
 }
 
 console.log(newFigure)
