@@ -17,13 +17,13 @@ function loadcontent(loadApplication){
   console.log("loadApplication: ", loadApplication)
 
 
-  var application = JSON.parse(loadApplication)
-  console.log("parsed: ", application)
-  claimsArray = application.savedClaimsArray;
-  figuresArray = application.savedFiguresArray;
-  document.getElementById('categoryfield').innerText = savedBgCategory;
-  document.getElementById('bgText').value = savedBgText;
-  document.getElementById("claimsContainer").innerHTML = savedClaimsContainer;
+  // var application = JSON.parse(loadApplication)
+  // console.log("parsed: ", application)
+  claimsArray = loadApplication.savedClaimsArray;
+  figuresArray = loadApplication.savedFiguresArray;
+  document.getElementById('categoryfield').innerText = loadApplication.savedBgCategory;
+  document.getElementById('bgText').value = loadApplication.savedBgText;
+  document.getElementById("claimsContainer").innerHTML = loadApplication.savedClaimsContainer;
 
 
 }
