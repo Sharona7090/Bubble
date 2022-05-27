@@ -56,7 +56,7 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
     var refnumber = loadApplication.savedFiguresArray[0][refidproperty]
     document.getElementById(`${x}_${k}`).value = refnumber
   }
-
+checkNumber()
   // if (loadApplication.savedFiguresArray[i].radio == "auto"){
   // document.getElementById('autoRef'+x).checked = true
   // }
