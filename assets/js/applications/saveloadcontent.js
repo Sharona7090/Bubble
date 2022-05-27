@@ -14,6 +14,7 @@ function savecontent(){
   bubble_fn_savecontent(savedApplication)
 }
 function loadcontent(loadApplication){
+  console.log("loadcontent called")
   var application = JSON.parse(loadApplication)
   claimsArray = application.savedClaimsArray;
   figuresArray = application.savedFiguresArray;
