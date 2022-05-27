@@ -24,6 +24,6 @@ function loadcontent(loadApplication){
   document.getElementById('categoryfield').innerText = loadApplication.savedBgCategory;
   document.getElementById('bgText').value = loadApplication.savedBgText;
   document.getElementById("claimsContainer").innerHTML = loadApplication.savedClaimsContainer;
-
+  loadApplication.figuresArray.radio.checked = true
 
 }
