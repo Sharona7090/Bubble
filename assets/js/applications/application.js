@@ -1009,9 +1009,20 @@ $("#"+pdfFigure).addClass("selectedFig");
 $("#"+pdfFigure).attr('data-figid',x);
 $("#"+pdfFigure).attr('data-figno',figurenumber);
 
+
+//manual or auto number
+var autoradio = document.getElementById('autoRef'+x)
+var manualradio = document.getElementById('manualRef'+x)
+if (autoradio.checked == true){
+  var radiochoice = "auto"
+}
+if (manualradio.checked == true){
+  var radiochoice = "manual"
+}
 var newFigure = {
   $slide: x,
-  fig: figurenumber
+  fig: figurenumber,
+  radio: radiochoice
 }
 var refs = document.getElementsByClassName("refno"+x);
 var refID = []
@@ -1023,15 +1034,7 @@ for (i=0; i<refs.length; i++){
   console.log(refNUM[i])
 }
 
-//manual or auto number
-var autoradio = document.getElementById('autoRef'+x)
-var manualradio = document.getElementById('manualRef'+x)
-if (autoradio.checked == true){
-  newFigure.radio = "auto"
-}
-if (manualradio.checked == true){
-  newFigure.radio = "manual"
-}
+
 
 console.log(newFigure)
 figuresArray.push(newFigure);
