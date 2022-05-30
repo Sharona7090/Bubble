@@ -2,7 +2,7 @@ function funcNfoaRec(casedata){
   var actionFull = "Non-Final Office Action Recommendation"
   var clientno = casedata.clientid
   var matter = casedata.firmid
-  var title = casedata.title
+  var title = casedata.title 
   var file = casedata.filingdate
   var ihc = "John"
   var to = "To: "
