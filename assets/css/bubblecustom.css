@@ -46,3 +46,17 @@ padding: 0px 10px !important;
 .btn:disabled{
   cursor:not-allowed;
 }
+
+#emailrepeatinggroup{
+  display: block;
+  position: static;
+}
+
+#emailrepeatinggroup .group-item{
+  margin-right: 10px;
+  display: inline-block;
+  width: auto;
+}
+#emailrepeatinggroup .group-item .Button{
+  position: initial
+}
