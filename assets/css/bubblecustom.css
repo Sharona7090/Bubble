@@ -58,7 +58,7 @@ padding: 0px 10px !important;
   width: auto;
 }
 #emailrepeatinggroup .group-item .Button{
-  position: initial
+  position: initial;
   left:0 !important;
   width: unset !important;
   font-size: 1rem;
