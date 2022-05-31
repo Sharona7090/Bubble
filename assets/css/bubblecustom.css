@@ -111,3 +111,7 @@ padding: 0px 10px !important;
 #emailrepeatinggroup .Button:nth-of-type(6n+6){
   background-color: #ffdce3 !important;
 }
+
+.btn:hover .Button:hover{
+  filter: brightness(85%)
+}
