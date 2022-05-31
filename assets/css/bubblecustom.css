@@ -65,21 +65,21 @@ padding: 0px 10px !important;
     line-height: 1.5;
 }
 
-#emailrepeatinggroup .group-item .Button:nth-of-type(6n+1){
+#emailrepeatinggroup .group-item:nth-of-type(6n+1) .Button{
   background-color: aquamarine !important;
 }
-#emailrepeatinggroup .group-item .Button:nth-of-type(6n+2){
+#emailrepeatinggroup .group-item:nth-of-type(6n+2) .Button{
   background-color: #cedffd !important;
 }
-#emailrepeatinggroup .group-item .Button:nth-of-type(6n+3){
+#emailrepeatinggroup .group-item:nth-of-type(6n+3) .Button{
   background-color: #ffe4c4 !important;
 }
-#emailrepeatinggroup .group-item .Button:nth-of-type(6n+4){
+#emailrepeatinggroup .group-item:nth-of-type(6n+4) .Button{
   background-color: #95ffff !important;
 }
-#emailrepeatinggroup .group-item .Button:nth-of-type(6n+5){
+#emailrepeatinggroup .group-item:nth-of-type(6n+5) .Button{
   background-color: #cde896 !important;
 }
-#emailrepeatinggroup .group-item .Button:nth-of-type(6n+6){
+#emailrepeatinggroup .group-item:nth-of-type(6n+6) .Button{
   background-color: #ffdce3 !important;
 }
