@@ -87,11 +87,14 @@ padding: 0px 10px !important;
 #emailrepeatinggroup .group-item:nth-of-type(6n+6) .Button{
   background-color: #ffdce3 !important;
 }
-
+#prosbuttoncontainer{
+  display: inline-block;
+}
 #prosbuttoncontainer .Button{
   width: unset !important;
   font-size: 1rem;
   line-height: 1.5;
+  margin-right: 10px;
 }
 #prosbuttoncontainer .Button:nth-of-type(6n+1){
   background-color: aquamarine !important;
