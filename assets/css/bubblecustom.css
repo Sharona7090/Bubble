@@ -1,5 +1,5 @@
 .debugger-page-mention{
-  display: none
+  display: none !important;
 }
 
 .Dropdown{
