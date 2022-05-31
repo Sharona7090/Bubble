@@ -112,6 +112,6 @@ padding: 0px 10px !important;
   background-color: #ffdce3 !important;
 }
 
-.btn:hover .Button:hover{
+.btn:hover, .Button:hover{
   filter: brightness(85%)
 }
