@@ -93,22 +93,22 @@ padding: 0px 10px !important;
   font-size: 1rem;
   line-height: 1.5;
 }
-#emailrepeatinggroup .Button:nth-of-type(6n+1){
+#prosbuttoncontainer .Button:nth-of-type(6n+1){
   background-color: aquamarine !important;
 }
-#emailrepeatinggroup .Button:nth-of-type(6n+2){
+#prosbuttoncontainer .Button:nth-of-type(6n+2){
   background-color: #cedffd !important;
 }
-#emailrepeatinggroup .Button:nth-of-type(6n+3){
+#prosbuttoncontainer .Button:nth-of-type(6n+3){
   background-color: #ffe4c4 !important;
 }
-#emailrepeatinggroup .Button:nth-of-type(6n+4){
+#prosbuttoncontainer .Button:nth-of-type(6n+4){
   background-color: #95ffff !important;
 }
-#emailrepeatinggroup .Button:nth-of-type(6n+5){
+#prosbuttoncontainer .Button:nth-of-type(6n+5){
   background-color: #cde896 !important;
 }
-#emailrepeatinggroup .Button:nth-of-type(6n+6){
+#prosbuttoncontainer .Button:nth-of-type(6n+6){
   background-color: #ffdce3 !important;
 }
 
