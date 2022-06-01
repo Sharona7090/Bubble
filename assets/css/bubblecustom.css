@@ -127,6 +127,11 @@ padding: 0px 10px !important;
 line-height: 1
 }
 
-.RadioButtons::before,
+/* .RadioButtons::before,
 .RadioButtons::after {
-  box-sizing: unset !important; }
+  box-sizing: unset !important; } */
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box; }
