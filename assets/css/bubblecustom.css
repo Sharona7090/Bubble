@@ -89,28 +89,35 @@ padding: 0px 10px !important;
 }
 #prosbuttoncontainer{
   display: inline-block;
+  position: static;
 }
-#prosbuttoncontainer .Button{
+#emailrepeatinggroup .group-item{
+  margin-right: 10px;
+  display: inline-block;
+  width: auto;
+  border: none !important;
+}
+#prosbuttoncontainer .group-item .Button{
   width: unset !important;
   font-size: 1rem;
   line-height: 1.5;
 }
-#prosbuttoncontainer .Button:nth-of-type(6n+1){
+#prosbuttoncontainer .group-item:nth-of-type(6n+1) .Button{
   background-color: aquamarine !important;
 }
-#prosbuttoncontainer .Button:nth-of-type(6n+2){
+#prosbuttoncontainer .group-item:nth-of-type(6n+2) .Button{
   background-color: #cedffd !important;
 }
-#prosbuttoncontainer .Button:nth-of-type(6n+3){
+#prosbuttoncontainer .group-item:nth-of-type(6n+3) .Button{
   background-color: #ffe4c4 !important;
 }
-#prosbuttoncontainer .Button:nth-of-type(6n+4){
+#prosbuttoncontainer .group-item:nth-of-type(6n+4) .Button{
   background-color: #95ffff !important;
 }
-#prosbuttoncontainer .Button:nth-of-type(6n+5){
+#prosbuttoncontainer .group-item:nth-of-type(6n+5) .Button{
   background-color: #cde896 !important;
 }
-#prosbuttoncontainer .Button:nth-of-type(6n+6){
+#prosbuttoncontainer .group-item:nth-of-type(6n+6) .Button{
   background-color: #ffdce3 !important;
 }
 
@@ -122,7 +129,7 @@ padding: 0px 10px !important;
 .RadioButtons{
   padding-top: 0;
 padding-bottom: 0;
-margin-top: -4px;
+margin-top: -4px !important;
 }
 .RadioButtons input{
   box-sizing: unset !important;
@@ -132,15 +139,6 @@ margin-top: -4px;
   margin-bottom: 0 !important;
 line-height: 1
 }
-/* .RadioButtons,
-.RadioButtons::before,
-.RadioButtons::after {
-  box-sizing: unset !important; }
-
-  .RadioButtons input,
-  .RadioButtons input::before,
-.RadioButtons input::after {
-    box-sizing: unset!important; } */
 
     *,
     *::before,
