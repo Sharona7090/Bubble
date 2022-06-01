@@ -126,7 +126,7 @@ padding: 0px 10px !important;
   margin-bottom: 0 !important;
 line-height: 1
 }
-
+.RadioButtons,
 .RadioButtons::before,
 .RadioButtons::after {
   box-sizing: unset !important; }
