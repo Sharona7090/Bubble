@@ -140,10 +140,10 @@ margin-top: -4px !important;
 line-height: 1
 }
 
-#bubbleemailpage *,
-#bubbleemailpage *::before,
-#bubbleemailpage *::after{
-  box-sizing: unset;
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
 }
 
 
