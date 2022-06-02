@@ -160,3 +160,7 @@ textarea:focus{
 #apprepeatinggroup .group-item:nth-of-type(2n+2) .Button{
   background-color: #95ffff !important;
 }
+
+#searchicon * .fa{
+  font-size: 35px
+}
