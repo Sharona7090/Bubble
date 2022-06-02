@@ -150,3 +150,7 @@ line-height: 1
 textarea:focus{
   box-shadow: none
 }
+
+#apprepeatinggroup{
+      display: inline-table;
+}
