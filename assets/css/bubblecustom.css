@@ -154,9 +154,9 @@ textarea:focus{
 #apprepeatinggroup{
       display: inline-table;
 }
-#apprepeatinggroup .group-item:nth-of-type(6n+1) .Button{
+#apprepeatinggroup .group-item:nth-of-type(2n+1) .Button{
   background-color: aquamarine !important;
 }
-#apprepeatinggroup .group-item:nth-of-type(6n+2) .Button{
+#apprepeatinggroup .group-item:nth-of-type(2n+2) .Button{
   background-color: #95ffff !important;
 }
