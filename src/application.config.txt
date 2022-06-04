@@ -1,5 +1,4 @@
 assets/plugins/global/plugins.bundle.js
-assets/plugins/custom/prismjs/prismjs.bundle.js
 assets/js/scripts.bundle.js
 assets/plugins/custom/tinymce/tinymce.bundle.js
 assets/js/pages/widgets.js
