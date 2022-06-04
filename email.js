@@ -15,6 +15,7 @@ var applicationtitle = casedata.applicationtitle
 console.log(client, email, casedata)
 funcNfoaRec(casedata)
 }
+
 function funcNfoaRec(casedata){
   var actionFull = "Non-Final Office Action Recommendation"
   var clientno = casedata.clientid
@@ -226,3 +227,4 @@ function AARec(){
       // setTimeout(function(){window.location = window.location }, 1000);}
 
 };
+
