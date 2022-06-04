@@ -4,7 +4,8 @@
   "description": "",
   "main": "tensorTest.js",
   "scripts": {
-    "build": "./scripts/01-concat.sh"
+    "build": "./scripts/01-concat.sh",
+    "postbuild": "./scripts/02-setup-css.sh"
   },
   "repository": {
     "type": "git",
