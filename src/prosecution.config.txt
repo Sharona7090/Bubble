@@ -1,5 +1,4 @@
 assets/plugins/custom/tinymce/tinymce.bundle.js
-assets/plugins/custom/draggable/draggable.bundle.js
 assets/plugins/global/plugins.bundle.js
 assets/utilities/docx/docxtemplater.js
 assets/utilities/docx/pizzip.js
@@ -8,9 +7,7 @@ assets/utilities/docx/pizzip-utils.js
 assets/utilities/docx/slides-module.js
 assets/utilities/docx/html-module.js
 assets/js/applications/AD_Editor_Functions.js
-assets/js/applications/appfront.js
-assets/js/applications/boilertext.js
-assets/js/applications/application.js
-assets/js/applications/claimsModel.js
-assets/js/applications/draggable.js
-assets/js/applications/filledClaims.js
+assets/js/prosecution/officeAction_UI.js
+assets/js/prosecution/officeAction_GetData.js
+assets/js/prosecution/officeAction_createDoc.js
+assets/js/prosecution/fillOffceAction.js
