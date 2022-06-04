@@ -10,4 +10,4 @@ assets/js/applications/AD_Editor_Functions.js
 assets/js/prosecution/officeAction_UI.js
 assets/js/prosecution/officeAction_GetData.js
 assets/js/prosecution/officeAction_createDoc.js
-assets/js/prosecution/fillOffceAction.js
+assets/js/prosecution/fillOfficeAction.js
