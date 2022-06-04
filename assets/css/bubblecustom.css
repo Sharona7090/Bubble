@@ -1,0 +1,166 @@
+.debugger-page-mention{
+  display: none !important;
+}
+
+.Dropdown{
+  padding-left: 8px !important;
+}
+
+.Group.Button{
+min-width: fit-content !important;
+max-width: fit-content !important;
+width: fit-content !important;
+padding: 0px 10px !important;
+}
+
+.figCard {
+  width: 100%;padding-top: 100%;position: relative;
+}
+
+.refno{
+  border-color: lightgray;
+}
+
+.figbg{
+  position: absolute; top: 0;left: 0;bottom: 0;right: 0;
+  background-position: center; background-repeat: no-repeat; background-size: contain;
+}
+
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.form-group.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#backgroundDiv{
+  margin: auto;
+}
+#figDiv{
+  margin: auto;
+}
+
+#claimsDiv{
+  display:grid;
+}
+
+.btn:disabled{
+  cursor:not-allowed;
+}
+
+#emailrepeatinggroup{
+  display: block;
+  position: static;
+}
+
+#emailrepeatinggroup .group-item{
+  margin-right: 10px;
+  display: inline-block;
+  width: auto;
+  border: none !important;
+}
+#emailrepeatinggroup .group-item .Button{
+  position: initial;
+  width: unset !important;
+  font-size: 1rem;
+    line-height: 1.5;
+}
+
+#emailrepeatinggroup .group-item:nth-of-type(6n+1) .Button{
+  background-color: aquamarine !important;
+}
+#emailrepeatinggroup .group-item:nth-of-type(6n+2) .Button{
+  background-color: #cedffd !important;
+}
+#emailrepeatinggroup .group-item:nth-of-type(6n+3) .Button{
+  background-color: #ffe4c4 !important;
+}
+#emailrepeatinggroup .group-item:nth-of-type(6n+4) .Button{
+  background-color: #95ffff !important;
+}
+#emailrepeatinggroup .group-item:nth-of-type(6n+5) .Button{
+  background-color: #cde896 !important;
+}
+#emailrepeatinggroup .group-item:nth-of-type(6n+6) .Button{
+  background-color: #ffdce3 !important;
+}
+#prosbuttoncontainer{
+  display: inline-block;
+  position: static;
+}
+#emailrepeatinggroup .group-item{
+  margin-right: 10px;
+  display: inline-block;
+  width: auto;
+  border: none !important;
+}
+#prosbuttoncontainer .group-item .Button{
+  width: unset !important;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#prosbuttoncontainer .group-item:nth-of-type(6n+1) .Button{
+  background-color: aquamarine !important;
+}
+#prosbuttoncontainer .group-item:nth-of-type(6n+2) .Button{
+  background-color: #cedffd !important;
+}
+#prosbuttoncontainer .group-item:nth-of-type(6n+3) .Button{
+  background-color: #ffe4c4 !important;
+}
+#prosbuttoncontainer .group-item:nth-of-type(6n+4) .Button{
+  background-color: #95ffff !important;
+}
+#prosbuttoncontainer .group-item:nth-of-type(6n+5) .Button{
+  background-color: #cde896 !important;
+}
+#prosbuttoncontainer .group-item:nth-of-type(6n+6) .Button{
+  background-color: #ffdce3 !important;
+}
+
+.btn:hover, .Button:hover{
+  filter: brightness(90%)
+}
+
+
+.RadioButtons{
+  padding-top: 0;
+padding-bottom: 0;
+margin-top: -4px !important;
+}
+.RadioButtons input{
+  box-sizing: unset !important;
+
+}
+.RadioButtons label{
+  margin-bottom: 0 !important;
+line-height: 1
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
+textarea:focus{
+  box-shadow: none
+}
+
+#apprepeatinggroup{
+      display: inline-table;
+}
+#apprepeatinggroup .group-item:nth-of-type(2n+1) .Button{
+  background-color: aquamarine !important;
+}
+#apprepeatinggroup .group-item:nth-of-type(2n+2) .Button{
+  background-color: #95ffff !important;
+}
+
+#searchicon * .fa{
+  font-size: 42px
+}
