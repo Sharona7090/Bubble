@@ -1,7 +1,6 @@
-window.onload = (event) => {
+window.addEventListener('load', (event) => {
   initAppPage()
-};
-
+});
 function initAppPage(){
   // initappfront()
   initdraggable()
