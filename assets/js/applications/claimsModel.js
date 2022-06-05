@@ -115,7 +115,7 @@ function updateView(){
   claimsArray.forEach(function(claimObject){
     modelCount++
   })
-  for (i = 0; i < allOuterDiv.length; i++) { //
+  for (i = 0; i < allOuterDiv.length; i++) {
     var claimNumber = claimsArray[i].claim
     var dependency = claimsArray[i].parent
     var zone = claimsArray[i].zone

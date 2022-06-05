@@ -10,8 +10,9 @@ function initAppPage(){
 
   initappinterface()
   initfiguresui()
+  initapplication_ui()
   initclaimsui()
 
-  loadbackgrounds()
-  loadfigures()
+  // loadbackgrounds()
+  // loadfigures()
 }

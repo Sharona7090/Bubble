@@ -1,7 +1,8 @@
 function initfiguresui(){
-figuresArray = []
-figText=[];
+  figuresArray = []
+  figText=[];
 }
+
 function loadfigures(figures){
  // figures =  [
  //  {
