@@ -47,7 +47,7 @@ $('.modal').on('shown.bs.modal', function (event) {
 $('#figDiv').prepend($('.modal-backdrop'))
 })
 
-KTSelect2.init();
+// KTSelect2.init();
 setTimeout(addIC, 100);
 setTimeout(addIC, 100);
 
