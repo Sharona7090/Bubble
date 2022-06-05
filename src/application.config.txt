@@ -11,6 +11,13 @@ assets/js/applications/AD_Editor_Functions.js
 assets/js/applications/appfront.js
 assets/js/applications/boilertext.js
 assets/js/applications/application.js
+
+assets/js/applications/appinterface.js
+assets/js/applications/claims_ui.js
+assets/js/applications/figures_ui.js
+assets/js/applications/background.js
+
+
 assets/js/applications/claimsModel.js
 assets/js/applications/draggable.js
 assets/js/applications/filledClaims.js
