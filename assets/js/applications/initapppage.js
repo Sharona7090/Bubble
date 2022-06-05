@@ -4,14 +4,14 @@ window.addEventListener('load', (event) => {
 function initAppPage(){
   // initappfront()
   initdraggable()
-  
+
   initclaimsModel()
 
 
   initfiguresui()
-  initapplication_ui()
+
   initclaimsui()
-initappinterface()
+  initappinterface()
   // loadbackgrounds()
   // loadfigures()
 }
