@@ -32,8 +32,7 @@ $("textarea").keydown(function(e){
     }
 });
 
-function setCaretPosition(ctrl, pos)
-{
+function setCaretPosition(ctrl, pos){
 
     if(ctrl.setSelectionRange)
     {

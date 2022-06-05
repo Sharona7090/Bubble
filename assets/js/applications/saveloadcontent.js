@@ -52,7 +52,7 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
     document.getElementById(`${x}_${k}`).value = refnumber
   }
   globalcurrentfig = x
-  
+
 checkNumber()
 var figInputID = "figinput"+x; //get figure number input ID
 var figurenumber = document.getElementById(figInputID).value
