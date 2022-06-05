@@ -3,7 +3,7 @@ window.onload = (event) => {
 };
 
 function initAppPage(){
-  initappfront()
+  // initappfront()
   initdraggable()
   initsearchbar()
   initclaimsModel()
