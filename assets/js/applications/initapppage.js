@@ -1,5 +1,5 @@
-window.addEventListener('load', (event) => {
-  initAppPage()
+jQuery(document).ready(function() {
+    initAppPage()
 });
 function initAppPage(){
   // initappfront()
