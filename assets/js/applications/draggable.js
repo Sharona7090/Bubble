@@ -1,3 +1,5 @@
+
+function initdraggable(){
 var KTCardDraggable = function () {
  var swappables = []
  return {
@@ -14,7 +16,7 @@ var KTCardDraggable = function () {
     mirror: {
      appendTo: 'body',
      constrainDimensions: true
-    } 
+    }
    });
  swappable.on('mirror:destroy', function() {
      console.log('swabble on stop:')
@@ -37,6 +39,10 @@ var KTCardDraggable = function () {
   },
  };
 }();
+
+
+KTCardDraggable.init(0)
+}
 
 function handlemouseup(){
 console.log("hello")
@@ -69,6 +75,7 @@ console.log("hello")
 console.log("new array: ", claimsArray)
 updateView()
 }
+
 function cleanDraggable(x){
     KTCardDraggable.destroyAll();
     KTCardDraggable.init(0)
@@ -77,4 +84,3 @@ function cleanDraggable(x){
     KTCardDraggable.init(num)
 }
 }
-KTCardDraggable.init(0)

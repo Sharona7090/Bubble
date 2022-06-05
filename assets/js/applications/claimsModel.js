@@ -1,3 +1,4 @@
+function initclaimsModel(){
 setupEditor()
 zoneCounter = 1
 
@@ -9,6 +10,7 @@ claimsArray=[
   },
 ]
 uniqueID = 200
+}
 
 function addClaim(parentclaimNumber, parentID, zone){
   uniqueID++
@@ -207,7 +209,7 @@ function closeDeletedList(){
   document.getElementById("deletedOverlay").style.display = "none"
 }
 
-function addIC(){ 
+function addIC(){
   zoneCounter++
   uniqueID++
   var newICnumber = claimsArray[claimsArray.length-1].claim +1

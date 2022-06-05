@@ -1,6 +1,4 @@
 function savecontent(){
-
-
   savedApplication = JSON.stringify(
   {
     savedClaimsArray: claimsArray,
@@ -10,7 +8,6 @@ function savecontent(){
     savedFiguresArray: figuresArray
   }
 )
-
   bubble_fn_savecontent(savedApplication)
 }
 function loadcontent(loadApplication){
@@ -22,9 +19,7 @@ function loadcontent(loadApplication){
   document.getElementById('bgText').value = loadApplication.savedBgText;
   document.getElementById("claimsContainer").innerHTML = loadApplication.savedClaimsContainer;
 
-
 for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
-
   var x = loadApplication.savedFiguresArray[i].$slide
   var figInputID = "figinput"+x; //get figure number input ID
   var figurenumber = loadApplication.savedFiguresArray[i].fig // get figure number value
@@ -57,25 +52,20 @@ for (var i=0; i<loadApplication.savedFiguresArray.length; i++){
     document.getElementById(`${x}_${k}`).value = refnumber
   }
   globalcurrentfig = x
+  
 checkNumber()
 var figInputID = "figinput"+x; //get figure number input ID
 var figurenumber = document.getElementById(figInputID).value
 $('.'+figInputID).text(figurenumber);
-
-
 document.getElementById(`selectfigbtn${x}`).disabled = true;
 document.getElementById(`deselectfigbtn${x}`).disabled = false;
   if (loadApplication.savedFiguresArray[i].radio == "auto"){
   document.getElementById('autoRef'+x).checked = true
   document.getElementById('manualRef'+x).checked = false
-
   }
   if (loadApplication.savedFiguresArray[i].radio == "manual"){
   document.getElementById('manualRef'+x).checked = true
   document.getElementById('autoRef'+x).checked = false
-
   }
 }
-
-
 }

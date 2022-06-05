@@ -1,3 +1,144 @@
+
+autosize(document.querySelectorAll('textarea'));
+
+
+$("textarea").keydown(function(e){
+	if (e.keyCode == 9) {
+		e.preventDefault();
+		var start = $(this).get(0).selectionStart;
+		var end = $(this).get(0).selectionEnd;
+
+		// set textarea value to: text before caret + tab + text after caret
+		$(this).val($(this).val().substring(0, start)
+								+ "\t"
+								+ $(this).val().substring(end));
+
+		// put caret at right position again
+		$(this).get(0).selectionStart =
+		$(this).get(0).selectionEnd = start + 1;
+	}
+    if(e.keyCode == 13){
+        var cursorPos = this.selectionStart;
+        var curentLine = this.value.substr(0, this.selectionStart).split("\n").pop();
+        var indent = curentLine.match(/^\s*/)[0];
+        var value = this.value;
+        var textBefore = value.substring(0,  cursorPos );
+        var textAfter  = value.substring( cursorPos, value.length );
+
+        this.value = textBefore + "\n" + indent + textAfter;
+        console.log(textBefore);
+        e.preventDefault();
+        setCaretPosition(this, cursorPos + indent.length + 1); // +1 is for the \n
+    }
+});
+
+function setCaretPosition(ctrl, pos)
+{
+
+    if(ctrl.setSelectionRange)
+    {
+        ctrl.focus();
+        ctrl.setSelectionRange(pos,pos);
+    }
+    else if (ctrl.createTextRange) {
+        var range = ctrl.createTextRange();
+        range.collapse(true);
+        range.moveEnd('character', pos);
+        range.moveStart('character', pos);
+        range.select();
+    }
+}
+
+'use strict';
+
+function updateButtons(history) {
+	$('#undo').attr('disabled',!history.canUndo());
+	$('#redo').attr('disabled',!history.canRedo());
+}
+
+function setEditorContents(contents) {
+	$('#editor').val(contents);
+}
+
+
+
+$(function(){
+	var history = new SimpleUndo({
+		maxLength: 200,
+		provider: function(done) {
+			done($('#editor').val());
+		},
+		onUpdate: function() {
+			//onUpdate is called in constructor, making history undefined
+			if (!history) return;
+
+			updateButtons(history);
+		}
+	});
+
+	$('#undo').click(function() {
+		history.undo(setEditorContents);
+	});
+	$('#redo').click(function() {
+		history.redo(setEditorContents);
+	});
+	$('#editor').keypress(function() {
+		history.save();
+	});
+
+	updateButtons(history);
+});
+
+//////// TABS //////////////////////////////////
+$(document).delegate('.set1textarea', 'keydown', function(e) {
+var keyCode = e.keyCode || e.which;
+if (keyCode == 9) {
+  e.preventDefault();
+  var start = $(this).get(0).selectionStart;
+  var end = $(this).get(0).selectionEnd;
+  // set textarea value to: text before caret + tab + text after caret
+  $(this).val($(this).val().substring(0, start)
+              + "\t"
+              + $(this).val().substring(end));
+
+  // put caret at right position again
+  $(this).get(0).selectionStart =
+  $(this).get(0).selectionEnd = start + 1;
+}
+});
+$(document).delegate('.set2textarea', 'keydown', function(e) {
+var keyCode = e.keyCode || e.which;
+if (keyCode == 9) {
+  e.preventDefault();
+  var start = $(this).get(0).selectionStart;
+  var end = $(this).get(0).selectionEnd;
+  // set textarea value to: text before caret + tab + text after caret
+  $(this).val($(this).val().substring(0, start)
+              + "\t"
+              + $(this).val().substring(end));
+  // put caret at right position again
+  $(this).get(0).selectionStart =
+  $(this).get(0).selectionEnd = start + 1;
+}
+});
+$(document).delegate('.set3textarea', 'keydown', function(e) {
+var keyCode = e.keyCode || e.which;
+if (keyCode == 9) {
+  e.preventDefault();
+  var start = $(this).get(0).selectionStart;
+  var end = $(this).get(0).selectionEnd;
+
+  // set textarea value to: text before caret + tab + text after caret
+  $(this).val($(this).val().substring(0, start)
+              + "\t"
+              + $(this).val().substring(end));
+  // put caret at right position again
+  $(this).get(0).selectionStart =
+  $(this).get(0).selectionEnd = start + 1;
+}
+});
+
+
 function setupEditor() {
   document.addEventListener('click', function(clickEvent) {
     if (clickEvent.target.parentElement.classList.contains('setCursor')) {
@@ -61,6 +202,7 @@ function setCaret(event) {
       sel.addRange(range);
       el.focus();
 }
+
 function tab_Key(node){
   if (node.tagName == "P"){   //  only applies for <p>
     if(node.style.textIndent){
@@ -74,6 +216,7 @@ function tab_Key(node){
     }
   }
 }
+
 function enter_Key(node){ // enter pressed
 // get any text right of cursor on ENTER so it can be moved to the newly created next line
       var textNode = node.childNodes[0];
@@ -114,6 +257,7 @@ function enter_Key(node){ // enter pressed
       sel.addRange(range);
       p.focus();
 }
+
 function backspace_Key(node){
     if (node.classList.contains('preambleBody')){
         var selection = window.getSelection();
@@ -179,6 +323,7 @@ function backspace_Key(node){
         node.remove()
       }
 }
+
 function delete_Key(node){
   var textNode = node.childNodes[0];
   var selection = window.getSelection();
@@ -214,6 +359,7 @@ function delete_Key(node){
       }
   }
 }
+
 function up_Key(node){
   var selection = window.getSelection();
   var index = selection.anchorOffset;
@@ -234,6 +380,7 @@ function up_Key(node){
    sel.removeAllRanges();
    sel.addRange(range);
 }
+
 function down_Key(node){
   var selection = window.getSelection();
   var index = selection.anchorOffset;
