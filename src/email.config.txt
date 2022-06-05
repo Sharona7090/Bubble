@@ -1,0 +1,2 @@
+assets/js/emails/email.js
+assets/js/emails/emailtemplates.js

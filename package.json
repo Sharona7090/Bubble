@@ -1,0 +1,20 @@
+{
+  "name": "bubble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tensorTest.js",
+  "scripts": {
+    "build": "./scripts/01-concat.sh",
+    "postbuild": "./scripts/02-setup-css.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sharona7090/Bubble.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sharona7090/Bubble/issues"
+  },
+  "homepage": "https://github.com/Sharona7090/Bubble#readme"
+}

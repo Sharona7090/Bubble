@@ -1,0 +1,13 @@
+assets/plugins/custom/tinymce/tinymce.bundle.js
+assets/plugins/global/plugins.bundle.js
+assets/utilities/docx/docxtemplater.js
+assets/utilities/docx/pizzip.js
+assets/utilities/docx/FileSaver.js
+assets/utilities/docx/pizzip-utils.js
+assets/utilities/docx/slides-module.js
+assets/utilities/docx/html-module.js
+assets/js/applications/AD_Editor_Functions.js
+assets/js/prosecution/officeAction_UI.js
+assets/js/prosecution/officeAction_GetData.js
+assets/js/prosecution/officeAction_createDoc.js
+assets/js/prosecution/fillOfficeAction.js
