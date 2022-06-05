@@ -55,7 +55,7 @@ jQuery(document).ready(function() {
     setTimeout(addIC, 100);
 });
 
-console.log(initiated app interface )
+console.log("initiated app interface" )
 }
 
 function show(){
