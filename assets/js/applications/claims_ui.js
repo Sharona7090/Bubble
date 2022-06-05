@@ -1,4 +1,4 @@
-initclaimsui(){
+function initclaimsui(){
 depPreambleArray = [
   0,
   `<span class="claimNo">'+newClaimNumber+'. </span>
