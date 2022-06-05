@@ -55,7 +55,25 @@ setTimeout(addIC, 100);
 //     setTimeout(addIC, 100);
 //     setTimeout(addIC, 100);
 // });
-
+var newDiv = document.createElement("div")
+newDiv.innerHTML = `<div id="kt_quick_search" class="offcanvas offcanvas-right p-10 offcanvas-on" style="display:none">
+	<div class="offcanvas-header d-flex align-items-center justify-content-between mb-5" kt-hidden-height="24" style="">
+		<h3 class="font-weight-bold m-0 ">Deleted Claims</h3>
+		<button class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_search_close" onclick="closeDeletedList()">
+			<i class="ki ki-close icon-xs text-muted"></i>
+		</button>
+	</div>
+	<div class="offcanvas-content">
+		<div class="quick-search quick-search-offcanvas quick-search-has-result" id="kt_quick_search_offcanvas">
+			<div class="quick-search-wrapper pt-5 scroll ps ps--active-y" style="height: 784px; overflow: hidden;">
+				<div id="deletedList" class="quick-search-result">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id = "deletedOverlay" class="offcanvas-overlay" style="display:none" onclick="closeDeletedList()"></div>`
+document.body.append(newDiv)
 
 }
 
