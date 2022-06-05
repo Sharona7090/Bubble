@@ -48,12 +48,14 @@ $('#figDiv').prepend($('.modal-backdrop'))
 
 jQuery(document).ready(function() {
  KTSelect2.init();
+ setTimeout(addIC, 100);
+
 });
 
-jQuery(document).ready(function() {
-    setTimeout(addIC, 100);
-    setTimeout(addIC, 100);
-});
+// jQuery(document).ready(function() {
+//     setTimeout(addIC, 100);
+//     setTimeout(addIC, 100);
+// });
 
 console.log("initiated app interface" )
 }
