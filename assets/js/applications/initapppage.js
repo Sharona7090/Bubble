@@ -7,11 +7,11 @@ function initAppPage(){
   initsearchbar()
   initclaimsModel()
 
-  initappinterface()
+
   initfiguresui()
   initapplication_ui()
   initclaimsui()
-
+initappinterface()
   // loadbackgrounds()
   // loadfigures()
 }
