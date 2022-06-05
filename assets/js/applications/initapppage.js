@@ -4,7 +4,7 @@ window.addEventListener('load', (event) => {
 function initAppPage(){
   // initappfront()
   initdraggable()
-  initsearchbar()
+  
   initclaimsModel()
 
 
