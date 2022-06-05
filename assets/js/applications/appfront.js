@@ -1,40 +1,4 @@
 // Figure Filter
-$(function(){
-  $('.select2').on('change', function() {
-    var data = $(".select2 option:selected")
-    if (data.length ==0){
-      $('.EC_tag').show();
-      $('.ML_tag').show();
-      $('.CC_tag').show();
-      $('.MD_tag').show();
-      $('.G_tag').show();
-    }  else{
-      $('.EC_tag').hide();
-      $('.ML_tag').hide();
-      $('.CC_tag').hide();
-      $('.MD_tag').hide();
-      $('.G_tag').hide();
-    }
-    for (i = 0; i < data.length; i++) {
-    if(data[i].value == "EC"){
-      console.log("blah")
-      $('.EC_tag').show();
-    }
-    if(data[i].value == "ML"){
-      $('.ML_tag').show();
-    }
-    if(data[i].value == "CC"){
-      $('.CC_tag').show();
-    }
-    if(data[i].value == "MD"){
-      $('.MD_tag').show();
-    }
-    if(data[i].value == "G"){
-      $('.G_tag').show();
-    }
-    }
-  })
-});
 
 function genFigures(){
   var clientTracking = document.getElementById('clientTracking').value;
