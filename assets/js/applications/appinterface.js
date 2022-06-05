@@ -1,4 +1,5 @@
 function initappinterface(){
+  console.log("initiated app interface")
 $(function(){
   $('.select2').on('change', function() {
     var data = $(".select2 option:selected")
@@ -55,7 +56,7 @@ setTimeout(addIC, 100);
 //     setTimeout(addIC, 100);
 // });
 
-console.log("initiated app interface")
+
 }
 
 function show(){
