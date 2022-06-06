@@ -122,9 +122,11 @@ padding: 0px 10px !important;
 }
 
 .btn:hover, .Button:hover{
-  filter: brightness(90%)
+  filter: brightness(90%);
 }
-
+.appsidebutton:hover{
+  filter: none !important;
+}
 
 .RadioButtons{
   padding-top: 0;
