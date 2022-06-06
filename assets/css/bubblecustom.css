@@ -164,3 +164,7 @@ textarea:focus{
 #searchicon * .fa{
   font-size: 42px
 }
+
+#apprightcontainer, #bubbleappsidemenu{
+  height: calc(100% - 80px)
+}
