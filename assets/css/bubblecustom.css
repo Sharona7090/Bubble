@@ -171,6 +171,6 @@ textarea:focus{
   height: calc(100% - 80px) !important;
 }
 
-#appformpage .bubble-r-container{
+#appformpage > .bubble-r-container{
 padding-bottom: 0 !important;
 }
