@@ -124,7 +124,7 @@ padding: 0px 10px !important;
 .btn:hover, .Button:hover{
   filter: brightness(90%);
 }
-.appsidebutton:hover{
+.appsidebutton:hover, .outlinebutton:hover{
   filter: none !important;
 }
 
