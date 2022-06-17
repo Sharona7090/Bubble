@@ -17,6 +17,7 @@ assets/js/applications/background_ui.js
 assets/js/applications/claimsModel.js
 assets/js/applications/draggable.js
 
+assets/js/applications/searchbar.js
 
 assets/js/applications/filledClaims.js
 assets/js/applications/initapppage.js

@@ -175,6 +175,6 @@ textarea:focus{
 padding-bottom: 0 !important;
 }
 
-.oboardnav:hover{
+.oboardnav{
   cursor: pointer
 }
