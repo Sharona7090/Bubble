@@ -174,3 +174,7 @@ textarea:focus{
 #appformpage > .bubble-r-container{
 padding-bottom: 0 !important;
 }
+
+.oboardnav:hover{
+  cursor: pointer
+}
