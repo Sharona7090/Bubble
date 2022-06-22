@@ -187,3 +187,7 @@ padding-bottom: 0 !important;
   width: fit-content !important;
   margin-right: 40px !important;
 }
+button:hover{
+  cursor: pointer;
+}
+}
