@@ -131,7 +131,8 @@ padding: 0px 10px !important;
 .RadioButtons{
   padding-top: 0;
 padding-bottom: 0;
-margin-top: -4px !important;
+display: inherit;
+/* margin-top: -4px !important; */
 }
 .RadioButtons input{
   box-sizing: unset !important;
@@ -175,6 +176,6 @@ textarea:focus{
 padding-bottom: 0 !important;
 }
 
-.oboardnav:hover{
+.oboardnav{
   cursor: pointer
 }

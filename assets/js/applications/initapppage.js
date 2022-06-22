@@ -12,6 +12,7 @@ function initAppPage(){
 
   initclaimsui()
   initappinterface()
+  initsearchbar()
   // loadbackgrounds()
   // loadfigures()
 }
