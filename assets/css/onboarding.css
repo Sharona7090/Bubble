@@ -4,3 +4,7 @@
 .tox-statusbar{
   display:none !important
 }
+
+.Checkbox label{
+  padding-left: 8px;
+}
