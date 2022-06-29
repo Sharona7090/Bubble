@@ -6,7 +6,7 @@ setup: function(editor) {
         var content = tinymce.get(e.target.id).getContent();
            alert(content);
        });
-   }
+   },
 plugins: 'table lists',
 toolbar: 'undo redo fontfamily fontsize bold italic underline backcolor |outdent indent lineheight  bullist numlist table | alignleft aligncenter alignright alignjustify ',
  content_style: 'body { font-family:Arial,sans-serif; font-size:11pt }p{ margin:0}',
