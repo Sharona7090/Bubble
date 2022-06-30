@@ -19,6 +19,7 @@ function tinymce_init_check(editorinput, uniqueid){
 }
 
 function initialize_tinymce(editorinput, uniqueid){
+  var bubblefnName = "bubble_fn_tiny" + uniqueid
   console.log("initialize tiny")
   tinymce.init({
     height : 400,
@@ -30,7 +31,7 @@ function initialize_tinymce(editorinput, uniqueid){
         editor.on('blur', function(e) {
            var content = tinymce.get(e.target.id).getContent().replace(/(\r\n|\n|\r)/gm, '');
            console.log(content)
-           bubble_fn_tiny(content)
+           window[bubblefnName](content)
          });
        },
        plugins: 'table lists',
