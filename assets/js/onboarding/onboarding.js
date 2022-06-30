@@ -25,7 +25,7 @@ function initialize_tinymce(editorinput, uniqueid){
   console.log("initialize tiny")
   tinymce.init({
     height : 400,
-    selector: '#tiny'+uniqueid,
+    selector: '.emaileditor',
     setup: function(editor) {editor.on('init', function (e) {
         editor.setContent(editorinput);
         console.log("init fired")
