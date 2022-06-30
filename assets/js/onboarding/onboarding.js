@@ -6,10 +6,12 @@ $('link[rel=stylesheet][href~="https://sharona7090.github.io/Bubble/assets/css/b
 const tinyArray = []
 
 function tinymce_init_check(editorinput, uniqueid){
+    console.log(tinyArray)
   if (tinyArray.includes(uniqueid)){
     initialize_tinymce(editorinput, uniqueid)
     tinyArray.push(uniqueid)
   }
+
 
   // if (sessionStorage.getItem(uniqueid) ==""){
   //   initialize_tinymce(editorinput, uniqueid)
@@ -19,7 +21,7 @@ function tinymce_init_check(editorinput, uniqueid){
 }
 
 function initialize_tinymce(editorinput, uniqueid){
-
+console.log("initialize tiny")
 tinymce.init({
  height : 400,
  selector: '.emaileditor',
