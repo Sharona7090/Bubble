@@ -22,11 +22,11 @@ function tinymce_init_check(editorinput, uniqueid){
 }
 
 function initialize_tinymce(editorinput, uniqueid){
-console.log("initialize tiny")
-tinymce.init({
- height : 400,
- selector: '.emaileditor',
- setup: function(editor) {editor.on('init', function (e) {
+  console.log("initialize tiny")
+  tinymce.init({
+    height : 400,
+    selector: '.emaileditor',
+    setup: function(editor) {editor.on('init', function (e) {
         editor.setContent(editorinput);
         console.log("init fired")
         });
@@ -36,10 +36,10 @@ tinymce.init({
            bubble_fn_tiny(content)
          });
        },
- plugins: 'table lists',
- toolbar: 'undo redo fontfamily fontsize bold italic underline fontcolor backcolor |outdent indent lineheight  bullist numlist table | alignleft aligncenter alignright alignjustify ',
- content_style: 'body { font-family:Arial,sans-serif; font-size:11pt }p{ margin:0}',
- font_size_formats: '8pt 9pt 10pt 11pt 12pt 14pt 16pt 18pt 24pt 36pt 48pt'
+       plugins: 'table lists',
+       toolbar: 'undo redo fontfamily fontsize bold italic underline fontcolor backcolor |outdent indent lineheight  bullist numlist table | alignleft aligncenter alignright alignjustify ',
+       content_style: 'body { font-family:Arial,sans-serif; font-size:11pt }p{ margin:0}',
+       font_size_formats: '8pt 9pt 10pt 11pt 12pt 14pt 16pt 18pt 24pt 36pt 48pt'
 
-});
+    });
 }
