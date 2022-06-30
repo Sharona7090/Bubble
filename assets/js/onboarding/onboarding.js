@@ -1,7 +1,4 @@
 
-$('link[rel=stylesheet][href~="https://sharona7090.github.io/Bubble/assets/css/style.bundle.css?v=7.0.4"]').remove();
-$('link[rel=stylesheet][href~="https://sharona7090.github.io/Bubble/assets/css/custom.css"]').remove();
-$('link[rel=stylesheet][href~="https://sharona7090.github.io/Bubble/assets/css/bubblecustom.css"]').remove();
 
 const tinyArray = []
 
