@@ -11,6 +11,7 @@ function tinymce_init_check(editorinput, uniqueid){
     initialize_tinymce(editorinput, uniqueid)
     tinyArray.push(uniqueid)
   }
+  console.log(tinyArray)
 
 
   // if (sessionStorage.getItem(uniqueid) ==""){
