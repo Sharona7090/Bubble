@@ -7,7 +7,7 @@ const tinyArray = []
 
 function tinymce_init_check(editorinput, uniqueid){
     console.log(tinyArray)
-  if (tinyArray.includes(uniqueid)){
+  if (tinyArray.includes(uniqueid)==false){
     initialize_tinymce(editorinput, uniqueid)
     tinyArray.push(uniqueid)
   }
