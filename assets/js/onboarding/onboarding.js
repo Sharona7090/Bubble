@@ -24,10 +24,12 @@ function initialize_tinymce(editorinput, uniqueid){
 
   tinymce.init({
     height : 400,
-    selector: '.emaileditor',
+    selector: `#tiny${uniqueid}`,
     setup: function(editor) {editor.on('init', function (e) {
         editor.setContent(editorinput);
-        console.log("init fired")
+        console.log("set content: ", editorinput)
+        console.log("INIT", "uniqueid: ", uniqueid, "editorinput: ", editorinput)
+        
         });
         editor.on('blur', function(e) {
            var content = tinymce.get(e.target.id).getContent().replace(/(\r\n|\n|\r)/gm, '');
