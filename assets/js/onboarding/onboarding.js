@@ -19,7 +19,7 @@ function tinymce_init_check(editorinput, uniqueid){
 }
 
 function initialize_tinymce(editorinput, uniqueid){
-  console.log("INIT", "uniqueid: ", uniqueid, "editorinput: ", editorinput)
+  console.log("function", "uniqueid: ", uniqueid, "editorinput: ", editorinput)
   var bubblefnName = "bubble_fn_tiny" + uniqueid
 
   tinymce.init({
@@ -27,9 +27,8 @@ function initialize_tinymce(editorinput, uniqueid){
     selector: `#tiny${uniqueid}`,
     setup: function(editor) {editor.on('init', function (e) {
         editor.setContent(editorinput);
-        console.log("set content: ", editorinput)
-        console.log("INIT", "uniqueid: ", uniqueid, "editorinput: ", editorinput)
-        
+        console.log("init set content: ", uniqueid, editorinput)
+
         });
         editor.on('blur', function(e) {
            var content = tinymce.get(e.target.id).getContent().replace(/(\r\n|\n|\r)/gm, '');
