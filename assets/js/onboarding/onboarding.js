@@ -28,7 +28,6 @@ function initialize_tinymce(editorinput, uniqueid){
     setup: function(editor) {editor.on('init', function (e) {
         editor.setContent(editorinput);
         console.log("init set content: ", uniqueid, editorinput)
-
         });
         editor.on('blur', function(e) {
            var content = tinymce.get(e.target.id).getContent().replace(/(\r\n|\n|\r)/gm, '');
@@ -40,6 +39,5 @@ function initialize_tinymce(editorinput, uniqueid){
        toolbar: 'undo redo fontfamily fontsize bold italic underline fontcolor backcolor |outdent indent lineheight  bullist numlist table | alignleft aligncenter alignright alignjustify ',
        content_style: 'body { font-family:Arial,sans-serif; font-size:11pt }p{ margin:0}',
        font_size_formats: '8pt 9pt 10pt 11pt 12pt 14pt 16pt 18pt 24pt 36pt 48pt'
-
     });
 }
