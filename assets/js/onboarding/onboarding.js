@@ -19,8 +19,9 @@ function tinymce_init_check(editorinput, uniqueid){
 }
 
 function initialize_tinymce(editorinput, uniqueid){
+  console.log("INIT", "uniqueid: ", uniqueid, "editorinput: ", editorinput)
   var bubblefnName = "bubble_fn_tiny" + uniqueid
-  console.log("initialize tiny")
+
   tinymce.init({
     height : 400,
     selector: '.emaileditor',
