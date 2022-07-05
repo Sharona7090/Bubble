@@ -6,3 +6,7 @@
 .Checkbox label{
   padding-left: 8px;
 }
+
+.highlightfield{
+  border-color: red !important
+}
