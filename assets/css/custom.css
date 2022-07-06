@@ -1,3 +1,6 @@
+html{
+  scrollbar-gutter: stable
+}
 input:disabled{
   background-color: white
 }
