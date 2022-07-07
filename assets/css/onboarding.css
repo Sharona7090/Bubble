@@ -1,6 +1,6 @@
-html{
-  scrollbar-gutter: stable 
-}
+/* html{
+  scrollbar-gutter: stable
+} */
 .tox-statusbar{
   display:none !important
 }

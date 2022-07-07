@@ -1,3 +1,6 @@
+/* html{
+  scrollbar-gutter: stable
+} */
 .debugger-page-mention{
   display: none !important;
 }
