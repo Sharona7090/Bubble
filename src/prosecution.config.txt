@@ -11,3 +11,4 @@ assets/js/prosecution/officeAction_UI.js
 assets/js/prosecution/officeAction_GetData.js
 assets/js/prosecution/officeAction_createDoc.js
 assets/js/prosecution/fillOfficeAction.js
+assets/js/prosecution/initprospage.js
