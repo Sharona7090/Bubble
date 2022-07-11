@@ -1,6 +1,4 @@
-jQuery(document).ready(function() {
-    initEobPage()
-});
+
 // function initEobPage(){
 // initsearchbar()
 // }
