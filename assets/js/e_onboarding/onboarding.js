@@ -57,6 +57,8 @@ function initsearchbar(){
 }
 
 function userfilter(){
+  var groups = document.getElementById('eobrepeatinggroup').children
+  var groupcount = groups.length
   var keyword = document.getElementById('usersearchbar').value.trim().toLowerCase()
   for (var i=0; i<groupcount; i++){
     var currentgroup = groups[i]
@@ -74,6 +76,8 @@ function userfilter(){
 }
 
 function casefilter(){
+  var groups = document.getElementById('eobrepeatinggroup').children
+  var groupcount = groups.length
   var keyword = document.getElementById('casesearchbar').value.trim().toLowerCase()
   for (var i=0; i<groupcount; i++){
     var currentgroup = groups[i]
