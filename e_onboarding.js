@@ -1,6 +1,5 @@
 jQuery(document).ready(function() {
-   initusersearchbar()
-   initcasesearchbar()
+   initsearchbar()
 
 console.log('load')
 });
@@ -46,10 +45,15 @@ function initialize_tinymce(editorinput, uniqueid){
       console.log("after init code")
 }
 
-function initusersearchbar(){
+function initsearchbar(){
  groups = document.getElementById('eobrepeatinggroup').children
  groupcount = groups.length
-document.getElementById("usersearchbar").addEventListener("input", userfilter);
+ if (document.getElementById("usersearchbar")){
+   document.getElementById("usersearchbar").addEventListener("input", userfilter)
+ };
+ if (document.getElementById("casesearchbar")){
+   document.getElementById("casesearchbar").addEventListener("input", casefilter)
+ };
 }
 
 function userfilter(){
@@ -69,11 +73,6 @@ function userfilter(){
   }
 }
 
-function initcasesearchbar(){
- groups = document.getElementById('eobrepeatinggroup').children
- groupcount = groups.length
-document.getElementById("casesearchbar").addEventListener("input", casefilter);
-}
 function casefilter(){
   var keyword = document.getElementById('searchbar').value.trim().toLowerCase()
   for (var i=0; i<groupcount; i++){
