@@ -54,10 +54,7 @@ function userfilter(){
   for (var i=0; i<groupcount; i++){
     var currentgroup = groups[i]
     var currentfield = currentgroup.children
-    if (currentfield[0].innerText.includes(keyword) ||
-        currentfield[1].innerText.includes(keyword) ||
-        currentfield[2].innerText.includes(keyword) ||
-        currentfield[3].innerText.includes(keyword) ||
+    if (currentfield[1].innerText.includes(keyword) ||
         keyword == ""
     ){
       currentgroup.style.display="flex"
