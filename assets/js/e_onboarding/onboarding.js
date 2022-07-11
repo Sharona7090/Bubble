@@ -50,11 +50,12 @@ document.getElementById("searchbar").addEventListener("keyup", userfilter);
 }
 
 function userfilter(){
-  var keyword = document.getElementById('searchbar').value.trim()
+  var keyword = document.getElementById('searchbar').value.trim().toLowerCase()
   for (var i=0; i<groupcount; i++){
     var currentgroup = groups[i]
     var currentfield = currentgroup.children
-    if (currentfield[1].innerText.includes(keyword) ||
+    console.log(currentfield[1].innerText.toLowerCase())
+    if (currentfield[1].innerText.toLowerCase().includes(keyword) ||
         keyword == ""
     ){
       currentgroup.style.display="flex"
