@@ -60,6 +60,8 @@ function initsearchbar(){
 }
 
 function userfilter(){
+  console.log("user filter fires")
+
   var groups = document.getElementById('eobrepeatinggroup').children
   var groupcount = groups.length
   var keyword = document.getElementById('usersearchbar').value.trim().toLowerCase()
@@ -79,6 +81,8 @@ function userfilter(){
 }
 
 function casefilter(){
+  console.log("case filter fires")
+
   var groups = document.getElementById('eobrepeatinggroup').children
   var groupcount = groups.length
   var keyword = document.getElementById('casesearchbar').value.trim().toLowerCase()
