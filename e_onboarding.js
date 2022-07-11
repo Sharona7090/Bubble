@@ -50,9 +50,12 @@ function initsearchbar(){
  // groupcount = groups.length
  if (document.getElementById("usersearchbar")){
    document.getElementById("usersearchbar").addEventListener("input", userfilter)
+   console.log("user")
  };
  if (document.getElementById("casesearchbar")){
    document.getElementById("casesearchbar").addEventListener("input", casefilter)
+   console.log("case")
+
  };
 }
 
