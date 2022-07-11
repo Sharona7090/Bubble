@@ -57,7 +57,7 @@ function initsearchbar(){
 }
 
 function userfilter(){
-  var keyword = document.getElementById('searchbar').value.trim().toLowerCase()
+  var keyword = document.getElementById('usersearchbar').value.trim().toLowerCase()
   for (var i=0; i<groupcount; i++){
     var currentgroup = groups[i]
     var currentfield = currentgroup.children
@@ -74,7 +74,7 @@ function userfilter(){
 }
 
 function casefilter(){
-  var keyword = document.getElementById('searchbar').value.trim().toLowerCase()
+  var keyword = document.getElementById('casesearchbar').value.trim().toLowerCase()
   for (var i=0; i<groupcount; i++){
     var currentgroup = groups[i]
     var currentfield = currentgroup.children
