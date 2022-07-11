@@ -1,4 +1,9 @@
+jQuery(document).ready(function() {
+   initusersearchbar()
+   initcasesearchbar()
 
+console.log('load')
+});
 // function initEobPage(){
 // initsearchbar()
 // }
@@ -44,7 +49,7 @@ function initialize_tinymce(editorinput, uniqueid){
 function initusersearchbar(){
  groups = document.getElementById('eobrepeatinggroup').children
  groupcount = groups.length
-document.getElementById("searchbar").addEventListener("input", userfilter);
+document.getElementById("usersearchbar").addEventListener("input", userfilter);
 }
 
 function userfilter(){
@@ -67,7 +72,7 @@ function userfilter(){
 function initcasesearchbar(){
  groups = document.getElementById('eobrepeatinggroup').children
  groupcount = groups.length
-document.getElementById("searchbar").addEventListener("input", casefilter);
+document.getElementById("casesearchbar").addEventListener("input", casefilter);
 }
 function casefilter(){
   var keyword = document.getElementById('searchbar').value.trim().toLowerCase()
