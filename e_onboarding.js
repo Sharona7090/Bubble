@@ -82,7 +82,7 @@ function casefilter(){
   for (var i=0; i<groupcount; i++){
     var currentgroup = groups[i]
     var currentfield = currentgroup.children
-    console.log(currentfield[1].innerText.toLowerCase())
+    console.log(currentfield[2].innerText.toLowerCase())
     if (currentfield[1].innerText.toLowerCase().includes(keyword) ||
         currentfield[2].innerText.toLowerCase().includes(keyword) ||
         currentfield[3].innerText.toLowerCase().includes(keyword) ||
