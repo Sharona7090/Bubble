@@ -45,7 +45,7 @@ function initialize_tinymce(editorinput, uniqueid){
 
 function initsearchbar(){
 var groups = document.getElementById('eobrepeatinggroup').children
-let groupcount = groups.length
+ groupcount = groups.length
 document.getElementById("searchbar").addEventListener("keyup", userfilter);
 }
 
