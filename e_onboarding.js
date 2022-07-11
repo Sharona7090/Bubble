@@ -1,3 +1,9 @@
+jQuery(document).ready(function() {
+    initEobPage()
+});
+function initEobPage(){
+initsearchbar()
+}
 
 
 const tinyArray = []
@@ -9,12 +15,6 @@ function tinymce_init_check(editorinput, uniqueid){
     tinyArray.push(uniqueid)
   }
   console.log(tinyArray)
-
-
-  // if (sessionStorage.getItem(uniqueid) ==""){
-  //   initialize_tinymce(editorinput, uniqueid)
-  //   sessionStorage.setItem(uniqueid, "yes");
-  // }
 
 }
 
@@ -41,5 +41,30 @@ function initialize_tinymce(editorinput, uniqueid){
        font_size_formats: '8pt 9pt 10pt 11pt 12pt 14pt 16pt 18pt 24pt 36pt 48pt'
     });
       console.log("after init code")
+}
+
+function initsearchbar(){
+var groups = document.getElementById('userrepeatinggroup').children
+var groupcount = groups.length
+document.getElementById("searchbar").addEventListener("keyup", userfilter);
+}
+
+function userfilter(){
+  var keyword = document.getElementById('searchbar').value.trim()
+  for (var i=0; i<groupcount; i++){
+    var currentgroup = groups[i]
+    var currentfield = currentgroup.children
+    if (currentfield[0].innerText.includes(keyword) ||
+        currentfield[1].innerText.includes(keyword) ||
+        currentfield[2].innerText.includes(keyword) ||
+        currentfield[3].innerText.includes(keyword) ||
+        keyword == ""
+    ){
+      currentgroup.style.display="flex"
+        }
+    else{
+      currentgroup.style.display="none"
+    }
+  }
 }
 
