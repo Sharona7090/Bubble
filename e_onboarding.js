@@ -83,7 +83,10 @@ function casefilter(){
     var currentgroup = groups[i]
     var currentfield = currentgroup.children
     console.log(currentfield[1].innerText.toLowerCase())
-    if (currentfield[0].innerText.toLowerCase().includes(keyword) ||currentfield[1].innerText.toLowerCase().includes(keyword) ||currentfield[2].innerText.toLowerCase().includes(keyword) ||currentfield[3].innerText.toLowerCase().includes(keyword) ||
+    if (currentfield[1].innerText.toLowerCase().includes(keyword) ||
+        currentfield[2].innerText.toLowerCase().includes(keyword) ||
+        currentfield[3].innerText.toLowerCase().includes(keyword) ||
+        currentfield[4].innerText.toLowerCase().includes(keyword) ||
         keyword == ""
     ){
       currentgroup.style.display="flex"
