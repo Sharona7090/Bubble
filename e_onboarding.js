@@ -1,9 +1,9 @@
 jQuery(document).ready(function() {
     initEobPage()
 });
-function initEobPage(){
-initsearchbar()
-}
+// function initEobPage(){
+// initsearchbar()
+// }
 
 
 const tinyArray = []
@@ -43,7 +43,7 @@ function initialize_tinymce(editorinput, uniqueid){
       console.log("after init code")
 }
 
-function initsearchbar(){
+function initusersearchbar(){
  groups = document.getElementById('eobrepeatinggroup').children
  groupcount = groups.length
 document.getElementById("searchbar").addEventListener("input", userfilter);
@@ -56,6 +56,28 @@ function userfilter(){
     var currentfield = currentgroup.children
     console.log(currentfield[1].innerText.toLowerCase())
     if (currentfield[1].innerText.toLowerCase().includes(keyword) ||
+        keyword == ""
+    ){
+      currentgroup.style.display="flex"
+        }
+    else{
+      currentgroup.style.display="none"
+    }
+  }
+}
+
+function initcasesearchbar(){
+ groups = document.getElementById('eobrepeatinggroup').children
+ groupcount = groups.length
+document.getElementById("searchbar").addEventListener("input", casefilter);
+}
+function casefilter(){
+  var keyword = document.getElementById('searchbar').value.trim().toLowerCase()
+  for (var i=0; i<groupcount; i++){
+    var currentgroup = groups[i]
+    var currentfield = currentgroup.children
+    console.log(currentfield[1].innerText.toLowerCase())
+    if (currentfield[0].innerText.toLowerCase().includes(keyword) ||currentfield[1].innerText.toLowerCase().includes(keyword) ||currentfield[2].innerText.toLowerCase().includes(keyword) ||currentfield[3].innerText.toLowerCase().includes(keyword) ||
         keyword == ""
     ){
       currentgroup.style.display="flex"
