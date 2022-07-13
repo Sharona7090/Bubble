@@ -12,3 +12,6 @@
 .highlightfield{
   border-color: red !important
 }
+.uppercase{
+  text-transform: uppercase;
+}
