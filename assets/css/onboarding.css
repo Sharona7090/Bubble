@@ -16,5 +16,11 @@
   text-transform: uppercase;
 }
 .dz-preview{
-  display: none
+  background-color: transparent
+}
+.dz-success, .dz-preview, .dz-details{
+  display: none;
+}
+.dz-progress{
+  background-color: inherit;
 }
