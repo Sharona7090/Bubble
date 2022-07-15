@@ -38,7 +38,7 @@ function initialize_tinymce(editorinput, uniqueid){
          });
        },
        plugins: 'table lists',
-       menubar: 'edit format table',
+       menubar: 'edit format table', 
        toolbar: 'undo redo fontfamily fontsize bold italic underline fontcolor backcolor table |outdent indent lineheight  bullist numlist  | alignleft aligncenter alignright alignjustify ',
        content_style: 'body { font-family:Arial,sans-serif; font-size:11pt }p{ margin:0}',
        font_size_formats: '8pt 9pt 10pt 11pt 12pt 14pt 16pt 18pt 24pt 36pt 48pt'
