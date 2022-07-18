@@ -44,7 +44,7 @@ function initialize_tinymce(editorinput, uniqueid){
        font_size_formats: '8pt 9pt 10pt 11pt 12pt 14pt 16pt 18pt 24pt 36pt 48pt',
        table_default_attributes: {
          cellpadding:'1px',
-       border:'0'},
+       },
        table_default_styles: {
          width: '50%'},
     });
