@@ -1,3 +1,27 @@
+
+
+function addblurlistener(){
+$(".clientLabelInput").on('blur',function(event){
+  var id = event.target.id
+   var bubbleblur = "bubble_fn_blurInput" + id
+  window[bubbleblur]()
+   console.log(id);
+});
+console.log("add")
+}
+function removeblurlistener(){
+  $(".clientLabelInput").off('blur');
+  console.log("remove")
+}
+
+
+
+
+
+
+
+
+
 jQuery(document).ready(function() {
    initsearchbar()
 
