@@ -196,5 +196,5 @@ button:hover{
 }
 
 #bubbleheader{
-  z-index:50
+  z-index:50 !important
 }
