@@ -195,3 +195,6 @@ button:hover{
   cursor: pointer;
 }
 }
+#bubbleheader{
+  z-index:50
+}
