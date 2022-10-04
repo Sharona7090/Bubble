@@ -399,7 +399,7 @@ function funcClaims(){
 }
 
 function claimExpand(){
-	document.getElementById('bubbleappasidemenu').style="display: none;"
+	document.getElementById('bubbleappasidemenu').style.display="none;"
 	// document.getElementById('kt_header').style="display: none;"
 	// document.getElementById('kt_wrapper').style="padding:10px 15px;"
 	document.getElementById('claimsToggle').onclick=function() {claimContract()};
@@ -408,7 +408,7 @@ function claimExpand(){
 }
 
 function claimContract(){
-  	document.getElementById('bubbleappasidemenu').style="display: flex;"
+  	document.getElementById('bubbleappasidemenu').style.display="flex;"
 	// document.getElementById('appaside').style="border-radius:0; background-color:white; padding:50px"
 	// document.getElementById('kt_header').style="display: inherit;"
 	// document.getElementById('kt_wrapper').style="padding:"
