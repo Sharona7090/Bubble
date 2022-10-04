@@ -399,18 +399,19 @@ function funcClaims(){
 }
 
 function claimExpand(){
-	document.getElementById('appaside').style="display: none;"
-	document.getElementById('kt_header').style="display: none;"
-	document.getElementById('kt_wrapper').style="padding:10px 15px;"
+	document.getElementById('bubbleappasidemenu').style="display: none;"
+	// document.getElementById('kt_header').style="display: none;"
+	// document.getElementById('kt_wrapper').style="padding:10px 15px;"
 	document.getElementById('claimsToggle').onclick=function() {claimContract()};
 	document.getElementById('claimsToggle').innerHTML='<i class="fas fa-compress" style="font-size:1.75rem"></i>';
 
 }
 
 function claimContract(){
-	document.getElementById('appaside').style="border-radius:0; background-color:white; padding:50px"
-	document.getElementById('kt_header').style="display: inherit;"
-	document.getElementById('kt_wrapper').style="padding:"
+  	document.getElementById('bubbleappasidemenu').style="display: flex;"
+	// document.getElementById('appaside').style="border-radius:0; background-color:white; padding:50px"
+	// document.getElementById('kt_header').style="display: inherit;"
+	// document.getElementById('kt_wrapper').style="padding:"
 	document.getElementById('claimsToggle').onclick=function() {claimExpand()};
 	document.getElementById('claimsToggle').innerHTML='<i class="fas fa-expand" style="font-size:1.75rem"></i>';
 }
