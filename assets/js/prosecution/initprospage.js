@@ -3,6 +3,6 @@ jQuery(document).ready(function() {
 });
 function initProsPage(){
 
-loadproscontent()
+// loadproscontent()
 
 }
