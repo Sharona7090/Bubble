@@ -198,3 +198,6 @@ button:hover{
 #bubbleheader{
   z-index:50 !important
 }
+ #appPageContainer{
+   height: calc(100% - 70px) !important;
+ }
