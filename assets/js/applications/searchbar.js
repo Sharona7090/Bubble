@@ -1,7 +1,9 @@
 function initsearchbar(){
+  if(document.getElementById('apprepeatinggroup').children){
 var groups = document.getElementById('apprepeatinggroup').children
 var groupcount = groups.length
 document.getElementById("wipsearchbar").addEventListener("keyup", wipfilter);
+}
 }
 
 function wipfilter(){
