@@ -1,6 +1,6 @@
 
 function initdraggable(){
-var KTCardDraggable = function () {
+ KTCardDraggable = function () {
  var swappables = []
  return {
   //main function to initiate the module
@@ -83,6 +83,7 @@ updateView()
 }
 
 function cleanDraggable(x){
+
     KTCardDraggable.destroyAll();
     KTCardDraggable.init(0)
     for (i=0; i<x.length; i++){
