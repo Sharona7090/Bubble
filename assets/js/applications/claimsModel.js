@@ -227,7 +227,7 @@ function addIC(){
   div.classList.add("icSet")
   div.classList.add("col-md-4")
   div.classList.add("draggable0")
-  div.innerHTML = `<div id="outerDiv`+newICnumber+`" data-claim= "`+newICnumber+`" data-unique-id="`+uniqueID+`" data-parent-id="000" class="draggable-zone card my-3 card-block d-flex no-b ClaimSet outerDiv draggable-zone1 draggable_NA" style=""><div id= "innerDiv`+newICnumber+`" data-claim= "`+newICnumber+`"  class="card-body claimsRow claimGroup1 innerDiv"><div class="lobilist-actions claimsBar" style="visibility:visible"><span class="depNo" style="display:none"></span>
+  div.innerHTML = `<div id="outerDiv`+newICnumber+`" data-claim= "`+newICnumber+`" data-unique-id="`+uniqueID+`" data-parent-id="000" class="draggable-zone card my-3 card-block d-flex no-b ClaimSet outerDiv draggable-zone`+zoneCounter+` draggable_NA" style=""><div id= "innerDiv`+newICnumber+`" data-claim= "`+newICnumber+`"  class="card-body claimsRow claimGroup1 innerDiv"><div class="lobilist-actions claimsBar" style="visibility:visible"><span class="depNo" style="display:none"></span>
   <div class="dropdown preambleBtn "> <button type="button" class="btn btn-icon btn-outline-secondary btnPreamble" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-200, 0">
      <i class="fas fa-cog"></i>
    </button>				<form id="preambleBox`+zoneCounter+`" class="dropdown-menu preambleBox  p-0">
