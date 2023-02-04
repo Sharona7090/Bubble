@@ -42,6 +42,12 @@ var KTCardDraggable = function () {
 
 
 KTCardDraggable.init(0)
+var x = document.getElementsByClassName("outerDiv");
+for (i=0; i<x.length; i++){
+  var num = x[i].getAttribute("data-claim");
+  console.log(num)
+   KTCardDraggable.init(num)
+}
 }
 
 function handlemouseup(){
