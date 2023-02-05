@@ -174,7 +174,12 @@ textarea:focus{
 #apprightcontainer, #bubbleappsidemenu{
   height: calc(100% - 80px) !important;
 }
-
+#apprightcontainer{
+  z-index:7
+}
+#bubbleappsidemenu{
+  z-index:8
+}
 #appformpage > .bubble-r-container{
 padding-bottom: 0 !important;
 }
