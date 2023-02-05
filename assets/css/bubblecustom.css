@@ -105,22 +105,22 @@ padding: 0px 10px !important;
   font-size: 1rem;
   line-height: 1.5;
 }
-#prosbuttoncontainer, .bg1-btn .group-item:nth-of-type(6n+1) {
+#prosbuttoncontainer .group-item:nth-of-type(6n+1), .bg1-btn .group-item:nth-of-type(6n+1){
   background-color: aquamarine !important;
 }
-#prosbuttoncontainer, .bg1-btn .group-item:nth-of-type(6n+2) {
+#prosbuttoncontainer .group-item:nth-of-type(6n+2), .bg1-btn .group-item:nth-of-type(6n+2){
   background-color: #cedffd !important;
 }
-#prosbuttoncontainer, .bg1-btn .group-item:nth-of-type(6n+3) {
+#prosbuttoncontainer .group-item:nth-of-type(6n+3), .bg1-btn .group-item:nth-of-type(6n+3){
   background-color: #ffe4c4 !important;
 }
-#prosbuttoncontainer, .bg1-btn .group-item:nth-of-type(6n+4) {
+#prosbuttoncontainer  .group-item:nth-of-type(6n+4), .bg1-btn .group-item:nth-of-type(6n+4){
   background-color: #95ffff !important;
 }
-#prosbuttoncontainer, .bg1-btn .group-item:nth-of-type(6n+5) {
+#prosbuttoncontainer .group-item:nth-of-type(6n+5), .bg1-btn .group-item:nth-of-type(6n+5){
   background-color: #cde896 !important;
 }
-#prosbuttoncontainer, .bg1-btn .group-item:nth-of-type(6n+6) {
+#prosbuttoncontainer .group-item:nth-of-type(6n+6), .bg1-btn .group-item:nth-of-type(6n+6){
   background-color: #ffdce3 !important;
 }
 
@@ -175,10 +175,10 @@ textarea:focus{
   height: calc(100% - 80px) !important;
 }
 #apprightcontainer{
-  z-index:7 !important
+  z-index:8 !important
 }
 #bubbleappsidemenu{
-  z-index:8 !important
+  z-index:7 !important
 }
 #appformpage > .bubble-r-container{
 padding-bottom: 0 !important;
