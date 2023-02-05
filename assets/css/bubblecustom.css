@@ -105,29 +105,29 @@ padding: 0px 10px !important;
   font-size: 1rem;
   line-height: 1.5;
 }
-#prosbuttoncontainer .group-item:nth-of-type(6n+1), .bg1-btn .group-item:nth-of-type(6n+1){
+#prosbuttoncontainer .group-item:nth-of-type(6n+1) > button{
   background-color: aquamarine !important;
 }
-#prosbuttoncontainer .group-item:nth-of-type(6n+2), .bg1-btn .group-item:nth-of-type(6n+2){
+#prosbuttoncontainer .group-item:nth-of-type(6n+2) > button{
   background-color: #cedffd !important;
 }
-#prosbuttoncontainer .group-item:nth-of-type(6n+3), .bg1-btn .group-item:nth-of-type(6n+3){
+#prosbuttoncontainer .group-item:nth-of-type(6n+3) > button{
   background-color: #ffe4c4 !important;
 }
-#prosbuttoncontainer  .group-item:nth-of-type(6n+4), .bg1-btn .group-item:nth-of-type(6n+4){
+#prosbuttoncontainer  .group-item:nth-of-type(6n+4) > button{
   background-color: #95ffff !important;
 }
-#prosbuttoncontainer .group-item:nth-of-type(6n+5), .bg1-btn .group-item:nth-of-type(6n+5){
+#prosbuttoncontainer .group-item:nth-of-type(6n+5) > button{
   background-color: #cde896 !important;
 }
-#prosbuttoncontainer .group-item:nth-of-type(6n+6), .bg1-btn .group-item:nth-of-type(6n+6){
+#prosbuttoncontainer .group-item:nth-of-type(6n+6) > button{
   background-color: #ffdce3 !important;
 }
 #buttonzone span:nth-of-type(6n+1) >.bg1-btn{
  background-color: aquamarine !important;
 }
 #buttonzone span:nth-of-type(6n+2) >.bg1-btn{
- background-color: #cedffd ;
+ background-color: #cedffd !important;
 }
 #buttonzone span:nth-of-type(6n+3) >.bg1-btn{
  background-color: #ffe4c4 !important;
