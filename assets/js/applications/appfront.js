@@ -7,7 +7,7 @@ function genFigures(){
   var figfilename = clientTracking + " / " + firmTracking + " - " + "figures"
 
   PizZipUtils.getBinaryContent(
-            "assets/docs/figuresslides3.pptx",
+            figuresTemplatePpt,
             function (error, content) {
                 if (error) {
                     console.error(error);
@@ -20,13 +20,7 @@ function genFigures(){
                 });
                 doc.setData({
                   slides:
-                  // [
-                  //   {
-                  //     $slide: 1,
-                  //   fig: "2",
-                  //   a1: "101", b1: "102", c1: "103", d1: "104", e1: "105"
-                  // }
-                  // ]
+
                     figuresArray
                 });
 
