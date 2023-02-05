@@ -123,7 +123,24 @@ padding: 0px 10px !important;
 #prosbuttoncontainer .group-item:nth-of-type(6n+6), .bg1-btn .group-item:nth-of-type(6n+6){
   background-color: #ffdce3 !important;
 }
-
+#buttonzone span:nth-of-type(6n+1) >.bg1-btn{
+ background-color: aquamarine !important;
+}
+#buttonzone span:nth-of-type(6n+2) >.bg1-btn{
+ background-color: #cedffd ;
+}
+#buttonzone span:nth-of-type(6n+3) >.bg1-btn{
+ background-color: #ffe4c4 !important;
+}
+#buttonzone span:nth-of-type(6n+4) >.bg1-btn{
+ background-color: #95ffff !important;
+}
+#buttonzone span:nth-of-type(6n+5) >.bg1-btn{
+ background-color: #cde896 !important;
+}
+#buttonzone span:nth-of-type(6n+6) >.bg1-btn{
+ background-color: #ffdce3 !important;
+}
 .btn:hover, .Button:hover{
   filter: brightness(90%);
 }
