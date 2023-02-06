@@ -61,7 +61,7 @@ function loadfigures(figures){
                               </div>
                               <div class="modal-body row">
                                 <div id="pdfFigure${j}" class="col-6 modalfig">
-                                    <img id="image${j}" style="width:100%;" src="${figimage}">
+                                    <img id="image${j}" style="width:103%;" src="${figimage}">
                                     <!-- //append with reference numbers -->
                                     <input id="figno${j}" class="figno figno${j}" style="${figposition}" readonly="">
                                 </div>
