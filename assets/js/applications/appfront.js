@@ -20,7 +20,13 @@ function genFigures(){
                 });
                 doc.setData({
                   slides:
-
+                  // [
+                  //   {
+                  //     $slide: 1,
+                  //   fig: "2",
+                  //   a1: "101", b1: "102", c1: "103", d1: "104", e1: "105"
+                  // }
+                  // ]
                     figuresArray
                 });
 
@@ -202,8 +208,8 @@ function makeSummaryAbstract(){
       var claimText = cloneEditor.innerText.replace(/[\n\r]+|[\s]{2,}/g, ' ')
       claimText = claimText.replace('A', "a")
       claimText = claimText.replace(', comprising', " includes")
-      claimText = claimText.replace(/:/g, '')
-      claimText = claimText.replace(/;/g, ',')
+      claimText = claimText.replace(/:/g, ' ')
+      claimText = claimText.replace(/;/g, ', ')
       claimText = claimText.replace(/comprise/g, 'include')
       claimText = claimText.replace(/comprising/g, 'including')
       claimText = claimText.replace(/  +/g, ' ').trim();
