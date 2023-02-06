@@ -4,7 +4,7 @@ function genFigures(){
   var clientTracking = document.getElementById('clientTracking').value;
   var firmTracking = document.getElementById('firmTracking').value;
 
-  var figfilename = clientTracking + " / " + firmTracking + " - " + "figures"
+  var figfilename = clientTracking + " (" + firmTracking + ") - " + "figures"
 
   PizZipUtils.getBinaryContent(
             figuresTemplatePpt,
@@ -103,8 +103,8 @@ if (document.getElementById("typeNP").checked == true){
 if (document.getElementById("typeP").checked == true){
   var appType = "Provisional Patent Application"
 };
-filename = clientTracking + " / " + firmTracking + " - " + appType
-figfilename = clientTracking + " / " + firmTracking + " - " + "figures"
+filename = clientTracking + " (" + firmTracking + ") - " + appType
+figfilename = clientTracking + " (" + firmTracking + ") - " + "figures"
 ///////////////  2. Background ///////////////////////////
 var background = document.getElementById('bgText').value;
 ///////////////  3. FIGURES  + SPEC  ////////////////////////////////
