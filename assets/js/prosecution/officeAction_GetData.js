@@ -50,7 +50,7 @@ function getBasicData(){
   regnumber = "68,244"
   pending = document.getElementById('pendClaims').value
   indInput = document.getElementById('indClaims').value
-  filename = clientno+ " / " + attyno + " - draft response to office action";
+  filename = clientno+ " (" + attyno + ") - draft response to office action";
   ////////////////////////////////////////////////////////////
   amendspec = document.getElementById("amendspec").checked;
   amenddraw = document.getElementById("amenddraw").checked;
