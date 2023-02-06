@@ -223,3 +223,15 @@ button:hover{
  #appPageContainer{
    height: calc(100% - 70px) !important;
  }
+ .figCard {
+     cursor: pointer;
+     margin-bottom: 20px;
+ }
+#figfilter{
+  margin-left:15px;
+  margin-right:10px
+}
+#figscroller{
+  height: 70vh;
+    overflow-y: auto;
+}

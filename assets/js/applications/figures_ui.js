@@ -41,6 +41,7 @@ function loadfigures(figures){
     //create a figure card in the figures grid
     var newFigCard = document.createElement("div");
     newFigCard.classList.add("col-3")
+    newFigCard.style.padding = "0 10px"
     newFigCard.innerHTML = `<div class="card figCard"  data-toggle="modal" data-target="#exampleModal${j}" style="width: 100%;padding-top: 100%;position: relative;" onclick="focusfig(${j})">
                               <div class="d-flex flex-column align-items-center figbg" style="background-image:url(${figimage});">
                               </div>
