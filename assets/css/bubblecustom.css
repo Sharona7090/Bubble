@@ -228,8 +228,8 @@ button:hover{
      margin-bottom: 20px;
  }
 #figfilter{
-  margin-left:15px;
-  margin-right:10px
+  margin-left:10px;
+  /* margin-right:10px */
 }
 #figscroller{
   height: 70vh;
