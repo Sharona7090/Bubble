@@ -227,3 +227,11 @@ button:hover{
      cursor: pointer;
      margin-bottom: 20px;
  }
+#figfilter{
+  margin-left:15px;
+  margin-right:10px
+}
+#figscroller{
+  height: 70vh;
+    overflow-y: auto;
+}
