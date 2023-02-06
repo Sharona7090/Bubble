@@ -186,7 +186,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock5">
         <span class="setCursor depPreamble1">
   <span class="claimNo" id="claimNo2">2. </span>
-  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno2">1,</span></span>
+  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno2">1, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein graphical user interface includes an affordance, and wherein the input represents a contact with the affordance, the one or more programs further including instructions for providing a haptic feedback of a third feedback level different from the first feedback level.&nbsp;</span>
         </p>
 
@@ -206,7 +206,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock2">
         <span class="setCursor depPreamble1">
   <span class="claimNo" id="claimNo3">3. </span>
-  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno3">1,</span></span>
+  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno3">1, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the determination that the electronic device is in the second activity state is based at least in part on one or more data selected from the group consisting of: accelerometer data, global positioning system data, wireless communication data, heart rate sensor data, and gyroscope data.&nbsp;&nbsp;</span>
         </p>
 
@@ -226,7 +226,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock3">
         <span class="setCursor depPreamble1">
   <span class="claimNo" id="claimNo4">4. </span>
-  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno4">1,</span></span>
+  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno4">1, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the graphical user interface includes an affordance, and wherein the input represents a contact with the affordance, the one or more programs further including instructions for providing a haptic feedback of a first feedback level.&nbsp;</span>
         </p>
 
@@ -246,7 +246,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock4">
         <span class="setCursor depPreamble1">
   <span class="claimNo" id="claimNo5">5. </span>
-  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno5">4,</span></span>
+  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno5">4, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the first feedback level and the second feedback level have different values.&nbsp;</span>
         </p>
 
@@ -329,7 +329,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock7">
         <span class="setCursor depPreamble2"><span class="claimNo" id="claimNo7">7. </span>
   <span class="preamble preambleInclude">The computer implemented method of claim </span>
-  <span class="depNo preambleInclude" id="depno7">6,</span></span>
+  <span class="depNo preambleInclude" id="depno7">6, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">&nbsp;wherein the determination that the electronic device is in the second activity state is based at least in part on one or more data selected from the group consisting of: accelerometer data, global positioning system data, wireless communication data, heart rate sensor data, and gyroscope data.</span>
         </p>
 
@@ -349,7 +349,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock8">
         <span class="setCursor depPreamble2"><span class="claimNo" id="claimNo8">8. </span>
   <span class="preamble preambleInclude">The computer implemented method of claim </span>
-  <span class="depNo preambleInclude" id="depno8">7,</span></span>
+  <span class="depNo preambleInclude" id="depno8">7, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein graphical user interface includes an affordance, and wherein the input represents a contact with the affordance, the one or more programs further including instructions for providing a haptic feedback of a third feedback level different from the first feedback level.&nbsp;&nbsp;</span>
         </p>
 
@@ -389,7 +389,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock9">
         <span class="setCursor depPreamble2"><span class="claimNo" id="claimNo10">10. </span>
   <span class="preamble preambleInclude">The computer implemented method of claim </span>
-  <span class="depNo preambleInclude" id="depno10">9,</span></span>
+  <span class="depNo preambleInclude" id="depno10">9, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">&nbsp;wherein the determination that the electronic device is in the first activity state is based at least in part on one or more data selected from the group consisting of: accelerometer data, global positioning system data, wireless communication data, heart rate sensor data, and gyroscope data.</span>
         </p>
 
@@ -429,7 +429,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock11">
         <span class="setCursor depPreamble2"><span class="claimNo" id="claimNo12">12. </span>
   <span class="preamble preambleInclude">The computer implemented method of claim </span>
-  <span class="depNo preambleInclude" id="depno12">6,</span></span>
+  <span class="depNo preambleInclude" id="depno12">6, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the first feedback level and the second feedback level have different values.&nbsp;</span>
         </p>
 
@@ -504,7 +504,7 @@ var filledClaims =
         <span class="setCursor depPreamble3">
   <span class="claimNo" id="claimNo14">14. </span>
   <span class="preamble preambleInclude">The non-transitory computer-accessible storage medium of claim </span>
-  <span class="depNo preambleInclude" id="depno14">13,</span></span>
+  <span class="depNo preambleInclude" id="depno14">13, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the determination that the electronic device is in the second activity state is based at least in part on one or more data selected from the group consisting of: accelerometer data, global positioning system data, wireless communication data, heart rate sensor data, and gyroscope data.&nbsp;</span>
         </p>
 
@@ -525,7 +525,7 @@ var filledClaims =
         <span class="setCursor depPreamble3">
   <span class="claimNo" id="claimNo15">15. </span>
   <span class="preamble preambleInclude">The non-transitory computer-accessible storage medium of claim </span>
-  <span class="depNo preambleInclude" id="depno15">13,</span></span>
+  <span class="depNo preambleInclude" id="depno15">13, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein graphical user interface includes an affordance, and wherein the input represents a contact with the affordance, the one or more programs further including instructions for providing a haptic feedback of a third feedback level different from the first feedback level.&nbsp;&nbsp;&nbsp;</span>
         </p>
 
@@ -546,7 +546,7 @@ var filledClaims =
         <span class="setCursor depPreamble3">
   <span class="claimNo" id="claimNo16">16. </span>
   <span class="preamble preambleInclude">The non-transitory computer-accessible storage medium of claim </span>
-  <span class="depNo preambleInclude" id="depno16">15,</span></span>
+  <span class="depNo preambleInclude" id="depno16">15, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the first activity state and the second activity state are obtained through the same activity function.&nbsp;&nbsp;</span>
         </p>
 
@@ -609,7 +609,7 @@ var filledClaims =
         <span class="setCursor depPreamble3">
   <span class="claimNo" id="claimNo19">19. </span>
   <span class="preamble preambleInclude">The non-transitory computer-accessible storage medium of claim </span>
-  <span class="depNo preambleInclude" id="depno19">13,</span></span>
+  <span class="depNo preambleInclude" id="depno19">13, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the first activity state and the second activity state are obtained through different activity functions.&nbsp;</span>
         </p>
 
