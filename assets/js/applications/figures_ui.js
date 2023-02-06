@@ -73,7 +73,7 @@ function loadfigures(figures){
                               </div>
                               <div class="modal-footer">
                                 <div class="col-3" style="text-align:left;padding-left: 50px;">
-                                  <button id="deselectfigbtn${j}" type="button" class="btn btn-secondary btn-disabled" onclick="deselectfig(${j})" data-dismiss="modal" aria-label="Close" disabled >Deselect Figure</button>
+                                  <button type="button" class="deselectfigbtn${j} btn btn-secondary btn-disabled" onclick="deselectfig(${j})" data-dismiss="modal" aria-label="Close" disabled >Deselect Figure</button>
                                 </div>
                                 <div class="col-3">
                                   <label>Figure number:</label> <input id="figinput${j}" class="figinput" autofocus onkeyup="autoNumber(${j})" ></input>
@@ -92,7 +92,7 @@ function loadfigures(figures){
                                   </div>
                                 </div>
                                 <div class="col-2">
-                                  <button id="selectfigbtn${j}" type="button" class="btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(${j})">Select Figure</button>
+                                  <button type="button" class="selectfigbtn${j} btn btn-primary font-weight-bold btn-disabled" data-dismiss="modal" aria-label="Close" onclick="selectfig(${j})">Select Figure</button>
                                 </div>
                               </div>
                             </div>
@@ -312,8 +312,8 @@ console.log(newFigure)
 figuresArray.push(newFigure);
 console.log(figuresArray)
 
-document.getElementById(`selectfigbtn${x}`).disabled = true;
-document.getElementById(`deselectfigbtn${x}`).disabled = false;
+document.getElementsByClassName(`selectfigbtn${x}`)[0].disabled = true;
+document.getElementsByClassName(`deselectfigbtn${x}`)[0].disabled = false;
 
 }
 
@@ -347,8 +347,8 @@ const indexOfObject = figuresArray.findIndex(object => {
 figuresArray.splice(indexOfObject, 1);
 
 
-document.getElementById(`selectfigbtn${x}`).disabled = false;
-document.getElementById(`deselectfigbtn${x}`).disabled = true;
+document.getElementsByClassName(`selectfigbtn${x}`)[0].disabled = false;
+document.getElementsByClassName(`deselectfigbtn${x}`)[0].disabled = true;
 }
 
 function populateModal(){
