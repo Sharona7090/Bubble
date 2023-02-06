@@ -170,7 +170,7 @@ var filledClaims =
   <span class="claimNo" id="claimNo1">1. </span>
   <span class="preamble preambleInclude">A system, comprising:</span></p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">a processor;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">a touch sensitive display;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">a memory device;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">instructions, the instructions when executed by the processor cause the system to:</p>
 														<p class="claimBodyLine" style="text-indent:.5in" contenteditable="true">display, on the display, a graphical user interface;</p>
-													<p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">receive, via the touch-sensitive display, an input representing a contact with the graphical user interface, the input having an input intensity;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determine whether the input intensity of the input meets or exceeds a first intensity threshold in response to receiving the input and in accordance with a determination that the electronic device is in a first activity state;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determine whether the input intensity of the input meets or exceeds a second intensity threshold in response to receiving the input and in accordance with a determination that the electronic device is in a second activity state; and</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">provide a haptic feedback of a second feedback level higher than the first feedback level in response to receiving the input and in accordance with a determination that the electronic device is in a second activity state.</p></div>
+													<p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">receive, via the touch-sensitive display, an input representing a contact with the graphical user interface, the input having an input intensity;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determine whether the input intensity of the input meets or exceeds a first intensity threshold in response to receiving the input and in accordance with a determination that the electronic device is in a first activity state;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determine whether the input intensity of the input meets or exceeds a second intensity threshold in accordance with a determination that the electronic device is in a second activity state; and</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">provide a haptic feedback of a second feedback level higher than the first feedback level in response to receiving the input.</p></div>
 												</div>
 										<div class="outerDiv depouterDiv draggable-zone5 draggable-zone2 draggable1" data-claim="2" data-parent="1" data-unique-id="206" data-parent-id="101" id="outerDiv2" tabindex="-1" style="">
     <div id="innerDiv2" data-claim="2" class="innerDiv card-body claimsRow" onmouseenter="mouseIn2(this)" onmouseleave="mouseOut2(this)">
@@ -186,7 +186,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock5">
         <span class="setCursor depPreamble1">
   <span class="claimNo" id="claimNo2">2. </span>
-  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno2">1,</span></span>
+  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno2">1, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein graphical user interface includes an affordance, and wherein the input represents a contact with the affordance, the one or more programs further including instructions for providing a haptic feedback of a third feedback level different from the first feedback level.&nbsp;</span>
         </p>
 
@@ -206,7 +206,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock2">
         <span class="setCursor depPreamble1">
   <span class="claimNo" id="claimNo3">3. </span>
-  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno3">1,</span></span>
+  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno3">1, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the determination that the electronic device is in the second activity state is based at least in part on one or more data selected from the group consisting of: accelerometer data, global positioning system data, wireless communication data, heart rate sensor data, and gyroscope data.&nbsp;&nbsp;</span>
         </p>
 
@@ -226,7 +226,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock3">
         <span class="setCursor depPreamble1">
   <span class="claimNo" id="claimNo4">4. </span>
-  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno4">1,</span></span>
+  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno4">1, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the graphical user interface includes an affordance, and wherein the input represents a contact with the affordance, the one or more programs further including instructions for providing a haptic feedback of a first feedback level.&nbsp;</span>
         </p>
 
@@ -246,7 +246,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock4">
         <span class="setCursor depPreamble1">
   <span class="claimNo" id="claimNo5">5. </span>
-  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno5">4,</span></span>
+  <span class="preamble preambleInclude">The system of claim </span><span class="depNo preambleInclude" id="depno5">4, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the first feedback level and the second feedback level have different values.&nbsp;</span>
         </p>
 
@@ -314,7 +314,7 @@ var filledClaims =
       <span class="preamble preambleInclude">A computer implemented method, comprising:</span>
     </p>
     <p class="claimBodyLine" style="text-indent:.5in" contenteditable="true">displaying, on a touch-sensitive display, a graphical user interface;</p>
-  <p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">receiving, via the display, an input representing a contact with the graphical user interface, the input having an input intensity;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determining whether the input intensity of the input meets or exceeds a first characteristic intensity threshold;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">providing a haptic feedback of a first feedback level;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determining whether the input intensity of the input meets or exceeds a second characteristic intensity threshold higher than the first characteristic intensity threshold; and</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">providing a haptic feedback of a second feedback level higher than the first feedback level in response to receiving the input and in accordance with a determination that the electronic device is in a second activity state.</p></div>
+  <p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">receiving, via the display, an input representing a contact with the graphical user interface, the input having an input intensity;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determining whether the input intensity of the input meets or exceeds a first characteristic intensity threshold;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">providing a haptic feedback of a first feedback level;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determining whether the input intensity of the input meets or exceeds a second characteristic intensity threshold higher than the first characteristic intensity threshold; and</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">providing a haptic feedback of a second feedback level higher than the first feedback level in response to receiving the input.</p></div>
     </div>	<div class="outerDiv depouterDiv draggable-zone7 draggable6" data-claim="7" data-parent="6" data-unique-id="207" data-parent-id="201" id="outerDiv7" tabindex="-1">
     <div id="innerDiv7" data-claim="7" class="innerDiv card-body claimsRow" onmouseenter="mouseIn2(this)" onmouseleave="mouseOut2(this)">
       <div class="lobilist-actions claimsBar" style="visibility: hidden;">
@@ -329,7 +329,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock7">
         <span class="setCursor depPreamble2"><span class="claimNo" id="claimNo7">7. </span>
   <span class="preamble preambleInclude">The computer implemented method of claim </span>
-  <span class="depNo preambleInclude" id="depno7">6,</span></span>
+  <span class="depNo preambleInclude" id="depno7">6, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">&nbsp;wherein the determination that the electronic device is in the second activity state is based at least in part on one or more data selected from the group consisting of: accelerometer data, global positioning system data, wireless communication data, heart rate sensor data, and gyroscope data.</span>
         </p>
 
@@ -349,7 +349,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock8">
         <span class="setCursor depPreamble2"><span class="claimNo" id="claimNo8">8. </span>
   <span class="preamble preambleInclude">The computer implemented method of claim </span>
-  <span class="depNo preambleInclude" id="depno8">7,</span></span>
+  <span class="depNo preambleInclude" id="depno8">7, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein graphical user interface includes an affordance, and wherein the input represents a contact with the affordance, the one or more programs further including instructions for providing a haptic feedback of a third feedback level different from the first feedback level.&nbsp;&nbsp;</span>
         </p>
 
@@ -389,7 +389,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock9">
         <span class="setCursor depPreamble2"><span class="claimNo" id="claimNo10">10. </span>
   <span class="preamble preambleInclude">The computer implemented method of claim </span>
-  <span class="depNo preambleInclude" id="depno10">9,</span></span>
+  <span class="depNo preambleInclude" id="depno10">9, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">&nbsp;wherein the determination that the electronic device is in the first activity state is based at least in part on one or more data selected from the group consisting of: accelerometer data, global positioning system data, wireless communication data, heart rate sensor data, and gyroscope data.</span>
         </p>
 
@@ -429,7 +429,7 @@ var filledClaims =
         <p class="preambleBlock" id="preambleBlock11">
         <span class="setCursor depPreamble2"><span class="claimNo" id="claimNo12">12. </span>
   <span class="preamble preambleInclude">The computer implemented method of claim </span>
-  <span class="depNo preambleInclude" id="depno12">6,</span></span>
+  <span class="depNo preambleInclude" id="depno12">6, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the first feedback level and the second feedback level have different values.&nbsp;</span>
         </p>
 
@@ -488,7 +488,7 @@ var filledClaims =
   <span class="claimNo" id="claimNo13">13. </span>
   <span class="preamble preambleInclude">A non-transitory computer-accessible storage medium storing program instructions that when executed on one or more processors cause the processors to:</span></p>
     <p class="claimBodyLine" style="text-indent:.5in" contenteditable="true">display, on the display, a graphical user interface;</p>
-  <p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">receive, via the touch-sensitive display, an input representing a contact with the graphical user interface, the input having an input intensity;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determine whether the input intensity of the input meets or exceeds a first intensity threshold in response to receiving the input and in accordance with a determination that the electronic device is in a first activity state;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determine whether the input intensity of the input meets or exceeds a second intensity threshold in response to receiving the input and in accordance with a determination that the electronic device is in a second activity state; and</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">provide a haptic feedback of a second feedback level higher than the first feedback level in response to receiving the input and in accordance with a determination that the electronic device is in a second activity state.&nbsp;</p></div>
+  <p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">receive, via the touch-sensitive display, an input representing a contact with the graphical user interface, the input having an input intensity;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determine whether the input intensity of the input meets or exceeds a first intensity threshold in accordance with a determination that the electronic device is in a first activity state;</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">determine whether the input intensity of the input meets or exceeds a second intensity threshold in response to receiving the input and in accordance with a determination that the electronic device is in a second activity state; and</p><p class="claimBodyLine" contenteditable="true" style="text-indent: 0.5in;">provide a haptic feedback of a second feedback level higher than the first feedback level in response to receiving the input.&nbsp;</p></div>
     </div>	<div class="outerDiv depouterDiv draggable-zone14 draggable13" data-claim="14" data-parent="13" data-unique-id="213" data-parent-id="202" id="outerDiv14" tabindex="-1">
     <div id="innerDiv14" data-claim="14" class="innerDiv card-body claimsRow" onmouseenter="mouseIn2(this)" onmouseleave="mouseOut2(this)">
       <div class="lobilist-actions claimsBar" style="visibility: hidden;">
@@ -504,7 +504,7 @@ var filledClaims =
         <span class="setCursor depPreamble3">
   <span class="claimNo" id="claimNo14">14. </span>
   <span class="preamble preambleInclude">The non-transitory computer-accessible storage medium of claim </span>
-  <span class="depNo preambleInclude" id="depno14">13,</span></span>
+  <span class="depNo preambleInclude" id="depno14">13, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the determination that the electronic device is in the second activity state is based at least in part on one or more data selected from the group consisting of: accelerometer data, global positioning system data, wireless communication data, heart rate sensor data, and gyroscope data.&nbsp;</span>
         </p>
 
@@ -525,7 +525,7 @@ var filledClaims =
         <span class="setCursor depPreamble3">
   <span class="claimNo" id="claimNo15">15. </span>
   <span class="preamble preambleInclude">The non-transitory computer-accessible storage medium of claim </span>
-  <span class="depNo preambleInclude" id="depno15">13,</span></span>
+  <span class="depNo preambleInclude" id="depno15">13, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein graphical user interface includes an affordance, and wherein the input represents a contact with the affordance, the one or more programs further including instructions for providing a haptic feedback of a third feedback level different from the first feedback level.&nbsp;&nbsp;&nbsp;</span>
         </p>
 
@@ -546,7 +546,7 @@ var filledClaims =
         <span class="setCursor depPreamble3">
   <span class="claimNo" id="claimNo16">16. </span>
   <span class="preamble preambleInclude">The non-transitory computer-accessible storage medium of claim </span>
-  <span class="depNo preambleInclude" id="depno16">15,</span></span>
+  <span class="depNo preambleInclude" id="depno16">15, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the first activity state and the second activity state are obtained through the same activity function.&nbsp;&nbsp;</span>
         </p>
 
@@ -609,7 +609,7 @@ var filledClaims =
         <span class="setCursor depPreamble3">
   <span class="claimNo" id="claimNo19">19. </span>
   <span class="preamble preambleInclude">The non-transitory computer-accessible storage medium of claim </span>
-  <span class="depNo preambleInclude" id="depno19">13,</span></span>
+  <span class="depNo preambleInclude" id="depno19">13, </span></span>
         <span class="preambleBody preambleInclude" contenteditable="true" style="outline:none">wherein the first activity state and the second activity state are obtained through different activity functions.&nbsp;</span>
         </p>
 
